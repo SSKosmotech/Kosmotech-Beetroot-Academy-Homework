@@ -5,16 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 Семантичні елементи</title>
+    <style>
+        body{
+            padding-left: 5%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif        }
+        h1{
+            font-size: 30px; 
+            font-weight: 400;
+        }
+        h2{
+            font-size: 20px; 
+            font-weight: 400;
+        }
+        section{
+            font-size: 12px;
+        }
+    </style>
 </head>
 <body>
     <header>
-
+        <nav>
+            <ul style="line-height: 150%; font-size: 20px; list-style-type:square;">
+                <li><a href="#section01">Section</a></li>
+                <li><a href="#">Article</a></li>
+                <li><a href="#">Header</a></li>
+                <li><a href="#">Footer</a></li>
+            </ul>
+        </nav>
     </header>
-    
     <main>
-
+        <article>
+            <h1>HTML5 Семантичні елементи</h1>
+            <section>
+                <p>
+                    Семантичний елемент чітко описує його значення як для браузера, так і
+                    <br>
+                    для розробника. 
+                    <br><br>
+                    Приклади не <strong>семантичних</strong> елементів: &lt;div&gt; і &lt;span&gt; - нічого не говорить
+                    <br>
+                    про його вміст.
+                    <br><br>
+                    Приклади <strong>семантичних</strong> елементів: &lt;form&gt;, &lt;table&gt; і &lt;article&gt; - чітко
+                    <br>
+                    визначає його зміст.
+                </p>             
+            </section>
+            
+            <section>
+                <h2>Підтримка браузерів</h2>
+                <div>
+                    <img src="images/chrome.png" alt="Chrome" height="25" width="25">
+                    <img src="images/internet-explorer.png" alt="Internet-explorer" height="25" width="25">
+                    <img src="images/firefox.png" alt="Firefox" height="25" width="25">
+                    <img src="images/safari.png" alt="Safari" height="25" width="25">
+                    <img src="images/opera.png" alt="Opera" height="25" width="25">
+                </div>
+                <br>
+                <p>
+                    Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.
+                    <br><br>
+                    Крім того, ви можете "навчити" старих браузерів, як обробляти "невідомі
+                    <br>
+                    елементи".
+                    <br><br>
+                    Прочитайте про це в <a href="https://www.blogger.com/blog/page/edit/2590532390801722394/850003172824707311#">підтримці браузера HTML5</a>.
+                </p>
+            </section>
+            <br>
+            <section>
+                <h2>Нові семантичні елементи в HTML5</h2>
+                <br>
+                <p>
+                    HTML5 пропонує нові семантичні елементи для визначення різних частин
+                    <br>
+                    веб-сторінки:
+                </p>
+                <ul>
+                    <li>&lt;section&gt;</li>
+                    <li>&lt;article&gt;</li>
+                    <li>&lt;header&gt;</li>
+                    <li>&lt;footer&gt;</li>
+                </ul>
+            </section>
+            <section id="section01">
+                <h2>HTML5 &lt;section&gt; елемент</h2>
+                <p>
+                    Елемент &lt;section&gt; визначає розділ в документі.
+                    Згідно з документацією в3к'с HTML5: "розділ представляє собою
+                    тематичну угруповання контенту, зазвичай з заголовком".
+                    Домашня сторінка зазвичай може бути розділена на розділи для
+                    ознайомлення, змісту і контактної інформації.
+                </p>
+            </section>
+        </article>
     </main>
-    
     <footer>
 
     </footer>
