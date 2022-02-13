@@ -38,7 +38,7 @@ h1 {
     background-color:rgba(240, 248, 255, .5);
     font-family: Arial, Helvetica, sans-serif;
     height: 150vh;
-    background: url(../images/Wall-Kosmo.png) no-repeat fixed center/cover;
+    background: url(../../assets/images/Wall-Kosmo.png) no-repeat fixed center/cover;
     /* background-image: url(../images/Wall-Kosmo.png); 
     background-repeat: no-repeat;
     background-size: cover;
