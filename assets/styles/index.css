@@ -37,7 +37,13 @@ h1 {
  body {
     background-color:rgba(240, 248, 255, .5);
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url();
+    height: 150vh;
+    background: url(../images/Wall-Kosmo.png) no-repeat fixed center/cover;
+    /* background-image: url(../images/Wall-Kosmo.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;*/
 }
  
  .site-name {
@@ -48,6 +54,11 @@ h1 {
      text-align: center;
      text-decoration: underline;
      background-color: #55c7c5;
+     border-width: 2px;
+     border-style: solid;
+     border-color: #000000;
+     border-bottom: 5px solid #000000;
+     border-radius: 10px;
  }
 
  .list-of-lessons {
