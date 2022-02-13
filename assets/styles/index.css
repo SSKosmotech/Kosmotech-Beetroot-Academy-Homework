@@ -39,7 +39,7 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     height: 150vh;
     background: url(../../assets/images/Wall-Kosmo.png) no-repeat fixed center/cover;
-    /* background-image: url(../images/Wall-Kosmo.png); 
+    /* background-image: url(../../assets/images/Wall-Kosmo.png); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -53,16 +53,17 @@ h1 {
      font-style: italic;
      text-align: center;
      text-decoration: underline;
-     background-color: #55c7c5;
+     background-color: rgba(87, 199, 197, 0.4);
      border-width: 2px;
      border-style: solid;
      border-color: #000000;
      border-bottom: 5px solid #000000;
      border-radius: 10px;
+     box-shadow: 2px 2px 20px #000000;
  }
 
  .list-of-lessons {
-    color: #94be46;
+    color: #3760c9;
     text-align: center;
     list-style-position: inside;
     padding-right: 20%;
