@@ -1,18 +1,19 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-body{
+/*
+body {
     padding: 0;
     background-color: #fff;
     background-color: #aaee00;
-    background-color:hsl(206, 100%, 97%);
+    background-color:rgb(240, 248, 255);
     color: red;
     color: rgba(255, 99, 71, .4);
-    /*color: transparent;*/
+    color: transparent;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 26px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
@@ -21,8 +22,37 @@ h1 {
 
 .classname{
     background-color: rgb(194, 28, 28);
+} 
+
+#id_value {
+    background-color: rgb(104, 54, 13);
  }
 
- #id_value {
-    background-color: rgb(104, 54, 13);
+  .list-of-lessons {
+     color: aqua !important;
+     color: #94be46;
+ }
+ */
+
+ body {
+    background-color:rgba(240, 248, 255, .5);
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url();
+}
+ 
+ .site-name {
+     color:#175cf0;
+     font-size: 40px;
+     font-weight: 300;
+     font-style: italic;
+     text-align: center;
+     text-decoration: underline;
+     background-color: #55c7c5;
+ }
+
+ .list-of-lessons {
+    color: #94be46;
+    text-align: center;
+    list-style-position: inside;
+    padding-right: 20%;
  }
