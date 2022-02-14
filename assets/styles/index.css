@@ -85,20 +85,29 @@ h1 {
 
  /* unvisited link */
  a:link {
-    color: #9999CC;
+    color: #0000FF;
   }
-  
+
   /* visited link */
   a:visited {
-    color: green;
+    color: #0000FF;
   }
-  
+
   /* mouse over link */
   a:hover {
-    color: hotpink;
+    color: #ff69b4;
   }
-  
-  /* selected link */
-  a:active {
-    color: blue;
+
+  /* unvisited link */
+  .footer-links a:link {
+    color: #ffffff;
+  }
+
+  /* visited link */
+  .footer-links a:visited {
+    color: #ffffff;
+  }
+
+  .footer-links a:hover {
+    color: #ff69b4;
   }
