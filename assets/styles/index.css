@@ -1,39 +1,3 @@
-/*
-body {
-    padding: 0;
-    background-color: #fff;
-    background-color: #aaee00;
-    background-color:rgb(240, 248, 255);
-    color: red;
-    color: rgba(255, 99, 71, .4);
-    color: transparent;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 26px;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-h1 {
-    color:blue;
-}
-
-.classname{
-    background-color: rgb(194, 28, 28);
-} 
-
-#id_value {
-    background-color: rgb(104, 54, 13);
- }
-
-  .list-of-lessons {
-     color: aqua !important;
-     color: #94be46;
- }
- */
-
  body {
     background-color:rgba(240, 248, 255, .5);
     font-family: Arial, Helvetica, sans-serif;
