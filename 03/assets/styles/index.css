@@ -18,7 +18,7 @@ body {
 
 img {
     width: 100%;
-
+    vertical-align: top;
 }
 
 .container {
@@ -26,15 +26,12 @@ img {
     /* max-width: 1600px; */
     max-width: 940px;
     margin: 0 auto;
-
-
     /* border: 2px solid red; 
     height: 100%;*/
 }
 
 header#header {
     height: 75px;
- 
 }
 
 #header .container {
@@ -53,6 +50,8 @@ header#header {
 }
 
 #main_menu ul li a {
+    font-size: 18px;
+    line-height: 25px;
     color: #828282;
     text-decoration: none;
 }
@@ -66,23 +65,22 @@ header#header {
     background-color: #fff;
 }
 
-.grey {
-    background-color: grey;
-
+.gray {
+    background-color: #F6F6F6;
 }
 
 .first_screen {
     padding: 33px 0 100px;
 }
 
+section {
+    padding: 100px 0;
+}
+
 h1 {
     font-size: 47.3392px;
     line-height: 64px;
     margin-bottom: 38px;
-}
-
-section {
-    padding: 100px 0;
 }
 
 h2 {
@@ -93,7 +91,8 @@ h2 {
 }
 
 .content {
-    width: 480;
+    width: 100%;
+    max-width: 480px;
     margin: 0 auto;
     text-align: center;
 }
