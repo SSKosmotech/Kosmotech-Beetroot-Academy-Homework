@@ -115,23 +115,25 @@ div#skills_images img {
     margin-bottom: 67px;
 }
 
-#portfolio_assets img {
+.portfolio_assets img {
     margin-bottom: 15px;
 }
 
-div#portfolio_assets {
+div.portfolio_assets {
     text-align: center;
 }
 
-#portfolio_assets p > a {
+.portfolio_assets p > a {
     color: #070707;
 }
 
-#portfolio_assets p {
+.portfolio_assets p {
     margin-bottom: 100px;
 }
 
-
+.contacts_screen .container .content p {
+    margin-bottom: 86px;
+}
 
 
 
