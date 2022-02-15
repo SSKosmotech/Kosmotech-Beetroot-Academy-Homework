@@ -19,76 +19,78 @@
             <nav id="main_menu">
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#about_section">About me</a></li>
+                    <li><a href="#skills_section">Skills</a></li>
+                    <li><a href="#portfolio_section">Portfolio</a></li>
+                    <li><a href="#contacts_section">Contacts</a></li>
                 </ul>     
             </nav>
         </div>
     </header>
 
-<section class="first_screen white">
-    <div class="container">
-        <h1>Denis Novik</h1>
-        <img src="assets/images/Denis-Novik.png" alt="Denis Novik">
-    </div>
-</section>
-
-<section class="gray">
-    <div class="container">
-        <h2>About me</h2>
-        <div class="content">
-            <p>Hi, I'm Denis – UX/UI designer from Minsk.<br>
-            I'm interested in design and everything connected with it.</p>
-
-            <p>I'm studying at courses "Web and mobile design<br>
-            interfaces" in IT-Academy.</p>
-            
-            <p>Ready to implement excellent projects<br>
-            with wonderful people.</p>          
+<main>
+    <section class="first_screen white">
+        <div class="container">
+            <h1>Denis Novik</h1>
+            <img src="assets/images/Denis-Novik.png" alt="Denis Novik">
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="skills_screen white">
-    <div class="container">
-        <h2>Skills</h2>
-        <div class="content">  
-            <p>I work in such programs as</p>
-        </div>
-        <div id="skills_images">
-            <img src="assets/images/ps.jpg" alt="Adobe Photoshop images">
-            <img src="assets/images/ai.jpg" alt="Adobe Illustrator images">
-            <img src="assets/images/ae.jpg" alt="Adobe After Effects images">
-            <img src="assets/images/figma.jpg" alt="Figma images">
-        </div>
-    </div>
-</section>
+    <section class="gray" id="about_section">
+        <div class="container">
+            <h2>About me</h2>
+            <div class="content">
+                <p>Hi, I'm Denis – UX/UI designer from Minsk.<br>
+                I'm interested in design and everything connected with it.</p>
 
-<section class="portfolio_screen gray">
-    <div class="container">
-        <h2>Portfolio</h2>
-        <div class="portfolio_assets">
-            <p>
-                <img src="assets/images/Portfolio_01.jpg" alt="Portfolio_01 foto">
-                <a href="#">Online fashion store -<br>
-                    Homepage</a>
-            </p>
-            <p>
-                <img src="assets/images/Portfolio_02.jpg" alt="Portfolio_02 foto">
-                <a href="#">Reebok Store - Concept</a>
-            </p>
-            <p id="zero_margin">
-                <img src="assets/images/Portfolio_03.jpg" alt="Portfolio_03 foto">
-                <a href="#">Braun Landing Page - Concept</a>
-            </p>
+                <p>I'm studying at courses "Web and mobile design<br>
+                interfaces" in IT-Academy.</p>
+                
+                <p>Ready to implement excellent projects<br>
+                with wonderful people.</p>          
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <section class="skills_screen white" id="skills_section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="content">  
+                <p>I work in such programs as</p>
+            </div>
+            <div id="skills_images">
+                <img src="assets/images/ps.jpg" alt="Adobe Photoshop images">
+                <img src="assets/images/ai.jpg" alt="Adobe Illustrator images">
+                <img src="assets/images/ae.jpg" alt="Adobe After Effects images">
+                <img src="assets/images/figma.jpg" alt="Figma images">
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio_screen gray" id="portfolio_section">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio_assets">
+                <p>
+                    <img src="assets/images/Portfolio_01.jpg" alt="Portfolio_01 foto">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Online fashion store -<br>
+                        Homepage</a>
+                </p>
+                <p>
+                    <img src="assets/images/Portfolio_02.jpg" alt="Portfolio_02 foto">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Reebok Store - Concept</a>
+                </p>
+                <p id="zero_margin">
+                    <img src="assets/images/Portfolio_03.jpg" alt="Portfolio_03 foto">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Braun Landing Page - Concept</a>
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
 
 <footer>
-    <section class="contacts_screen white">
+    <section class="contacts_screen white" id="contacts_section">
         <div class="container">
             <h2>Contacts</h2>
             <div class="contact_content">
@@ -102,8 +104,22 @@
                     <button class="button_style" type="button">Send message</button>
                 </p>
             </div>
+            <div id="contacts_images">
+                <p class="center_button">
+                    <a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/LinkdIn_icon.svg" alt="LinkdIn icon"></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/instagram_icon.svg" alt="Instagram icon"></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/Be_icon.svg" alt="Be icon"></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/ball_icon.svg" alt="ball icon"></a>
+                </p>
+            </div>
+            <div>
+                <h3>Like me on <br>
+                    LinkedIn, Instagram, Behance, <br>
+                     Dribble</h3>
+            </div>        
         </div>
     </section>    
 </footer>
+
 </body>
 </html>
