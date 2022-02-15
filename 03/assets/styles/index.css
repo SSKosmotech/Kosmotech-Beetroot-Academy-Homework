@@ -101,6 +101,16 @@ h2 {
     margin-bottom: 40px;
 }
 
+.skills_screen .content p {
+    margin-bottom: 78px;
+}
+
+div#skills_images img {
+    width: 167px;
+    height: 223px;
+    margin: 0 30px;
+}
+
 
 /* 
 
