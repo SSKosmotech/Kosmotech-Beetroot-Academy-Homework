@@ -5,57 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summary Serhii Simonov</title>
-    <style>
-        body{
-            background-color:rgb(250, 245, 237);
-        }
-        div.text_center{
-            text-align: center;
-        }
-        table, tr, th, td{
-          width: 75%;
-          margin: auto;
-          border-style:inset;
-          text-align: center;
-        }
-        caption{
-            font-size: 24px;
-            text-decoration: underline;
-        }
-        ul{
-            line-height: 150%;
-            list-style-type:circle;
-            margin-right: 5px;
-        }
-        </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/index.css">
 </head>
 <body>
-    <header style="text-align: right; padding-right: 15%;"> <!--Multilanguage-->
+    <header> <!--Multilanguage-->
         <nav>
+            <a id="left_home" href="../../index.html">Home</a>
             <a href="../">uk</a> | 
             <a href="../pages/">en</a>
         </nav>
     </header>
     <div class="text_center"> <!--Picture-->
         <h1>Summary</h1>
-        <p><img src="../images/avatar.jpg" alt="моє фото" width="140" height="140"></p>
+        <p><img class="image_square" src="../assets/images/avatar.jpg" alt="моє фото"></p>
     </div>
     <div> <!--Social-->
-        <p style="text-align: center">
-            <a href="https://www.facebook.com/profile.php?id=100013120476598" target="_blank" rel="noopener noreferrer"><img src="../images/facebook_icon.png" alt="facebook_icon фото" width="40" height="40"></a>
-            <a href="https://www.instagram.com/sliverpools/" target="_blank" rel="noopener noreferrer"><img src="../images/instagram_icon.png" alt="instagram_icon фото" width="40" height="40"></a>
-            <a href="https://t.me/SLIVERPOOLS" target="_blank" rel="noopener noreferrer"><img src="../images/telegram_icon.png" alt="telegram_icon фото" width="40" height="40"></a>
+        <p class="social_style">
+            <a href="https://www.facebook.com/profile.php?id=100013120476598" target="_blank" rel="noopener noreferrer"><img src="../assets/images/facebook_icon.png" alt="facebook_icon фото"></a>
+            <a href="https://www.instagram.com/sliverpools/" target="_blank" rel="noopener noreferrer"><img src="../assets/images/instagram_icon.png" alt="instagram_icon фото"></a>
+            <a href="https://t.me/SLIVERPOOLS" target="_blank" rel="noopener noreferrer"><img src="../assets/images/telegram_icon.png" alt="telegram_icon фото"></a>
         </p>
     </div>
     <div>
         <table>
             <caption>Simonov Serhii</caption>
-            <tr style="height: 50px">
-                <th style="width:50%"><a href="mailto:simonov.serj87@gmail.com">
-                    <img src="../images/email.png" alt="email фото" width="15" height="10"> simonov.serj87@gmail.com</a>
+            <tr class="style_table">
+                <th><a href="mailto:simonov.serj87@gmail.com">
+                    <img class="contact_images_email" src="../assets/images/email.png" alt="email фото"> simonov.serj87@gmail.com</a>
                 </th>
-                <th style="width:50%; white-space:nowrap"><a href="tel:+380688397069">
-                    <img src="../images/phone.png" alt="phone фото" width="15" height="15"> +38 (068) 839-70-69</a>
+                <th><a href="tel:+380688397069">
+                    <img class="contact_images_phone" src="../assets/images/phone.png" alt="phone фото"> +38 (068) 839-70-69</a>
                 </th>
             </tr>
         </table>
@@ -65,14 +47,14 @@
         <table>
             <caption>Education</caption>
             <tr>
-                <th style="width:50%">
+                <th>
                     <p><abbr title="Vinnytsia National Technical University">VNTU</abbr>
                     <br>
                     2004-2009
                     </p>
                 </th>
                 <th>
-                    <p style="font-weight:100"><strong>Faculty</strong> — Automation and computer control systems;<br>
+                    <p class="thin_font"><strong>Faculty</strong> — Automation and computer control systems;<br>
                         <strong>Specialty</strong> — Control and automation systems;<br>
                         <strong>Qualification</strong> — Electrical engineer.
                         </p>
@@ -85,18 +67,18 @@
         <table>
             <caption>Work experience</caption>
             <tr>
-                <td style="width:50%">
+                <td>
                     <a href="https://kosmotech.com.ua/" target="_blank" rel="noopener noreferrer"><b>Kosmotech</b></a><br>
                     WEB-Tech<br>
                     з 02.2021 for now
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Manage, support and provide all Web and Digital channels of the company;</li>
                             <li>Manage, support and providing all XML uploads of the company;</li>
                             <li>Marketing analytics;</li>
                             <li>Providing the company with leads: 
-                                <ul style="list-style-type:lower-latin; line-height: 130%;">
+                                <ul class="nested_list">
                                 <li>Potential customers;</li>
                                 <li>Suppliers;</li>
                                 <li>Investors;</li>
@@ -108,12 +90,12 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:50%">
+                <td>
                     <a href="https://zulfiya.ua/" target="_blank" rel="noopener noreferrer"><b>Zulfiya Cosmetics</b></a><br>
                     Chief Operating Officer<br>
                         from 05.2020 to 10.2020
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Analysis, optimization and automation of operational processes in the company;</li>
                             <li>Launch remarketing Google ADS Campaign and Google Shopping;</li>
@@ -124,12 +106,12 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:50%">
+                <td>
                     <a href="https://zulfiya.ua/" target="_blank" rel="noopener noreferrer"><b>Zulfiya Cosmetics</b></a><br>
                     Chief Executive Officer<br>
                         from  2019 to 2020
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Bringing the company to profitability (positive P&L);</li>
                             <li>Reorganization of the company structure;</li>
@@ -138,12 +120,12 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:50%">
+                <td>
                     <a href="https://zulfiya.ua/" target="_blank" rel="noopener noreferrer"><b>Zulfiya Cosmetics</b></a><br>
                     Head of Marketing<br>
                         from 2018 to 2019
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Creating a marketing department;</li>
                             <li>Creating, ensuring and monitoring the implementation of the company's marketing plan;</li>
@@ -154,12 +136,12 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:50%">
+                <td>
                         <a href="https://zulfiya.ua/" target="_blank" rel="noopener noreferrer"><b>Zulfiya Cosmetics</b></a><br>
                         Administrator of internet shop<br>
                         from 2016 to 2017
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Full responsibility for the online store;</li>
                             <li>Online store development (finding, ordering or buying new modules for marketing, sales promotion, process automation);</li>
@@ -172,12 +154,12 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:50%">
+                <td>
                     <a href="https://zulfiya.ua/" target="_blank" rel="noopener noreferrer"><b>Zulfiya Cosmetics</b></a><br>
                     Inventory Manager<br>
                         from 2015 to 2016
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Planning orders for the production and purchase of goods in the company for the actual filling of the catalog of the online store;</li>
                             <li>Correction of technical errors with stocks that were in the online store;</li>
@@ -186,12 +168,12 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:50%">
+                <td>
                     <a href="https://zulfiya.ua/" target="_blank" rel="noopener noreferrer"><b>Zulfiya Cosmetics</b></a><br>
                     Warehouse manager<br>
                         2015
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Ensuring the completion, packaging and delivery of online store orders;</li>
                             <li>Ensuring the preservation of material values;</li>
@@ -201,12 +183,12 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:50%">
+                <td>
                     <a href="https://zulfiya.ua/" target="_blank" rel="noopener noreferrer"><b>Zulfiya Cosmetics</b></a><br>
                     Courier + warehouse worker<br>
                         from 2014 to 2015
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Acquisition and packaging of goods;</li>
                             <li>Delivery of packages with goods to postal carriers;</li>
@@ -216,12 +198,12 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:50%">
+                <td>
                     <a href="https://elna-service.com/" target="_blank" rel="noopener noreferrer"><b>Elna-Service</b></a><br>
                         Locksmith-assembler<br>
                         2014
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Cutting metal pipes;</li>
                             <li>Stripping of metal pipes;</li>
@@ -231,25 +213,25 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:50%">
+                <td>
                     <a href="https://www.ru.barlinek.ua/" target="_blank" rel="noopener noreferrer"><b>BARLINEK INVEST</b></a><br>
                         Assistant Operator<br>
                         2014
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Assistance to the operator of automatic and semi-automatic machines and installations for the production of parquet board;</li>
                         </ul>
                 </td>
             </tr>
             <tr>
-                <td style="width:50%; height: 100px">
+                <td>
                         <b>Small family business</b><br>
                         Work in the field of trade and services<br>
                         (sale of consumer goods: tea, coffee...)<br>
                         from 2009 to 2014
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Wholesale purchase and retail trade of consumer goods;</li>
                         </ul>
@@ -262,7 +244,7 @@
             (on a 5-point scale)
             </caption>
             <tr>
-                <td style="height: 75px;">
+                <td>
                     <b>Ukrainian</b> / 5 <br>
                     <b>Russian</b> / 5 <br>
                     <b>English</b> / 4 <br>
@@ -273,7 +255,7 @@
         <table>
             <caption>Courses</caption>
             <tr>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                     <ul>
                         <li><b>2019р</b> — "Executive Director" Program from the School of Systems Business <a href="https://bizconstructor.com/" target="_blank" rel="noopener noreferrer">"BizConstructor"</a>;</li>
                         <li><b>2017р</b> — Course "School of Marketing" from <a href="https://www.facebook.com/RIAhub/" target="_blank" rel="noopener noreferrer">RIA hub</a>;</li>
@@ -285,13 +267,13 @@
         <table>
             <caption>Additional Information</caption>
             <tr>
-                <td style="text-align: left; padding-left: 30px;">
+                <td class="table_format">
                     <i>About myself:</i> I'm not afraid to take responsibility and independence, I learn quickly, I have an analytical mind, conscientious.<br>
                         <em>I do not smoke.</em><br>
                         At a certain stage of his career - served as Chief Financial Officer (creation of management financial statements P&L, CashFlow, Balance Sheet, Financial models of the company, CashFlow forecasts). <br>
                         Advised the owners of the company on making financial management decisions and creating a budgeting system in the company.
                         I also acted as a Recruiter
-                        <ul style="line-height: 100%; list-style-type:disc;">
+                        <ul>
                             <li>Placement of vacancies</li>
                             <li>Search for candidates</li>
                             <li>Interviews</li>
@@ -304,7 +286,7 @@
         <table>
             <caption>Free time</caption>
             <tr>
-                <td style="text-align: center; height: 50px;">
+                <td class="style_free_time">
                     Family, CrossFit, football.
                 </td>    
             </tr>

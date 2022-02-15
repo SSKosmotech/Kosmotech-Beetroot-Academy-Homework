@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color:rgb(250, 245, 237);
+    font-family: 'Roboto', sans-serif;
+}
+
+div.text_center{
+    text-align: center;
+}
+
+table, tr, th, td{
+  width: 75%;
+  margin: auto;
+  border-style: inset;
+  text-align: center;
+  height: 100px;
+}
+
+th, td {
+    width: 50%;
+}
+
+caption{
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+ul{
+    line-height: 150%;
+    list-style-type:circle;
+    margin-right: 5px;
+}
+
+.table_format ul {
+    line-height: 150%; 
+    list-style-type:disc;
+}
+
+header {
+    text-align: right; 
+    padding-right: 15%;
+}
+
+#left_home {
+    padding-right: 75%
+}
+
+.image_square {
+    width: 140px;
+    height: 140px;
+}
+
+.social_style {
+    text-align: center;
+}
+
+.social_style img {
+    width: 40px;
+    height: 40px;
+}
+
+.contact_images_email {
+    width: 15px;
+    height: 10px;
+}
+
+.contact_images_phone {
+    width: 15px;
+    height: 15px;
+}
+
+.thin_font {
+    font-weight: 100;
+}
+
+.style_text_allign {
+    text-align: left;
+}
+
+.nested_list {
+    list-style-type:lower-latin; 
+    line-height: 180%;
+}
+
+.table_format {
+    text-align: left; 
+    padding-left: 30px;
+}
+
+.style_free_time {
+    text-align: center; 
+    height: 50px;
+}

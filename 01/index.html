@@ -5,58 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Резюме Сімонов Сергій</title>
-    <style>
-        body{
-            background-color:rgb(250, 245, 237);
-        }
-        div.text_center{
-            text-align: center;
-        }
-        table, tr, th, td{
-          width: 75%;
-          margin: auto;
-          border-style:inset;
-          text-align: center;
-        }
-        caption{
-            font-size: 24px;
-            text-decoration: underline;
-        }
-        ul{
-            line-height: 150%;
-            list-style-type:circle;
-            margin-right: 5px;
-        }
-        </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/index.css">
 </head>
 <body>
-    <header style="text-align: right; padding-right: 15%;"> <!--Multilanguage-->
+    <header> <!--Multilanguage-->
         <nav>
-            <a style="padding-right: 75%" href="../index.html">Home</a>
+            <a id="left_home" href="../index.html">Home</a>
             <a href="index.html">uk</a> | 
             <a href="pages/">en</a>
         </nav>    
     </header>
     <div class="text_center"> <!--Picture-->
         <h1>Резюме</h1>
-        <p><img src="images/avatar.jpg" alt="моє фото" width="140" height="140"></p>
+        <p><img class="image_square" src="assets/images/avatar.jpg" alt="моє фото"></p>
     </div>
     <div> <!--Social-->
-        <p style="text-align: center">
-            <a href="https://www.facebook.com/profile.php?id=100013120476598" target="_blank" rel="noopener noreferrer"><img src="images/facebook_icon.png" alt="facebook_icon фото" width="40" height="40"></a>
-            <a href="https://www.instagram.com/sliverpools/" target="_blank" rel="noopener noreferrer"><img src="images/instagram_icon.png" alt="instagram_icon фото" width="40" height="40"></a>
-            <a href="https://t.me/SLIVERPOOLS" target="_blank" rel="noopener noreferrer"><img src="images/telegram_icon.png" alt="telegram_icon фото" width="40" height="40"></a>
+        <p class="social_style">
+            <a href="https://www.facebook.com/profile.php?id=100013120476598" target="_blank" rel="noopener noreferrer"><img src="assets/images/facebook_icon.png" alt="facebook_icon фото"></a>
+            <a href="https://www.instagram.com/sliverpools/" target="_blank" rel="noopener noreferrer"><img src="assets/images/instagram_icon.png" alt="instagram_icon фото"></a>
+            <a href="https://t.me/SLIVERPOOLS" target="_blank" rel="noopener noreferrer"><img src="assets/images/telegram_icon.png" alt="telegram_icon фото"></a>
         </p>
     </div>
     <div>
         <table>
             <caption>Сімонов Сергій</caption>
-            <tr style="height: 50px">
-                <th style="width:50%"><a href="mailto:simonov.serj87@gmail.com">
-                    <img src="images/email.png" alt="email фото" width="15" height="10"> simonov.serj87@gmail.com</a>
+            <tr class="style_table">
+                <th><a href="mailto:simonov.serj87@gmail.com">
+                    <img class="contact_images_email" src="assets/images/email.png" alt="email фото"> simonov.serj87@gmail.com</a>
                 </th>
-                <th style="width:50%; white-space:nowrap"><a href="tel:+380688397069">
-                    <img src="images/phone.png" alt="phone фото" width="15" height="15"> +38 (068) 839-70-69</a>
+                <th><a href="tel:+380688397069">
+                    <img class="contact_images_phone" src="assets/images/phone.png" alt="phone фото"> +38 (068) 839-70-69</a>
                 </th>
             </tr>
         </table>
@@ -66,14 +47,14 @@
         <table>
             <caption>Освіта</caption>
             <tr>
-                <th style="width:50%">
+                <th>
                     <p><abbr title="Вінницький Національний Технічний Університет">ВНТУ</abbr>
                     <br>
                     2004-2009
                     </p>
                 </th>
                 <th>
-                    <p style="font-weight:100"><strong>Факультет</strong> — Автоматики та комп’ютерних систем управління;<br>
+                    <p class="thin_font"><strong>Факультет</strong> — Автоматики та комп’ютерних систем управління;<br>
                         <strong>Спеціальність</strong> — Системи управління і автоматики;<br>
                         <strong>Кваліфікація</strong> — Інженер-електрик.
                         </p>
@@ -86,18 +67,18 @@
         <table>
             <caption>Досвід роботи</caption>
             <tr>
-                <td style="width:50%">
+                <td>
                     <a href="https://kosmotech.com.ua/" target="_blank" rel="noopener noreferrer"><b>Kosmotech</b></a><br>
                     WEB-Tech<br>
                     з 02.2021 по сьогоднішній день
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Ведення, керування, підтримка та забезпечення усіх Web та Digital каналів компанії;</li>
                             <li>Ведення, керування, підтримка та забезпечення усіх XML вигрузок компанії;</li>
                             <li>Маркетингова аналітика;</li>
                             <li>Забезпечення компанії лідами: 
-                                <ul style="list-style-type:lower-latin; line-height: 130%;">
+                                <ul class="nested_list">
                                 <li>Потенційними клієнтами;</li>
                                 <li>Постачальниками;</li>
                                 <li>Інвесторами;</li>
@@ -109,12 +90,12 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:50%">
+                <td>
                     <a href="https://zulfiya.ua/" target="_blank" rel="noopener noreferrer"><b>Zulfiya Cosmetics</b></a><br>
                     Операційний директор<br>
                         з 05.2020 по 10.2020
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Аналіз, оптимізація та автоматизація операційних процесів в компанії;</li>
                             <li>Запуск рекламної кампанії в Google по ремаркетингу та товарні компанії (Google Shopping);</li>
@@ -125,12 +106,12 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:50%">
+                <td>
                     <a href="https://zulfiya.ua/" target="_blank" rel="noopener noreferrer"><b>Zulfiya Cosmetics</b></a><br>
                     Виконавчий директор<br>
                         з  2019 по 2020
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Виведення компанії до прибутковості (позитивного P&L);</li>
                             <li>Реорганізація структури компанії;</li>
@@ -139,12 +120,12 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:50%">
+                <td>
                     <a href="https://zulfiya.ua/" target="_blank" rel="noopener noreferrer"><b>Zulfiya Cosmetics</b></a><br>
                     Керівник відділу Маркетингу<br>
                         з 2018 по 2019
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Створення відділу маркетингу;</li>
                             <li>Створення, забезпечення та контроль виконання маркетингового плану компанії;</li>
@@ -155,12 +136,12 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:50%">
+                <td>
                         <a href="https://zulfiya.ua/" target="_blank" rel="noopener noreferrer"><b>Zulfiya Cosmetics</b></a><br>
                         Адміністратор інтернет-магазину<br>
                         з 2016 по 2017
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Повна відповідальність за інтернет-магазин;</li>
                             <li>Розвиток інтернет-магазину (знаходження, замовлення або покупка нових модулів по маркетингу, підвищенню продаж, автоматизації процесів);</li>
@@ -173,12 +154,12 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:50%">
+                <td>
                     <a href="https://zulfiya.ua/" target="_blank" rel="noopener noreferrer"><b>Zulfiya Cosmetics</b></a><br>
                     Менеджер по запасам<br>
                         з 2015 по 2016
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Планування нарядів на виробництво та закупок товарів в компанії для актуального заповнення каталогу інтернет-магазину;</li>
                             <li>Виправлення технічних помилок із запасами, які були в інтернет-магазині;</li>
@@ -187,12 +168,12 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:50%">
+                <td>
                     <a href="https://zulfiya.ua/" target="_blank" rel="noopener noreferrer"><b>Zulfiya Cosmetics</b></a><br>
                     Завідувач складу<br>
                         2015
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Забезпечення комплектування, пакування та доставки заказів інтернет-магазина;</li>
                             <li>Забезпечення збереження матеріальних цінностей;</li>
@@ -202,12 +183,12 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:50%">
+                <td>
                     <a href="https://zulfiya.ua/" target="_blank" rel="noopener noreferrer"><b>Zulfiya Cosmetics</b></a><br>
                     Кур’єр + робітник складу<br>
                         з 2014 по 2015
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Комплектування та пакування товару;</li>
                             <li>Доставка пакунків з товаром до поштових перевізників;</li>
@@ -217,12 +198,12 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:50%">
+                <td>
                     <a href="https://elna-service.com/" target="_blank" rel="noopener noreferrer"><b>Елна-Сервіс</b></a><br>
                         Слюсар-збиральник<br>
                         2014
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Нарізання металевих труб;</li>
                             <li>Зачищання металевих труб;</li>
@@ -232,25 +213,25 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:50%">
+                <td>
                     <a href="https://www.ru.barlinek.ua/" target="_blank" rel="noopener noreferrer"><b>BARLINEK INVEST</b></a><br>
                         Помічник оператора<br>
                         2014
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Допомога оператору автоматичних та напівавтоматичних верстатів та установок з виготовлення паркетної дошки;</li>
                         </ul>
                 </td>
             </tr>
             <tr>
-                <td style="width:50%; height: 100px">
+                <td>
                         <b>Малий сімейний бізнес</b><br>
                         Робота в сфері торгівлі та обслуговування<br>
                         (продаж продуктів споживання: чай, кава...)<br>
                         з 2009 по 2014
                 </td>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                         <ul>
                             <li>Оптова закупка та роздрібна торгівля товарами споживання;</li>
                         </ul>
@@ -263,7 +244,7 @@
             (по 5-ти бальній шкалі)
             </caption>
             <tr>
-                <td style="height: 75px;">
+                <td>
                     <b>Українська</b> / 5 <br>
                     <b>Російська</b> / 5 <br>
                     <b>Англійська</b> / 4 <br>
@@ -274,7 +255,7 @@
         <table>
             <caption>Курси</caption>
             <tr>
-                <td style="text-align: left">
+                <td class="style_text_allign">
                     <ul>
                         <li><b>2019р</b> — Програма “Виконавчий Директор” від Школи системного бізнесу <a href="https://bizconstructor.com/" target="_blank">"Бізнес-Конструктор"</a>;</li>
                         <li><b>2017р</b> — Курс “Школа маркетингу” від <a href="https://www.facebook.com/RIAhub/" target="_blank" rel="noopener noreferrer">RIA hub</a>;</li>
@@ -286,13 +267,13 @@
         <table>
             <caption>Додаткова інформація</caption>
             <tr>
-                <td style="text-align: left; padding-left: 30px;">
+                <td class="table_format">
                     <i>Про себе:</i> не боюся брати на себе відповідальність і самостійність, швидко навчаюся, маю аналітичний склад розуму, сумлінний.<br>
                         <em>Не палю.</em><br>
                         На певному етапі кар'єри — виконував обов'язки Фінансового директора (створення управлінських фінансових звітів P&L, CashFlow, Баланс, Фінансові моделі компанії, прогнозні CashFlow). <br>
                         Консультував власників компанії по прийняттю фінансових управлінських рішень та по створенню системи бюджетування в компанії.
                         Також виконував обов'язки Рекрутера:
-                        <ul style="line-height: 100%; list-style-type:disc;">
+                        <ul>
                             <li>Розміщення вакансій</li>
                             <li>Пошук кандидатів</li>
                             <li>Співбесіди</li>
@@ -305,7 +286,7 @@
         <table>
             <caption>Дозвілля</caption>
             <tr>
-                <td style="text-align: center; height: 50px;">
+                <td class="style_free_time">
                     Сім’я, CrossFit, футбол.
                 </td>    
             </tr>
