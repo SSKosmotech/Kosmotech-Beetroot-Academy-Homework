@@ -14,6 +14,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #070707;
     font-size: 18px;
+    line-height: 25px;
 }
 
 img {
@@ -111,15 +112,15 @@ div#skills_images img {
     margin: 0 30px;
 }
 
-.portfolio_screen h2 {
+.portfolio_screen .container h2 {
     margin-bottom: 67px;
 }
 
-.portfolio_assets img {
+.portfolio_assets p > img {
     margin-bottom: 15px;
 }
 
-div.portfolio_assets {
+div.portfolio_assets p {
     text-align: center;
 }
 
@@ -127,16 +128,42 @@ div.portfolio_assets {
     color: #070707;
 }
 
-.portfolio_assets p {
-    margin-bottom: 100px;
+.portfolio_screen .portfolio_assets p {
+    margin-bottom: 130px;
 }
 
 .contacts_screen .container .content p {
     margin-bottom: 86px;
 }
 
+#zero_margin {
+    margin-bottom: 0;
+}
 
+.contact_content {
+    width: 100%;
+    max-width: 275px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 78px;
+}
 
+.button_style {
+    color: #F6F6F6;
+    background-color: #000;
+    font-size: 18px;
+    width: 180px;
+    height: 42px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.center_button {
+    text-align: center;
+}
 
 /* 
 
