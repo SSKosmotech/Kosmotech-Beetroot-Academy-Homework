@@ -89,6 +89,7 @@ h2 {
     font-size: 34px;
     line-height: 46px;
     margin-bottom: 28px;
+    font-weight: 700;
 }
 
 h3 {
@@ -153,6 +154,10 @@ div#skills_images img {
     margin: 0 auto;
     text-align: center;
     margin-bottom: 78px;
+}
+
+#contacts_section h2 {
+    margin-bottom: 21px;
 }
 
 .button_style {
