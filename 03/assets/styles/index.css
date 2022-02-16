@@ -74,7 +74,7 @@ header#header {
     padding: 33px 0 100px;
 }
 
-section {
+section, footer {
     padding: 100px 0;
 }
 
@@ -90,17 +90,6 @@ h2 {
     line-height: 46px;
     margin-bottom: 28px;
     font-weight: 700;
-}
-
-h3 {
-    text-align: center;
-    font-size: 14px;
-    line-height: 19px;
-    width: 100%;
-    max-width: 243px;
-    margin: 0 auto;
-    font-weight: 400;
-    color: #828282;
 }
 
 .content {
@@ -203,4 +192,15 @@ div#contacts_images img {
 .btn:hover {
     background-color: #fff;
     color: #333;
+}
+
+.footer_text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 19px;
+    width: 100%;
+    max-width: 243px;
+    margin: 0 auto;
+    font-weight: 400;
+    color: #828282;
 }
