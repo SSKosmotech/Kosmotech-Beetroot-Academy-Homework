@@ -32,9 +32,9 @@ img {
 }
  
 .container {
-    max-width: 1600px;
+    max-width: 534px;
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     /* border: 2px solid red;
     height: 100%; */
 }
@@ -57,7 +57,28 @@ h1 {
     font-weight: 16px;
     line-height: 18px;
 }
- 
+
+span {
+    font-size: 12px;
+}
+
+span::before {
+    content: "(";
+}
+
+span::after {
+    content: ")";
+}
+
+label::before {
+    content:url(../styles/Checklist.svg);
+}
+
+label {
+    padding-left: 15px;
+}
+
+
 footer#footer {
     text-align: center;
 }
@@ -67,9 +88,9 @@ footer#footer {
     color: #FF8984;
     background-color: #4A4F56;
     height: 45px;
+    width: 534px;
     line-height: 21px;
-    border: 2px solid #4A4F56;
-    padding: 0 204px 0 185px;
+    border: .1px solid #4A4F56;
     /* border: 0; */
     cursor: pointer;
     font-size: 18px;
