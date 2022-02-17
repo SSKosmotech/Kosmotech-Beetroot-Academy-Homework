@@ -15,6 +15,7 @@ body {
     color: #FFFFFF;
     font-size: 18px;
     line-height: 21px;
+    font-weight: 400;
 }
 
 a, 
@@ -33,19 +34,49 @@ img {
 .container {
     max-width: 1600px;
     margin: 0 auto;
-    width: 95%;
-    border: 2px solid red; 
-    height: 100%;
+    width: 80%;
+    /* border: 2px solid red; 
+    height: 100%; */
 }
 
 header#header {
-    height: 82px;
-    line-height: 82px;
     text-align: center;
+    padding: 20px 0 12px;
+    background-color: #4A4F56;
+}
+
+h1 {
+    color: #FF8984;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+#header p {
+    color: #FF8984;
+    font-weight: 16px;
+    line-height: 18px;
 }
 
 footer#footer {
     text-align: center;
-    height: 82px;
-    line-height: 82px;
+}
+
+.btn {
+    display: inline-block;
+    color: #FF8984;
+    background-color: #4A4F56;
+    height: 45px;
+    line-height: 21px;
+    border: 2px solid #4A4F56;
+    padding: 0 204px 0 185px;
+    /* border: 0; */
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.btn:hover {
+    color: #ffffff;
+    background-color: #FF8984;
 }
