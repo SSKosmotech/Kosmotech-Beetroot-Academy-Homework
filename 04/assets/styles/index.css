@@ -22,7 +22,8 @@ a,
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+input[type="checkbox"] {
     transition: all .2s ease;
 }
  
@@ -59,12 +60,36 @@ h1 + p {
     line-height: 18px;
 }
 
-input[type="checkbox"] {
+
+/*  */
+
+
+
+input[type='checkbox'] {
+    width: 19px;
+    height: 19px;
+}
+
+/* input[type="checkbox"] {
     display: block; 
     position:fixed;
     opacity: 1;
     z-index: 1;
-} 
+}  */
+
+input[type='checkbox']:checked {
+    width: 19px;
+    height: 19px;
+}
+
+input[type='checkbox']:checked + label{
+    text-decoration: line-through;
+    color: #9B96AC;
+}
+
+
+
+
 
 input[type="checkbox"]:before {
     content:'';
@@ -76,6 +101,12 @@ input[type="checkbox"]:before {
     transform: rotate(90deg);
     margin-right: 10px;
 }
+
+
+
+/*  */
+
+
 
 span {
     font-size: 12px;
