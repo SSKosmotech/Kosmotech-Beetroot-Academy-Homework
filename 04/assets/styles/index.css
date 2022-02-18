@@ -11,7 +11,7 @@ html, body {
  
 body {
     background-color: #3B3F45;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
     font-size: 18px;
     line-height: 21px;
@@ -45,7 +45,7 @@ header#header {
     text-align: center;
     padding: 20px 0 12px;
     background-color: #4A4F56;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 }
  
 h1 {
@@ -53,7 +53,7 @@ h1 {
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
  
 h1 + p {
@@ -85,7 +85,7 @@ input[type="checkbox"] {
 label {
     display:inline-block;
     background-color: #88839E;
-    padding: 11px 0px 13px 12px;
+    padding: 10px 0px 12px 12px;
     display: inline-block;
     width: 100%;
     cursor: pointer;
@@ -95,7 +95,7 @@ label {
 
 input[type="checkbox"]:nth-child(even) + label {
     background-color: #7A7593;
-    padding: 11px 0px 13px 12px;
+    padding: 10px 0px 12px 12px;
 }
 
 input[type="checkbox"]:checked + label {
@@ -118,7 +118,7 @@ input[type="checkbox"] + label:active {
 }
 
 input[type="checkbox"]:nth-last-of-type(1) + label {
-    margin-bottom: 45px;
+    margin-bottom: 39px;
 }
 
 input[type="checkbox"] + label:before {
@@ -171,7 +171,7 @@ footer#footer {
     cursor: pointer;
     font-size: 18px;
     font-weight: 400;
-    font-family:'Trebuchet MS', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     width: 100%;
 }
  
