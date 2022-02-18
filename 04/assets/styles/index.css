@@ -126,7 +126,6 @@ input[type="checkbox"] + label:before {
     display: inline-block;
     vertical-align: middle;
     padding-right: 10px;
-    border: 5px bold #000;
     /* width: 6px;
     height: 6px;
     border-top: 2px solid green;
