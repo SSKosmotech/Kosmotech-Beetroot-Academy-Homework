@@ -11,7 +11,7 @@ html, body {
  
 body {
     background-color: #3B3F45;
-    font-family:'Trebuchet MS', Arial, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
     color: #FFFFFF;
     font-size: 18px;
     line-height: 21px;
@@ -50,8 +50,9 @@ header#header {
  
 h1 {
     color: #FF8984;
-    font-weight: 700;
     font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
     margin-bottom: 8px;
 }
  
@@ -63,36 +64,38 @@ h1 + p {
 
 /* input[type="checkbox"] {
     display: block; 
-    position:fixed;
+    position:absolute;
     opacity: 1;
     z-index: 1;
 }  */
 
 input[type="checkbox"] {
-    display:inline-block;
-    width: 19px;
+    display:none;
+    /* width: 19px;
     height: 19px;
     cursor: pointer;
-    float:left;
+    float:none; */
 }
 
-input[type="checkbox"]:checked {
+/* input[type="checkbox"]:checked {
     width: 19px;
     height: 19px;
-}
+} */
 
 label {
+    display:inline-block;
     background-color: #88839E;
-    padding: 11px 0px 13px 47px;
-    display: block;
+    padding: 11px 0px 13px 12px;
+    display: inline-block;
+    width: 100%;
     cursor: pointer;
-    /* padding-left: 35px; */
-    /* display: inline-block; */
+    /* display: block; */
+    /* margin: -11px; */
 }
 
 input[type="checkbox"]:nth-child(even) + label {
     background-color: #7A7593;
-    padding: 11px 0px 13px 47px;
+    padding: 11px 0px 13px 12px;
 }
 
 input[type="checkbox"]:checked + label {
@@ -114,24 +117,30 @@ input[type="checkbox"] + label:active {
     background-color: #FF8984;
 }
 
-
 input[type="checkbox"]:nth-last-of-type(1) + label {
     margin-bottom: 45px;
 }
 
-
-/* input[type="checkbox"]:before {
-    content:'';
+input[type="checkbox"] + label:before {
+    content: url(../images/box.jpg);
     display: inline-block;
-    width: 6px;
+    vertical-align: middle;
+    padding-right: 10px;
+    border: 5px bold #000;
+    /* width: 6px;
     height: 6px;
     border-top: 2px solid green;
     border-right: 2px solid green;
     transform: rotate(90deg);
-    margin-right: 10px;
-} */
+    margin-right: 10px; */
+}
 
-
+input[type="checkbox"]:checked + label:before {
+    content: url(../images/check.jpg);
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+}
 
 
 span {
