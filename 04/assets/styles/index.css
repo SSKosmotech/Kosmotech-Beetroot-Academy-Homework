@@ -89,6 +89,8 @@ label {
     display: inline-block;
     width: 100%;
     cursor: pointer;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
     /* display: block; */
     /* margin: -11px; */
 }
@@ -105,8 +107,7 @@ input[type="checkbox"]:checked + label {
 
 input[type="checkbox"]:hover + label {
     background-color: #625E77;
-    border-top: 3px solid #ffffff;
-    border-bottom: 3px solid #ffffff;
+    border-color: #fff;
 }
 
 input[type="checkbox"]:active + label {
