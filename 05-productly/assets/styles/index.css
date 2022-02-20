@@ -28,7 +28,7 @@ img {
     width: 185px;
 }
 
-.container, header {
+.container {
     width: 90%;
     max-width: 1120px;
     margin: 0 auto;
@@ -44,7 +44,7 @@ header#header {
 #horizontal_menu ul {
     padding: 25px 0;
     text-align: right;
-    border: 1px solid red;
+    border: 1px solid rgb(54, 233, 9);
 }
 
 #horizontal_menu ul li {
@@ -55,7 +55,7 @@ header#header {
 
 #horizontal_menu ul li a {
     text-decoration: none;
-    color: #2F281E;
+    color: #2f281e;
     font-size: 14px;
     line-height: 28px;
 }
@@ -64,3 +64,75 @@ header#header {
     color: #544837;
 }
 
+.first_screen img {
+    float: right;
+    width: 605px;
+    height: 495px;
+}
+
+.first_screen::after {
+    content: ""; /* Генерируем пустой элемент */
+    clear: both; /* Отменяем обтекание*/
+    display: block; /* Блочный элемент */
+}
+
+.first_screen_text {
+    padding: 83px 0 82px;
+}
+
+.first_screen_text h1 {
+    display: block;
+    font-size: 44px;
+    line-height: 54px;
+    margin-bottom: 38px;
+}
+
+.first_screen_text p {
+    margin-bottom: 53px;
+    color: #544837;
+}
+
+.btn-get-start {
+        color: #FFFFFF;
+        background-color: #FF9900;
+        height: 53px;
+        width: 175px;
+        line-height: 24px;
+        border: 1px solid #FF9900;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        margin-right: 30px;
+}
+
+.btn-get-start:hover {
+    color: #FF9900;
+    background-color: #FFFFFF;
+}
+
+.btn-watch {
+    display: inline;
+    color: #FF9900;
+    line-height: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border:none; 
+    padding:0; 
+    margin:0; 
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.btn-watch::before {
+    content: url(../images/triangle.png);
+    vertical-align: -15%;
+    padding-right: 8px;
+}
+
+.btn-watch:hover {
+    text-decoration: none;
+}
