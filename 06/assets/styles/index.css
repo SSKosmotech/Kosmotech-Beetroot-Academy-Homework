@@ -10,12 +10,10 @@ html, body {
 }
 
 body {
-    
-    /* background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    color: #070707;
-    font-size: 18px;
-    line-height: 25px; */
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 a, 
@@ -35,7 +33,30 @@ img {
     max-width: 1600px;
     margin: 0 auto;
     width: 90%;
-    border: 14px solid #2B81AC; 
+    border: solid #2B81AC; 
+    border-width: 14px 17px 13px 16px;
     height: 100%;
     background-color: #3399CC;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+.lisbon {
+    border: 3px solid #fff;
+    width: 33%;
+}
+
+.paris {
+    border: 3px solid #fff;
+    width: 33%;
+}
+.belgrade {
+    border: 3px solid #fff;
+    width: 33%;
 }
