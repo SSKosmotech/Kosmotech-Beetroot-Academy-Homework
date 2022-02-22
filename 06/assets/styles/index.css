@@ -41,35 +41,42 @@ img {
 
 .container {
     display: block;
-    border: 3px solid #fff;
+    margin: 50px auto;
+    border: 1.5px solid #fff;
     max-width: 533px;
     width: 100%;
 }
 
 ul {
     list-style: none;
+    font-size: 0;
 }
 
 ul li {
+    font-size: 16px;
     display: inline-block;
+    text-align: center;
+    padding-top: 12px;
 }
 
-.w_25 {
+.degrees {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.w_25, .w_50, .w_100 {
     width: 25%;
-    border: 3px solid #fff;
+    border: 1.5px solid #fff;
     height: 79px;
 }
 
 .w_50 {
     width: 50%;
-    border: 1px solid #fff;
-    height: 79px;
 }
 
 .w_100 {
     width: 100%;
 }
-
 
 .lisbon {
    background-color: #3399CC ;
