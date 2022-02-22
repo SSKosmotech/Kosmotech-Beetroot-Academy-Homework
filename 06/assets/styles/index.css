@@ -44,7 +44,7 @@ img {
     margin: 50px auto;
     border: 1.5px solid #fff;
     max-width: 533px;
-    width: 100%;
+    width: 100%;   
 }
 
 ul {
@@ -54,6 +54,7 @@ ul {
 
 ul li {
     font-size: 16px;
+    font-weight: 700;
     display: inline-block;
     text-align: center;
     padding-top: 12px;
@@ -62,6 +63,7 @@ ul li {
 .degrees {
     font-size: 18px;
     line-height: 24px;
+    font-weight: 400;
 }
 
 .w_25, .w_50, .w_100 {
