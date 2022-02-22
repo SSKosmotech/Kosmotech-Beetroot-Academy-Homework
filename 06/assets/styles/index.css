@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
     font-size: 16px;
     line-height: 18px;
@@ -35,16 +35,17 @@ img {
     width: 90%;
     border: solid #2B81AC; 
     border-width: 14px 17px 13px 16px;
-    height: 100%;
     background-color: #3399CC;
 }
 
 .container {
     display: block;
-    margin: 50px auto;
-    border: 1.5px solid #fff;
+    margin: 200px auto;
+    /* border: 3px solid #fff; */
+    /* border-bottom: 3px solid #fff;
+    border-left: 3px solid #fff; */
     max-width: 533px;
-    width: 100%;   
+    width: 100%;
 }
 
 ul {
@@ -58,7 +59,36 @@ ul li {
     display: inline-block;
     text-align: center;
     padding-top: 12px;
+    border: 3px solid #fff;
 }
+
+li:hover {
+    border: 3px solid #fff;
+}
+
+.container:hover li:not(:hover) {
+    filter: blur(2px);
+    opacity: .8;
+    /* border: 3px solid #fff; */
+    }
+
+.w_25 {
+    border-bottom-width: 0;
+    border-right-width: 0;
+}
+
+.w_50 {
+    border-bottom-width: 0;
+    border-right-width: 0;
+}
+
+.belgrade, .amsterdam, .sydney {
+    border-right-width: 3px;
+}
+
+ /* li:not(:last-of-type) {
+     border-bottom-width: 0;
+ }    */
 
 .degrees {
     font-size: 18px;
@@ -68,7 +98,9 @@ ul li {
 
 .w_25, .w_50, .w_100 {
     width: 25%;
-    border: 1.5px solid #fff;
+    /* border: 3px solid transparent; */
+    /* border-top: 3px solid #fff;
+    border-right: 3px solid #fff; */
     height: 79px;
 }
 
@@ -122,3 +154,4 @@ ul li {
 .newdelhi {
     background-color: #666699;
 }
+
