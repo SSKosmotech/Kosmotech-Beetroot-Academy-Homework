@@ -6,7 +6,7 @@
 
 html, body {
     width: 100%;
-    height: 100%;
+        /* height: 100%; */
 }
 
 body {
@@ -14,6 +14,9 @@ body {
     color: #FFFFFF;
     font-size: 16px;
     line-height: 18px;
+    background-color: #3399CC;
+    border: solid #2B81AC; 
+    border-width: 15px;
 }
 
 a, 
@@ -29,129 +32,97 @@ img {
     vertical-align: top;
 }
 
-.main_container {
-    max-width: 1600px;
-    margin: 0 auto;
-    width: 90%;
-    border: solid #2B81AC; 
-    border-width: 14px 17px 13px 16px;
-    background-color: #3399CC;
-}
-
 .container {
-    display: block;
+    max-width: 1600px;
     margin: 200px auto;
-    /* border: 3px solid #fff; */
-    /* border-bottom: 3px solid #fff;
-    border-left: 3px solid #fff; */
+    width: 90%;
     max-width: 533px;
-    width: 100%;
+    /* cursor: pointer; */
 }
 
-ul {
+.weather {
     list-style: none;
+    background-color: #fff;
     font-size: 0;
+    padding: 3px 3px 0 0;
 }
 
-ul li {
-    font-size: 16px;
-    font-weight: 700;
+.weather li {
     display: inline-block;
-    text-align: center;
-    padding-top: 12px;
-    border: 3px solid #fff;
-}
-
-li:hover {
-    border: 3px solid #fff;
-}
-
-.container:hover li:not(:hover) {
-    filter: blur(2px);
-    opacity: .8;
-    /* border: 3px solid #fff; */
-    }
-
-.w_25 {
-    border-bottom-width: 0;
-    border-right-width: 0;
-}
-
-.w_50 {
-    border-bottom-width: 0;
-    border-right-width: 0;
-}
-
-.belgrade, .amsterdam, .sydney {
-    border-right-width: 3px;
-}
-
- /* li:not(:last-of-type) {
-     border-bottom-width: 0;
- }    */
-
-.degrees {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-}
-
-.w_25, .w_50, .w_100 {
     width: 25%;
-    /* border: 3px solid transparent; */
-    /* border-top: 3px solid #fff;
-    border-right: 3px solid #fff; */
-    height: 79px;
+    /* outline: inset 2px red; */
+    /* height: 80px; */
+    /* padding-top: 16px; */
+    /* padding-bottom: 18px; */
+    padding: 0 0 3px 3px;
+    text-align: center;
 }
 
-.w_50 {
+li.w50 {
     width: 50%;
 }
 
-.w_100 {
+li.w100 {
     width: 100%;
 }
 
-.lisbon {
+.weather:hover li:not(:hover) {
+    opacity: 0.7;
+}
+
+.city {
+    padding-top: 16px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.temperature {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 18px;
+}
+
+.blue {
    background-color: #3399CC ;
 }
 
-.paris {
+.aquamarine {
     background-color: #33CCCC;
 }
-.belgrade {
+
+.purple {
     background-color: #996699;
 }
 
-.venice {
+.red {
     background-color: #C24747;
 }
 
-.telaviv {
+.tomato {
     background-color: #E2674A;
 }
 
-.kyiv {
+.yellow {
     background-color: #FFCC66;
 }
 
-.amsterdam {
+.light-green {
     background-color: #99CC99;
 }
 
-.tokyo {
+.cyane {
     background-color: #669999;
 }
 
-.sanfrancisco {
+.pink {
     background-color: #CC6699;
 }
 
-.sydney {
+.green {
     background-color: #339966;
 }
 
-.newdelhi {
+.amethyst {
     background-color: #666699;
 }
-
