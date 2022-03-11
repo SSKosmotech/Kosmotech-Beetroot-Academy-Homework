@@ -28,6 +28,15 @@ body {
     font-weight: var(--font-weight);
     }
 
+a,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    transition: all .2s ease;
+}
+
+
 .page_wrap {
     display: flex;
     flex-direction: column;
@@ -40,22 +49,23 @@ body {
     margin: 0 auto;
     width: 90%;
     border: 1px solid blue;
+    font-size: 0;
     /* height: 100%; */
 }
 
 header {
     /* border: 1px solid red; */
-    padding: 15px 0;
+    padding: 25px 0 40px;
 }
 
 main {
     flex-grow: 1;
-    background-color: rgb(169, 218, 171);
+    /* background-color: rgb(169, 218, 171); */
     /* border: 1px solid red; */
 }
 
 footer {
-    background-color: rgb(191, 163, 235);
+    /* background-color: rgb(191, 163, 235); */
     /* border: 1px solid red; */
 }
 
@@ -64,7 +74,7 @@ header .container {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 0;
+    /* margin-bottom: 50px; */
 }
 
 #main_menu ul {
@@ -96,7 +106,7 @@ header .container {
 }
 
 #logo {
-    margin-top: 8px;
+    margin-top: 12px;
     flex-grow: 1;
 }
 
@@ -105,7 +115,8 @@ header .container {
 }
 
 .btn {
-    display:inline-block;
+    display: inline-block;
+    color: #FFF;
     cursor: pointer;
     height: 53px;
     line-height: 53px;
@@ -113,8 +124,8 @@ header .container {
     font-weight: 700;
     font-size: var(--text-size);
     border-radius: 4px;
+    border: 1px solid var(--orange-color);
     background: var(--orange-color);
-    transition: all .2s ease;
 }
 
 header .btn {
@@ -147,8 +158,66 @@ header .btn {
     color: var(--orange-color);
 }
 
-
-
 .btn_wrap .btn:first-child {
     margin-right: 14px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.content h1 {
+    font-weight: 700;
+    font-size: 44px;
+    color: #2F281E;
+    line-height: 54px;
+    margin: 83px 0 30px;
+    }
+
+h1 + p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 56px;
+}
+
+.btn-started {
+    margin-right: 30px;
+}
+
+.btn-started:hover {
+    background-color: #FFF;
+    color: var(--orange-color);
+}
+
+
+.btn-watch {
+    display: inline;
+    color: var(--orange-color);
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: transparent;
+    font-size: var(--text-size);
+    font-weight: 600;
+    font-family: var(--font-family);
+    border: none;
+    padding:0;
+    margin:0;
+}
+
+.btn-watch:hover {
+    text-decoration: none;
+}
+
+.btn-watch::before {
+    content: url(../images/triangle.svg);
+    padding-right: 8px;
+    vertical-align: middle;
 }
