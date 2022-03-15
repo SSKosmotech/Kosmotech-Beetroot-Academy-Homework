@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-Regular.woff2) format("woff2"),
+    url(../fonts/Gilroy-Bold.woff2) format("woff2"),
+    url(../fonts/Gilroy-Regular.woff) format("woff"),
+    url(../fonts/Gilroy-Bold.woff) format("woff");
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -11,7 +19,7 @@ html, body {
 
 body {
     background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Gilroy, sans-serif;
     color: #070707;
     font-size: 18px;
     line-height: 25px;
@@ -184,8 +192,8 @@ div#contacts_images img {
     cursor: pointer;
     font-size: 18px;
     letter-spacing: 0.1em;
-    font-weight: 600;
-    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-family: Gilroy, Arial, Helvetica, sans-serif;
     margin-bottom: 37px;
 }
 
