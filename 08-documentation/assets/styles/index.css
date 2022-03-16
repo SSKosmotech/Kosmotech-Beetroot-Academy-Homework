@@ -46,6 +46,15 @@ header {
     font-family: 'Roboto', sans-serif;
 }
 
+.sticky {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFF;
+    /* border: 1px solid #4CAF50; */
+}
+
 .flex {
     display: flex;
     justify-content: flex-end;
@@ -84,7 +93,7 @@ header a {
 
 .logo {
     width: 243px;
-    height: 55px;
+    /* height: 55px; */
 }
 
 h2 {
