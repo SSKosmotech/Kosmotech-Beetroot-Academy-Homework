@@ -51,11 +51,10 @@ header {
 }
 
 .fixed {
-    /* position: fixed; */
-    position: sticky;
-    top: 10px;
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #FFF;
     /* border: 1px solid #4CAF50; */
 }
@@ -67,9 +66,59 @@ header {
     flex-wrap: wrap;
 }
 
-header a {
+.wrap-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin: 0 1.5% 0;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* border: 1px solid green;  */
+    max-width: 1920px;
+    margin: 0 auto;
+    /* width: 97%; */
+}
+
+.aside-menu {
+    position:sticky;
+    top: 70px;
+    /* border: 1px solid blue;  */
+    width: 760px;
+    /* margin: 0 auto; */
+    /* width: 1160px; */
+    /* width: 100%; */
+    /* flex-grow: 1; */
+    /* padding-bottom: 2000px; */
+}
+
+.main-content {
+    width: 1160px;
+    /* border: 1px solid blue;  */
+}
+
+ul li {
+    list-style: none;
+    border-bottom: 1px solid #BFBFBF;
+    padding-top: 91px;
+    /* height: calc(48px*3); */
+    /* border: 1px solid red; */
+    /* text-align:end; */
+    /* line-height: 600%; */
+}
+
+.aside-menu ul li:first-of-type {
+    padding-top: 0;
+}
+
+header a,
+ul li a {
     text-decoration: none;
     color: #000;
+}
+
+header a:hover,
+ul li a:hover {
+    text-decoration: underline;
 }
 
 .language, .documentation, .who {
@@ -87,6 +136,11 @@ header a {
     -webkit-text-stroke-width: 1px;
 }
 
+.language a:hover {
+    -webkit-text-fill-color: #fff;
+    text-decoration: none;
+}
+
 .documentation {
     margin-left: 42px;
 }
@@ -101,10 +155,20 @@ header a {
     /* height: 55px; */
 }
 
-h2 {
+h2, li {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
+    letter-spacing: 0.04rem;
+    font-size: 36px;
+}
+
+h2::before {
+    content: ();
+    display: inline-block;
+    padding-right: 50px;
+    border-top: 1px solid #000;
+    /* vertical-align: middle; */
 }
 
 .let-space {
@@ -113,7 +177,8 @@ h2 {
 
 sup {
     font-weight: 700;
-    font-size: 26px;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .u-line {
