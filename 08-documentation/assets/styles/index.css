@@ -18,6 +18,10 @@ body {
     line-height: 48px;
     font-weight: 400;
     /* letter-spacing: 6%; */
+    background-image: url(../images/documentation.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
 }
 
 a, 
@@ -46,11 +50,12 @@ header {
     font-family: 'Roboto', sans-serif;
 }
 
-.sticky {
-    position: fixed;
+.fixed {
+    /* position: fixed; */
+    position: sticky;
     top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
     background-color: #FFF;
     /* border: 1px solid #4CAF50; */
 }
