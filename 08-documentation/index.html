@@ -32,10 +32,10 @@
         <div class="aside-menu">
             <nav>
                 <ul>
-                    <li><sup>1 </sup><a href="#">Introduction</a></li>
-                    <li><sup>2 </sup><a href="#">Core Components</a></li>
-                    <li><sup>3 </sup><a href="#">React Fundamentals</a></li>
-                    <li><sup>4 </sup><a href="#">Handling Text Input</a></li>
+                    <li><sup>1 </sup><a href="#article-01">Introduction</a></li>
+                    <li><sup>2 </sup><a href="#article-02">Core Components</a></li>
+                    <li><sup>3 </sup><a href="#article-03">React Fundamentals</a></li>
+                    <li><sup>4 </sup><a href="#article-04">Handling Text Input</a></li>
                 </ul>
             </nav>
         </div>
@@ -45,31 +45,32 @@
     <main>
 
         <div class="main-content">
-        <article>
+        <article id="article-01">
+            <div class="line"></div>
             <h2 class="let-space">Introduction</h2>
             <br>
             <p>
             Welcome to the very start of your React Native journey! If you're looking for environment setup instructions, they've moved to <span class="u-line">their own section</span>. Continue reading for an introduction to the documentation, Native Components, React, and more!        
             </p>
             <br>
-            <br>
         </article>
-        <article class="second">
+        <article class="second" id="article-02">
+            <div class="line"></div>
             <h2>Core Components</h2>
             <br>
             <p>
             React Native is an open source framework for building Android and iOS applications using React and the app platform’s native capabiles. With React Native, you use JavaScript to access your platform’s APIs as well as to describe the appearance and behavior of your UI using React components: bundles of reusable, nestable code. You can learn more about React in the next section. But first, let’s cover how components work in React Native.
             </p>
             <br>
-            <br>
         </article>
-        <article class="third">
+        <article class="third" id="article-03">
+            <div class="line"></div>
             <h2>React Fundamentals</h2>
             <br>
             <p>
             React Native runs on <span class="u-line">React</span>, a popular open source library for building user interfaces with JavaScript. To make the most of React Native, it helps to understand React itself. This section can get you started or can serve as a refresher course.
             <br>
-
+            <br>
             We’re going to cover the core concepts behind React:
             <br>
             <br>
@@ -84,18 +85,17 @@
             <br>
             <b>+ state.</b> While you can think of props as arguments you use to configure how components render, state is like a component’s personal data storage. State is useful for handling data that changes over time or that comes from user interaction. State gives your components memory!
             <br>
-            <br>
             </p>
             <br>
-            <br>
         </article>
-        <article>
+        <article id="article-04">
+            <div class="line"></div>
             <h2>Handling Text Input</h2>
             <br>
             <p>TextInput is a Core Component that allows the user to enter text. It has an onChangeText prop that takes a function to be called every time the text changed, and an onSubmitEditing prop that takes a function to be called when the text is submitted.
             <br>
             <br>
-            For example, let's say that as the user types, you're translating their words into a different language. In this new language, every single word is written the same way: 🍕. So the sentence "Hello there Bob" would be translated as "🍕 🍕".
+            For example, let's say that as the user types, you're translating their words into a different language. In this new language, every single word is written the same way: 🍕. So the sentence "Hello there Bob" would be translated as "🍕🍕🍕".
             </p>
             <br>
             <br>
