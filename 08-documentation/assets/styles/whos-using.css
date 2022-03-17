@@ -155,8 +155,7 @@ main img:last-child {
 
 .wrap_pictures {
     position: relative;
-    /* opacity: 0; */
-    /* z-index: 1; */
+     /* z-index: 1; */
     /* align-items: flex-start; */
     /* border: 5px solid pink; */
 }
@@ -183,4 +182,5 @@ main img:last-child {
     transform: rotateX(-0deg);
     opacity: 1;
 }
+
 
