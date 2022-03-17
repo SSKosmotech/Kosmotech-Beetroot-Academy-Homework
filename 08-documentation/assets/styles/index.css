@@ -59,7 +59,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     background-color: #FFF;
-    border: 1px solid #4CAF50;
+    /* border: 1px solid #4CAF50; */
     z-index: 1;
 }
 
