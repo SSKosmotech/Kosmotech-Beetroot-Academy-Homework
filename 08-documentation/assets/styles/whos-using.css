@@ -159,11 +159,11 @@ main img:last-child {
     /* border: 5px solid pink; */
 }
 
-.wrap-pictures img.first-img {
+.wrap-pictures .first-img {
     opacity: 1;
 }
 
-.wrap-pictures:hover img.first-img {
+.wrap-pictures:hover .first-img {
     transform: rotateX(180deg);
     opacity: 0;
 }
@@ -178,7 +178,7 @@ main img:last-child {
 
 .wrap-pictures:hover .second-img {
     transition: all 0.5s ease-out;
-    transform: rotateX(-0deg);
+    transform: rotateX(0deg);
     opacity: 1;
 }
 
