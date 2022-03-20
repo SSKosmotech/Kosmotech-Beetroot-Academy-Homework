@@ -47,7 +47,7 @@ input[type="submit"] {
     max-width: 1110px;
     margin: 0 auto;
     width: 90%;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     /* height: 100%; */
 }
 
@@ -163,9 +163,13 @@ header .btn {
 
 .flex {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     /* align-items: center; */
     flex-wrap: wrap;
+}
+
+.flex-start {
+    justify-content: flex-start;
 }
 
 .reverse {
@@ -184,6 +188,11 @@ header .btn {
     font-size: 0;
 }
 
+.content--padding {
+    /* align-self: center; */
+    padding-right: 45px;
+}
+
 .content h1 {
     font-weight: 700;
     font-size: 44px;
@@ -199,11 +208,34 @@ header .btn {
     margin-bottom: 56px;
 }
 
-.section-third__p {
+.section__p {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
-    margin-bottom: 56px;
+}
+
+.section__p--m_margin {
+    margin-bottom: 25px;
+}
+
+.section__p--l_margin {
+    margin-bottom: 30px;
+}
+
+.section__p--margin_top {
+    margin-top: 26px;
+}
+
+.section__li--margin_bottom {
+    margin-bottom: 30px;
+}
+
+.check::before {
+    content: url(../images/check.svg);
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 30px;
+    padding-top: 5px;
 }
 
 .btn-started {
@@ -239,12 +271,10 @@ header .btn {
     vertical-align: middle;
 }
 
-.section-first {
-    margin-bottom: 111px;
-}
-
-.section-second {
-    margin-bottom: 120px;
+.section-first,
+.section-second,
+.section {
+    margin-bottom: 109px;
 }
 
 .container__h2 {
@@ -252,20 +282,27 @@ header .btn {
     font-size: 36px;
     line-height: 54px;
     color: #2F281E;
-    margin-bottom: 54px;
 }
 
 .container__h2--center {
     text-align: center;
 }
 
+.container__h2--margin {
+    margin-bottom: 22px;
+}
 
-h3 {
+
+.container__h3 {
     color: #2F281E;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 33px;  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;  
 
+}
+
+.container__h3--padding {
+    padding-bottom: 12px;
 }
 
 .btn-sign-up-now {
@@ -295,6 +332,14 @@ section:last-of-type .container {
     padding-bottom: 146px;
     border-bottom: 1px solid rgba(188, 208, 229, 0.496913);
     margin-bottom: 106px;
+}
+
+.section__ul {
+    list-style: none;
+}
+
+.section__li {
+    font-size: 16px;
 }
 
 footer li {
