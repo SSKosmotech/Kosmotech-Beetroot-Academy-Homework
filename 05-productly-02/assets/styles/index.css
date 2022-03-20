@@ -227,11 +227,11 @@ input[type="submit"] {
     margin-top: 26px;
 }
 
-.section__li--margin_bottom {
+.list-product__p--margin_bottom {
     margin-bottom: 30px;
 }
 
-.check::before {
+.list-product__check::before {
     content: url(../images/check.svg);
     display: inline-block;
     vertical-align: middle;
@@ -336,11 +336,7 @@ input[type="submit"] {
     margin-bottom: 106px;
 }
 
-.section__ul {
-    list-style: none;
-}
-
-.section__li {
+.list-product__p {
     font-size: var(--text-size);
 }
 
