@@ -36,7 +36,7 @@ input[type="submit"] {
     transition: all .2s ease;
 }
 
-.page_wrap {
+.page-wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -76,15 +76,15 @@ header .container {
     /* margin-bottom: 50px; */
 }
 
-#main_menu ul {
+#main-menu ul {
     list-style: none;
 }
 
-#main_menu ul li {
+#main-menu ul li {
     display: inline-block;
 }
 
-#main_menu ul li a {
+#main-menu ul li a {
     color: #2F281E;
     font-weight: 400;
     font-size: 14px;
@@ -94,12 +94,12 @@ header .container {
 }
 
 
-#main_menu ul li a:last-of-type {
+#main-menu ul li a:last-of-type {
     margin-right: 0;
 }
 
-#main_menu ul li a:hover,
-#main_menu ul li a.active {
+#main-menu ul li a:hover,
+#main-menu ul li a.active {
    text-decoration: underline;
    color: var(--orange-color);
 }
@@ -109,7 +109,7 @@ header .container {
     flex-grow: 1;
 }
 
-#main_menu {
+#main-menu {
     margin-right: 55px;
 }
 

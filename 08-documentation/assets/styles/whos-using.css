@@ -155,7 +155,7 @@ main img:last-child {
 .wrap-pictures {
     position: relative;
      /* z-index: 1; */
-    /* align-items: flex-start; */
+    /* align-items: flex--start; */
     /* border: 5px solid pink; */
 }
 
