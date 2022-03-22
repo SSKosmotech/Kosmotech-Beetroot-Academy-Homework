@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <title>Uuikit form _ Create an Account</title>
+</head>
+<body>
+    <form action="#" class="form">
+        
+        <h1 class="form__tittle">Create an Account</h1>
+        
+        <div class="form__wrap-names">
+           
+            <div class="form__group">
+                <input type="text" class="form__input" name="firstname" id="firstname">
+                <label for="firstname" class="form__label">First Name</label>
+            </div>
+
+            <div class="form__group">
+                <input type="text" class="form__input" name="lastname" id="lastname">
+                <label for="lastname" class="form__label">Last Name</label>
+            </div>
+
+        </div>
+
+        <div class="form__group">
+            <input type="email" class="form__input" id="email">
+            <label for="email" class="form__label">E-mail</label>
+        </div>   
+        
+        <p class="form__p">
+            We'll never share your email with anyone else.
+        </p>
+
+        <div class="form__wrap-gender">
+
+            <div class="form__group">
+                <input type="checkbox" class="form__input" name="male" id="male"> 
+                <label for="male" class="form__label">Male</label>               
+            </div>
+            
+            <div class="form__group">
+                <input type="checkbox" class="form__input" name="female" id="female"> 
+                <label for="female" class="form__label">Female</label>               
+            </div>
+
+        </div>
+
+        <div class="form__wrap-country">
+
+            <div class="form__group">
+                <select class="form__input" name="country" id="country"> 
+                    <option value="Select" disabled selected >Select</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="USA">USA</option> 
+                    <option value="United Kingdom">United Kingdom</option> 
+                </select>    
+            </div>
+            
+            <div class="form__group">
+                <input type="text" class="form__input" name="city" id="city"> 
+                <label for="city" class="form__label">City</label>               
+            </div>
+
+        </div>
+
+        <button type="submit" class="form__submit">--submit--</button>
+
+        <p class="terms">By clicking the 'Sign Up' button, you confirm that you accept our<br>
+            Terms of Use and Privacy Policy.
+        </p>
+
+        <p class="login">
+            Have an account?Log In
+        </p>
+
+    </form>
+</body>
+</html>
