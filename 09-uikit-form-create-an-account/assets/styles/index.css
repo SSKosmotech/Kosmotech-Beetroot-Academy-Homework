@@ -24,7 +24,7 @@ body {
 
 .container {
     background-color: #FFF;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     max-width: 540px;
     min-height: 590px;
     margin: 10% auto;
