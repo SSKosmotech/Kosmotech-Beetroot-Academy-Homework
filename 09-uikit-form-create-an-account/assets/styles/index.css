@@ -59,17 +59,14 @@ img {
 }
 
 .form__tittle--margin_bottom,
-.form__wrap-names--margin_bottom {
-    margin-bottom: 49px;
-}
-
+.form__wrap-names--margin_bottom,
 .form__wrap-gender--margin_bottom {
-    margin-bottom: 72px;
+    margin-bottom: 49px;
 }
 
 .form__group {
     position: relative;
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
 }
 
 .form__label {
@@ -81,7 +78,8 @@ img {
 
 .form__label--top_left {
     top: 0;
-    left: 28px;
+    padding-left: 28px;
+    width: 50px;
 }
 
 .flex {
@@ -97,6 +95,84 @@ img {
     border-radius: 6px;
     outline: none;
 }
+
+/*  */
+
+.form__group--position {
+    display: inline-block;
+}
+
+.form__group--margin--left {
+    margin-left: 60px;
+}
+
+.form__label--cursor_pointer {
+    cursor: pointer;
+}
+
+
+.form__input-radio {
+    /* width: 20px;
+    height: 20px; */
+    /* position: absolute; */
+    cursor: pointer;
+    opacity: 0;
+}
+
+.radio__span {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #E4E4E4;
+    cursor: pointer;
+  }
+
+  .radio__span::after {
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: -1px;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    border: solid #007BFF;
+    border-width: 6px;
+    transform: rotate(0deg) scale(0);
+    opacity: 1; 
+}
+
+
+.form__group:checked ~ .radio__span {
+    border: none;
+
+    /* transform: rotate(0deg) scale(1); */
+    /* background-color: red;
+    border-radius: 5px;
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    border: 2px solid red; */
+}
+
+.form__input-radio:checked ~ .radio__span::after {
+    transform: rotate(0deg) scale(1);
+    /* transform: rotate(45deg) scale(1);
+    opacity: 1;
+    left: 6px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid #007BFF;
+    border-width: 0 2px 2px 0;
+    background-color: transparent;
+    border-radius: 0; */
+}
+
+/*  */
+
 
 .form__input:focus {
     border: 1px solid #007BFF;  
@@ -181,13 +257,8 @@ img {
     font-weight: 700;
 }
 
+ /*  */
  
- 
-.form__input--opacity_null {
-    position: absolute;
-    cursor: pointer;
-    /* opacity: 0; */
-  }
  
 
 
