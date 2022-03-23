@@ -73,13 +73,17 @@ img {
     position: absolute;
     top: -29px;
     left: 0;
-    z-index: -1px;
+    /* z-index: -1px; */
 }
 
 .form__label--top_left {
     top: 0;
     padding-left: 28px;
-    width: 50px;
+}
+
+.form__input--select {
+    padding-left: 10px;
+    appearance: none;
 }
 
 .flex {
@@ -95,6 +99,18 @@ img {
     border-radius: 6px;
     outline: none;
 }
+
+.form__img {
+    position: absolute;
+    width: 10.5px;
+    height: 13.5px;
+    top: 12.25px;
+    right: 13.75px;
+}
+
+
+
+
 
 /*  */
 
