@@ -102,17 +102,13 @@ img {
 
 .form__img {
     position: absolute;
-    width: 10.5px;
-    height: 13.5px;
-    top: 12.25px;
-    right: 13.75px;
+    width: 18px;
+    height: 18px;
+    top: 10px;
+    right: 13px;
 }
 
 
-
-
-
-/*  */
 
 .form__group--position {
     display: inline-block;
@@ -187,7 +183,6 @@ img {
     border-radius: 0; */
 }
 
-/*  */
 
 
 .form__input:focus {
@@ -234,7 +229,7 @@ img {
 }
 
 .form__input--country_style {
-    color: #969696;
+    color: rgba(84, 84, 84, 0.5);
     font-size: 15px;
     line-height: 22px;
     letter-spacing: -0.2px;
@@ -273,7 +268,19 @@ img {
     font-weight: 700;
 }
 
- /*  */
+
+
+
+ /*
+  <form method="get" action="https://www.google.com.ua/search" target="_blank">
+        <input type="text" name="q" value="" placeholder="Enter search quary">
+        <!--<input type="submit" value="Search">-->
+        <button type="submit">Search</button>
+        <button type="button">Simple button</button>
+        <button type="reset">Clear</button>
+        <!---->
+    </form>
+ */
  
  
 
