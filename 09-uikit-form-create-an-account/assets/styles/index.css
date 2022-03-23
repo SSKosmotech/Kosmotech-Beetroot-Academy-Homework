@@ -40,6 +40,7 @@ input[type="reset"],
 input[type="submit"],
 input[type="text"],
 input[type="checkbox"],
+input[type="radio"],
 input[type="email"] {
     transition: all .2s ease;
     font-family: 'Inter', sans-serif;
@@ -58,13 +59,17 @@ img {
 }
 
 .form__tittle--margin_bottom,
-.form__wrap-names--margin_bottom,
-.form__wrap-gender--margin_bottom {
+.form__wrap-names--margin_bottom {
     margin-bottom: 49px;
+}
+
+.form__wrap-gender--margin_bottom {
+    margin-bottom: 72px;
 }
 
 .form__group {
     position: relative;
+    border: 1px solid pink;
 }
 
 .form__label {
@@ -72,6 +77,11 @@ img {
     top: -29px;
     left: 0;
     z-index: -1px;
+}
+
+.form__label--top_left {
+    top: 0;
+    left: 28px;
 }
 
 .flex {
@@ -104,7 +114,7 @@ img {
 }
 
 .form__p--margin_bottom {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .form__submit--full_with {
@@ -170,4 +180,17 @@ img {
     letter-spacing: -0.1px;
     font-weight: 700;
 }
+
+ 
+ 
+.form__input--opacity_null {
+    position: absolute;
+    cursor: pointer;
+    /* opacity: 0; */
+  }
+ 
+
+
+
+
 

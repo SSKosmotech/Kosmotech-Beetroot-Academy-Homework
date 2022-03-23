@@ -11,7 +11,7 @@
     <title>Uuikit form _ Create an Account</title>
 </head>
 <body>
-    <form action="#" class="form container">
+    <form action="" class="form container">
         
         <h1 class="form__tittle form__tittle--margin_bottom">Create an Account</h1>
         
@@ -41,13 +41,15 @@
         <div class="form__wrap-gender flex form__wrap-gender--margin_bottom">
 
             <div class="form__group">
-                <input type="checkbox" class="form__input" name="male" id="male" checked> 
-                <label for="male" class="form__label">Male</label>               
+                <input type="radio" class="form__input form__input--opacity_null" name="gender" value="male" id="male" checked> 
+                <span class="radio__span"></span>
+                <label for="male" class="form__label form__label--top_left">Male</label>               
             </div>
             
             <div class="form__group">
-                <input type="checkbox" class="form__input" name="female" id="female"> 
-                <label for="female" class="form__label">Female</label>               
+                <input type="radio" class="form__input form__input--opacity_null" name="gender" value="female" id="female"> 
+                <span class="radio__span"></span>
+                <label for="female" class="form__label form__label--top_left">Female</label>               
             </div>
 
         </div>
@@ -71,7 +73,7 @@
 
         </div>
 
-        <button type="submit" class="form__submit form__submit--full_with form__submit--margin_bottom">Sign Up</button>
+        <input type="submit" value="Sign Up" class="form__submit form__submit--full_with form__submit--margin_bottom"></input>
 
         <p class="form__terms-text form__terms-text--margin_bottom">By clicking the 'Sign Up' button, you confirm that you accept our<br>
             <a href="#" class="form__a">Terms of Use</a> and <a href="#" class="form__a">Privacy Policy</a>.
