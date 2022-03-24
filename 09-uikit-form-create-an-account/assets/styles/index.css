@@ -104,7 +104,7 @@ img {
 }
 
 .form__group--margin--left {
-    margin-left: 60px;
+    margin-left: 65px;
 }
 
 .form__label--cursor_pointer {
@@ -226,7 +226,7 @@ img {
     appearance: none;
     background-image: url(../images/arrow_double.svg);
     background-repeat: no-repeat;
-    background-position: calc(100% - 8px) center;
+    background-position: right 8px center;
 }
 
 .form__terms-text {
