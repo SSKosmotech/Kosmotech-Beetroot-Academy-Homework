@@ -83,7 +83,6 @@ img {
 
 .form__input--select {
     padding-left: 10px;
-    appearance: none;
 }
 
 .flex {
@@ -99,16 +98,6 @@ img {
     border-radius: 6px;
     outline: none;
 }
-
-.form__img {
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    top: 10px;
-    right: 13px;
-}
-
-
 
 .form__group--position {
     display: inline-block;
@@ -234,6 +223,10 @@ img {
     line-height: 22px;
     letter-spacing: -0.2px;
     /* opacity: 0.4; */
+    appearance: none;
+    background-image: url(../images/arrow_double.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 
 .form__terms-text {
