@@ -11,26 +11,26 @@
     <title>Uuikit form _ Create an Account</title>
 </head>
 <body>
-    <form action="#" class="form container">
+    <form action="pages/profile.html" class="form container">
         
         <h1 class="form__tittle form__tittle--margin_bottom">Create an Account</h1>
         
         <div class="form__wrap-names flex form__wrap-names--margin_bottom">
            
             <div class="form__group">
-                <input type="text" class="form__input" name="firstname" id="firstname">
+                <input type="text" class="form__input" name="firstname" id="firstname" required>
                 <label for="firstname" class="form__label">First Name</label>
             </div>
 
             <div class="form__group">
-                <input type="text" class="form__input" name="lastname" id="lastname">
+                <input type="text" class="form__input" name="lastname" id="lastname" required>
                 <label for="lastname" class="form__label">Last Name</label>
             </div>
 
         </div>
 
         <div class="form__group form__group--margin_s">
-            <input type="email" class="form__input form__input--full_with" id="email">
+            <input type="email" class="form__input form__input--full_with" id="email" required>
             <label for="email" class="form__label">E-mail</label>
         </div>   
         
@@ -58,8 +58,8 @@
 
             <div class="form__group">
                 
-                <select class="form__input form__input--country_style form__input--select" name="country" id="country">
-                    <option value="Select"  disabled="disabled" selected="selected" hidden >Select</option>
+                <select class="form__input form__input--country_style form__input--select" name="country" id="country" required>
+                    <option value="Select" disabled selected hidden>Select</option>
                     <option value="Ukraine">Ukraine</option>
                     <option value="USA">USA</option> 
                     <option value="United Kingdom">United Kingdom</option> 
@@ -69,7 +69,7 @@
             </div>
             
             <div class="form__group">
-                <input type="text" class="form__input" name="city" id="city"> 
+                <input type="text" class="form__input" name="city" id="city" required> 
                 <label for="city" class="form__label">City</label>               
             </div>
 
