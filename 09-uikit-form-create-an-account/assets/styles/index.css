@@ -226,7 +226,7 @@ img {
     appearance: none;
     background-image: url(../images/arrow_double.svg);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: calc(100% - 8px) center;
 }
 
 .form__terms-text {
