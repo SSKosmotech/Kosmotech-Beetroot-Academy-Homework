@@ -37,7 +37,7 @@ img {
     max-width: 1920px;
     margin: 0 auto;
     width: 97%;
-    border: 1px solid red; 
+    /* border: 1px solid red;  */
     /* height: 100%; */
 }
 
@@ -118,4 +118,9 @@ sup {
 .grey-bcg {
     background-color: #dcdcdc;
     /* opacity: 0.9; */
+}
+
+.flip {
+    display:inline-block;
+    transform: scale(-1, 1);
 }
