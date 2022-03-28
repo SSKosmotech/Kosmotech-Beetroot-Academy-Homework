@@ -11,39 +11,28 @@ html, body {
 
 body {
     background-color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #16133D;
     font-size: 1rem;
     line-height: 1.75rem;
-    /* font-weight: normal; */
 }
 
 .container {
-    max-width: 1600px;
-    width: 90%;
-    /* width: calc(100% - 30px); */
+    max-width: 1155px;
+    width: 100%;
     margin: 0 auto;
     border: 1px solid red; 
-    /* height: 100%; */
 }
 
-/* .container-full {
-    width: 100%;
-    border: 1px solid red; 
-    /* height: 100%; */
-} */
+.container_footer {
+    max-width: 1440px;
+    background-color: #16133D;
+}
 
 a, 
 button,
 select,
-label, 
-input[type="button"],
-input[type="reset"], 
-input[type="submit"],
-input[type="text"],
-input[type="checkbox"],
-input[type="radio"],
-input[type="email"] {
+.card {
     transition: all .2s ease;
 }
 
@@ -60,8 +49,14 @@ ol, ul {
     list-style: none;
 }
 
-h1 {
-    font-size: 3rem;
+.main__h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 3.25rem;
+    letter-spacing: 0.2px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 35px;
 }
 
 /* img {
@@ -80,3 +75,57 @@ main {
 }
 
 /* ============================================ */
+
+header {
+    height: 80px;
+    margin: 38px 0 55px;
+}
+
+header .container {
+    border-bottom: 1px solid #EFEEF3;
+    padding-bottom: 45px;
+}
+
+.main__p {
+    line-height: 1.3125rem;
+    color: #7690A8;
+    margin-bottom: 17px;
+}
+
+.wrap_blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 41px 45px 46px 41px;
+    border: 1px solid #E5EAF4;
+    border-radius: 8px;
+}
+
+.card:hover {
+    border: 1px solid #3DB370;
+}
+
+.card__img {
+    margin-bottom: 28px;
+}
+
+.card__h2 {
+    margin-bottom: 14px;
+    line-height: 1.3125rem;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+.card__p {
+    margin-bottom: 29px;
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+.card__a {
+    line-height: 1.1875rem;
+}
+
