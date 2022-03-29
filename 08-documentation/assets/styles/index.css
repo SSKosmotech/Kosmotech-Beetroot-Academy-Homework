@@ -50,8 +50,16 @@ article p {
 }
 
 header {
-    padding: 12px 0 86px;
+    padding: 0 0 86px;
     font-family: 'Roboto', sans-serif;
+    /* height: 55px; */
+    
+}
+
+header .container {
+    padding-top: 12px;
+    background-color: #fff;
+    /* border: 1px solid red; */
 }
 
 .fixed {
@@ -60,7 +68,7 @@ header {
     transform: translateX(-50%);
     background-color: #FFF;
     /* border: 1px solid #4CAF50; */
-    z-index: 1;
+    z-index: 100;
 }
 
 .flex {
@@ -85,7 +93,7 @@ header {
 .aside-menu {
     position: sticky;
     top: 103px;
-    /* width: 685px; */
+    width: 685px;
 }
 
 .main-content {
@@ -100,7 +108,8 @@ header {
     list-style: none;
     border-bottom: 1px solid #BFBFBF;
     padding-top: 91px;
-    width: 1920px;
+    /* width: 1920px; */
+    /* border: 1px solid pink; */
 }
 
 .aside-menu ul li:first-of-type {
@@ -176,6 +185,12 @@ h2 {
     margin-bottom: 9px;
 }
 
+nav ul li a {
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 0.04em;
+}
+
 .let-space {
     letter-spacing: 0.04rem;
 }
@@ -195,3 +210,7 @@ sup {
     /* opacity: 0.9; */
 }
 
+.flip {
+    display:inline-block;
+    transform: scale(-1, 1);
+}
