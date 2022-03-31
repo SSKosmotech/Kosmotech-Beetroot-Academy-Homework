@@ -11,6 +11,7 @@
     <title>Uuikit form _ Profile</title>
 </head>
 <body>
+    <!-- don't set "method", because it gives a HTTP ERROR 405 when going to the "action" page  -->
     <form action="#" class="form container">
         
         <h1 class="form__tittle form__tittle--margin_bottom">Profile</h1>
@@ -48,7 +49,7 @@
 
             <div class="form__group">
                 
-                <select class="form__input form__input--country_style form__input--select" name="country" id="country" required>
+                <select class="form__input form__input--country_style form__input--select" name="country[]" id="country" required>
                     <option value="Select"  disabled="disabled" selected="selected" hidden >Select</option>
                     <option value="Ukraine">Ukraine</option>
                     <option value="USA">USA</option> 
