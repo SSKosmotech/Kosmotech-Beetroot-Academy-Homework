@@ -140,7 +140,7 @@ main .flex:last-of-type {
     margin: 0px 0px;
 } */
 
-.first, .second {
+.wrap {
     padding: 19px 0;
 }
 
