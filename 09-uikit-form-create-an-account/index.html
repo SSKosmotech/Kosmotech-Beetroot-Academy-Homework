@@ -11,7 +11,8 @@
     <title>Uikit form _ Create an Account</title>
 </head>
 <body>
-    <form action="pages/profile.html" class="form container">
+    <!-- don't set "method", because it gives a HTTP ERROR 405 when going to the next page  -->
+    <form action="pages/profile.html" class="form container"> 
         
         <h1 class="form__tittle form__tittle--margin_bottom">Create an Account</h1>
         
@@ -58,8 +59,8 @@
 
             <div class="form__group">
                 
-                <select class="form__input form__input--country_style form__input--select" name="country" id="country" required>
-                    <option value="Select" disabled selected hidden>Select</option>
+                <select class="form__input form__input--country_style form__input--select" name="country[]" id="country" required>
+                    <option value="" disable hidden>Select</option>
                     <option value="Ukraine">Ukraine</option>
                     <option value="USA">USA</option> 
                     <option value="United Kingdom">United Kingdom</option> 

@@ -44,6 +44,7 @@ input[type="radio"],
 input[type="email"] {
     transition: all .2s ease;
     font-family: 'Inter', sans-serif;
+    padding: 0 10px;
 }
 
 img {
@@ -72,12 +73,13 @@ img {
 .form__label {
     position: absolute;
     top: -29px;
-    left: 0;
+    left: -10px;
     /* z-index: -1px; */
 }
 
 .form__label--top_left {
     top: 0;
+    left: 0;
     padding-left: 28px;
 }
 
@@ -160,18 +162,7 @@ img {
 
 .form__input-radio:checked ~ .radio__span::after {
     transform: rotate(0deg) scale(1);
-    /* transform: rotate(45deg) scale(1);
-    opacity: 1;
-    left: 6px;
-    top: 3px;
-    width: 6px;
-    height: 12px;
-    border: solid #007BFF;
-    border-width: 0 2px 2px 0;
-    background-color: transparent;
-    border-radius: 0; */
 }
-
 
 
 .form__input:focus {
