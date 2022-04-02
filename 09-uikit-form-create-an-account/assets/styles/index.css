@@ -241,6 +241,8 @@ button:hover {
     padding-left: 0;
 }
 
+
+
 .jq-selectbox {
 	vertical-align: middle;
 	cursor: pointer;
@@ -251,7 +253,6 @@ button:hover {
 .jq-selectbox .placeholder {
 	color: rgba(84, 84, 84, 0.5);
 }
-
 
 .jq-selectbox__select {
 	height: 36px;

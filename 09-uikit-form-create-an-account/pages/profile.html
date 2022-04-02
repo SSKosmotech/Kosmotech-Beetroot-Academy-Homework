@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/plugins/jquery.formstyler.css">
+    <link rel="stylesheet" href="../assets/plugins/jquery.formstyler.theme.css">
     <link rel="stylesheet" href="../assets/styles/profile.css">
     <title>Uuikit form _ Profile</title>
 </head>
@@ -83,5 +85,17 @@
         <button type="submit" value="Update" class="form__submit form__submit--with">Update</button>
 
     </form>
+
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/plugins/jquery.formstyler.min.js"></script>
+    <script>
+        (function($) {
+            $(function() {
+
+	            $('select').styler();
+
+            });
+        })(jQuery);
+    </script>
 </body>
 </html>
