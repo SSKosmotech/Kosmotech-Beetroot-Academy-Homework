@@ -34,7 +34,6 @@ body {
 a, 
 button,
 select,
-label, 
 input[type="button"],
 input[type="reset"], 
 input[type="submit"],
@@ -64,14 +63,9 @@ img {
     height: 80px;
 }
 
-
-
-
 .form__label {
-    position: absolute;
-    top: -29px;
-    left: -10px;
-    /* z-index: -1px; */
+    display: block;
+    margin-bottom: 7px;
 }
 
 .flex {
@@ -81,9 +75,6 @@ img {
 
 .flex-start {
     justify-content: flex-start;
-    /* padding: 0; */
-    /* align-items: center; */
-    /* border: 1px solid blue; */
 }
 
 .wrap-upload {
@@ -92,16 +83,7 @@ img {
 }
 
 .form__input--upload_style {
-    /* opacity: 1; */
-    /* visibility: hidden; */
     display: none;
-
-    /* position: relative; */
-    /* margin-top: 12px; */
-    /* position: absolute; */
-    /* top: 0px; */
-    /* left: 30px; */
-    /* appearance: none; */
 }
 
 .form__label--style {
@@ -118,24 +100,18 @@ img {
     background-image: url(../images/icon-photo.svg);
     background-repeat: no-repeat;
     background-position: right 8px center;
-    /* z-index: 999; */
-    /* border: 1px solid green; */ 
 }
 
 .form__label--style:hover {
     border: 1px solid #007BFF;
 }
-/* 
-.form__label--style:not(:) {
-    border: 1px solid #328a3e;
-} */
-
-
 
 .form__wrap-upload--margin_bottom,
 .form__wrap-names--margin_bottom,
-.form__wrap-country--margin_bottom {
-    margin-bottom: 49px;
+.form__wrap-country--margin_bottom,
+.form__tittle--margin_bottom,
+.form__wrap-zip--margin_bottom {
+    margin-bottom: 20px;
 }
 
 .wrap-upload--margin_left {
@@ -144,12 +120,6 @@ img {
 
 .form__button--margin_left {
     margin-left: -5px;
-}
-
-
-.form__tittle--margin_bottom,
-.form__wrap-zip--margin_bottom {
-    margin-bottom: 20px;
 }
 
 .form__group {
@@ -197,10 +167,6 @@ button:hover {
     background-position: center center;
 }
 
-.form__group--margin--left {
-    margin-left: 65px;
-}
-
 .form__label:focus,
 .form__button:focus,
 .form__input:focus,
@@ -213,7 +179,6 @@ button:hover {
     line-height: 18px;
     letter-spacing: -0.1px;
     color: #969696;
-    /*  */
 }
 
 .form__p--margin_padding {
@@ -238,20 +203,6 @@ button:hover {
     background-position: right 8px center;
 }
 
-.form__a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.form__a:hover {
-    text-decoration: underline;
-}
-
-.form__a--login {
-    letter-spacing: -0.1px;
-    font-weight: 700;
-}
- 
  
 
 
