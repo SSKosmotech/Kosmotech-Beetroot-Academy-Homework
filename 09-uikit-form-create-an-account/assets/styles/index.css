@@ -74,12 +74,6 @@ img {
     margin-bottom: 7px;
 }
 
-.form__label--top_left {
-    top: 0;
-    left: 0;
-    padding-left: 28px;
-}
-
 .form__input--select {
     padding-left: 10px;
 }
