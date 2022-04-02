@@ -72,11 +72,6 @@ img {
 .form__label {
     display: block;
     margin-bottom: 7px;
-    /* border: 1px solid black; */
-    /* position: absolute; */
-    /* top: -29px; */
-    /* left: -10px; */
-    /* z-index: -1px; */
 }
 
 .form__label--top_left {
@@ -239,6 +234,7 @@ button:hover {
 .form__a {
     color: #007BFF;
     text-decoration: none;
+    padding: 0;
 }
 
 .form__a:hover {
@@ -248,6 +244,7 @@ button:hover {
 .form__a--login {
     letter-spacing: -0.1px;
     font-weight: 700;
+    padding-left: 0;
 }
  
 
