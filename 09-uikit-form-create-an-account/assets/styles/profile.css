@@ -171,6 +171,17 @@ img {
     outline: none;
 }
 
+button {
+    background-color: #007BFF;
+    cursor: pointer;
+    color: #FFF;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #007BFF;
+}
+
 .form__button:hover {
     border-color: #007BFF;
 }
@@ -212,15 +223,8 @@ img {
 
 .form__submit--with {
     width: 150px;
-    background-color: #FFF;
-    cursor: pointer;
-    color: #FFF;
 }
 
-.form__submit:hover {
-    background-color: #007BFF;
-    color: #FFF;
-}
 
 .form__input--country_style {
     color: rgba(84, 84, 84, 0.5);
