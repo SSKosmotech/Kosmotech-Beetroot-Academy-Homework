@@ -101,6 +101,17 @@ img {
     outline: none;
 }
 
+button {
+    background-color: #007BFF;
+    cursor: pointer;
+    color: #FFF;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #007BFF;
+}
+
 .form__group--position {
     display: inline-block;
 }
@@ -186,18 +197,10 @@ img {
 
 .form__submit--full_with {
     width: 500px;
-    background-color: #FFF;
-    cursor: pointer;
-    color: #FFF;
 }
 
 .form__submit--margin_bottom {
     margin-bottom: 22px;
-}
-
-.form__submit:hover {
-    background-color: #007BFF;
-    color: #FFF;
 }
 
 .form__wrap-country--margin_bottom {
