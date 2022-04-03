@@ -1,0 +1,61 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 1170px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    // border: 2px solid blue;
+}
+
+a, 
+button,
+select,
+label, 
+input[type="button"],
+input[type="reset"], 
+input[type="submit"],
+input[type="text"],
+input[type="checkbox"],
+input[type="radio"],
+input[type="email"] {
+    transition: all .2s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+ul, ol {
+    list-style: none;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.page_wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* ============================================ */
