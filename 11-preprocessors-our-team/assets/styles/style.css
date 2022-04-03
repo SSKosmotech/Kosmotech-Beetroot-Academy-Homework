@@ -210,6 +210,11 @@ main {
   font-size: 0.875rem;
   margin-bottom: 20px;
 }
+.container__icon:hover {
+  color: #fff;
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
 .container__p {
   font-weight: 500;
   font-size: 0.875rem;
@@ -261,11 +266,17 @@ main {
   color: #fff;
   background-color: #ffcc00;
 }
-.container__icon {
-  padding-left: 5px;
+.container__link {
+  margin-left: 5px;
 }
-.container__icon:first-of-type {
-  padding-left: 0px;
+.container__link:first-of-type {
+  margin-left: 0px;
+}
+.container__link:hover {
+  color: #ffcc00;
+  background-color: #ffcc00;
+  border-radius: 100%;
+  text-decoration: none;
 }
 
 i::before {

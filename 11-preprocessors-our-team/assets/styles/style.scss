@@ -171,6 +171,11 @@ $base_fz: 16;
         @include fz(14);
         margin-bottom: 20px;
     }
+    &__icon:hover {
+        color: #fff;
+        @include fz(14);
+        margin-bottom: 20px;
+    }
     &__p {
         font-weight: $font-weight;
         font-size: $font_size;
@@ -224,11 +229,17 @@ $base_fz: 16;
         color: #fff;
         background-color: #ffcc00;
     }
-    &__icon {
-        padding-left: 5px;
+    &__link {
+        margin-left: 5px;
     }
-    &__icon:first-of-type {
-        padding-left: 0px;
+    &__link:first-of-type {
+        margin-left: 0px;
+    }
+    &__link:hover {
+        color: #ffcc00;
+        background-color: #ffcc00;
+        border-radius: 100%;
+        text-decoration: none;
     }
 }
 
