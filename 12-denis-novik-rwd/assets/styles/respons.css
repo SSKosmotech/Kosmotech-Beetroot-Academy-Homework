@@ -1,0 +1,26 @@
+@media screen and (max-width: 640px) {
+  #main_menu {
+    display: none;
+  }
+
+  .hamb_menu {
+    display: block;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+  .flex > div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .flex > div {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .flex > div.pic {
+    display: none;
+  }
+}
