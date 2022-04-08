@@ -1,18 +1,13 @@
-$font_family: Gilroy, sans-serif;
+// $font_family: Gilroy, sans-serif;
 $text_color: #070707;
 $font_size: 1.125rem;
 $line_height: 1.5625rem;
-$background_color: #fff;
-$base_fz: 16;
-
-@mixin fz($size_in_px) {
-  font-size:($size_in_px/$base_fz)+rem;
-}
+$background_color_white: #fff;
 
 @import 'parts/reset';
 
 @font-face {
-    font-family: Gilroy;
+    font-family: Gilroy, sans-serif;
     src: url(../fonts/Gilroy-Regular.woff2) format("woff2"),
     url(../fonts/Gilroy-Bold.woff2) format("woff2"),
     url(../fonts/Gilroy-Regular.woff) format("woff"),
@@ -20,8 +15,8 @@ $base_fz: 16;
 }
 
 body {
-    background-color: $background_color;
-    font-family: $font-family;
+    background-color: $background_color_white;
+    font-family: Gilroy, sans-serif;
     color: $text_color;
     font-size: $font_size;
     // font-weight: 400;
@@ -79,7 +74,7 @@ img {
     top: 0px;
     left: 0px;
     z-index: 10;
-    background-color: #fff;
+    background-color: $background_color_white;
     // height: 175px;
 }
 
@@ -108,10 +103,10 @@ main {
         text-decoration: none;
     }
     &__a:hover {
-        color: #070707;
+        color: $text_color;
     }
     &__a.active {
-        color: #070707;
+        color: $text_color;
     }
 }
 
@@ -120,7 +115,7 @@ main {
         padding: 100px 0;
     }
     &--white {
-        background-color: #fff;
+        background-color: $background_color_white;
     }
     &--padding_top {
         padding-top: 33px;
@@ -157,7 +152,7 @@ main {
         margin-bottom: 15px;
     }
     &__a {
-        color: #070707;
+        color: $text_color;
     }
     &__a:hover {
         text-decoration: none;
@@ -216,7 +211,7 @@ main {
     font-family: Gilroy, Arial, Helvetica, sans-serif;
     margin-bottom: 37px;
     &:hover {
-        background-color: #fff;
+        background-color: $background_color_white;
         color: #333;
     }
 }

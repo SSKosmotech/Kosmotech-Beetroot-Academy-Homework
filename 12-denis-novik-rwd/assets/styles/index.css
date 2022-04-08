@@ -10,7 +10,7 @@ html, body {
 }
 
 @font-face {
-  font-family: Gilroy;
+  font-family: Gilroy, sans-serif;
   src: url(../fonts/Gilroy-Regular.woff2) format("woff2"), url(../fonts/Gilroy-Bold.woff2) format("woff2"), url(../fonts/Gilroy-Regular.woff) format("woff"), url(../fonts/Gilroy-Bold.woff) format("woff");
 }
 body {
