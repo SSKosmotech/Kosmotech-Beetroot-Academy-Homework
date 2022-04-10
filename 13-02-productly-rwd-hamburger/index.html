@@ -8,30 +8,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/fonts_style.min.css">
     <link rel="stylesheet" href="assets/styles/index.min.css">
     <link rel="stylesheet" href="assets/styles/respons.min.css">
 </head>
 <body>
 
+    <div id="side_block">
+        <div class="wrapper">
+
+            <nav class="mobile_menu">
+                <ul>
+                    <li><button class="btn btn--white btn--middle">Sign In</button></li>
+                    <li><button class="btn btn--orange btn--middle">Sign Up</button></li>
+                    <li><a href="#"><i class="icon-shopping-bag"></i><span>Product</span></a></li>
+                    <li><a href="#"><i class="icon-group"></i><span>Customers</span></a></li>
+                    <li><a href="#"><i class="icon-price-tags"></i><span>Pricng</span></a></li>
+                    <li><a href="#"><i class="icon-folder-open"></i><span>Resources</span></a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger hamburger--emphatic" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+
+        </div>
+    </div>
+
+    <div id="page_overlay"></div>
+
     <div class="page-wrap">
         <header class="header">
             <div class="container header__container">
+                <div class="hamb_menu">
+                    <button class="hamburger hamburger--emphatic" type="button">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                      </button>
+                </div>
+                
                 <div class="header__logo"> 
-                    <img class="header__logo" src="assets/images/logo_productly.svg" alt="Logo Productly">
+                    <img src="assets/images/logo_productly.svg" alt="Logo Productly">
                 </div>
                 <nav class="main-menu">
                     <ul class="main-menu__ul">
-                        <li class="main-menu__li"><a class="main-menu__a" href="#">Product</a></li>
-                        <li class="main-menu__li"><a class="main-menu__a" href="#">Customers</a></li>
-                        <li class="main-menu__li"><a class="main-menu__a" href="#">Pricng</a></li>
-                        <li class="main-menu__li"><a class="main-menu__a" href="#">Resources</a></li>
+                        <li class="main-menu__li"><a class="main-menu__a" href="#"><i class="icon-shopping-bag"></i><span>Product</span></a></li>
+                        <li class="main-menu__li"><a class="main-menu__a" href="#"><i class="icon-group"></i><span>Customers</span></a></li>
+                        <li class="main-menu__li"><a class="main-menu__a" href="#"><i class="icon-price-tags"></i><span>Pricng</span></a></li>
+                        <li class="main-menu__li"><a class="main-menu__a" href="#"><i class="icon-folder-open"></i><span>Resources</span></a></li>
                     </ul>
                 </nav>
                 <div class="btn-wrap">
                     <button class="btn btn--white btn--middle">Sign In</button>
                     <button class="btn btn--orange btn--middle">Sign Up</button>
                 </div>
-                <div class="hamb_menu"></div>
+            
             </div>
         </header>
 
@@ -46,34 +80,46 @@
                             in one place! The most intuitive way to imagine <br>
                             your next user experience.
                         </p>
-                        <button class="btn btn-started">Get started</button>
-                        <button class="btn-watch">Watch the Video</button>
+                        <div class="wrap_buton">
+                            <button class="btn btn-started">Get started</button>
+                            <button class="btn-watch">Watch the Video</button>
+                        </div>
                     </div>
-                    <div class="picture"><img src="assets/images/image_section_01.svg" alt="Image The Design Thinking superpowers"></div>
+                    <div class="picture">
+                        <img src="assets/images/image_section_01.svg" alt="Image The Design Thinking superpowers">
+                    </div>
                 </div>
             </section>
 
             <section class="section">
                 <div class="container flex-column">
                     <h2 class="container__h2 container__h2--center container__h2--margin_l">We design tools to unveil<br> your superpowers</h2>
-                    <div class="flex">
+                    <div class="wrap_preferences flex">
                         <div class="pref-column">
-                            <img class="pref-column__img" src="assets/images/first-click-tests.svg" alt="First click tests picture">
+                            <div class="pic">
+                                <img class="pref-column__img" src="assets/images/first-click-tests.svg" alt="First click tests picture">
+                            </div>
                             <h3 class="pref-column__h3">First click tests</h3>
                             <p class="pref-column__p">While most people enjoy<br> casino gambling,</p>
                         </div>
                         <div class="pref-column">
-                            <img class="pref-column__img" src="assets/images/design-surveys.svg" alt="Design surveys picture">
+                            <div class="pic">
+                                <img class="pref-column__img" src="assets/images/design-surveys.svg" alt="Design surveys picture">
+                            </div>
                             <h3 class="pref-column__h3">Design surveys</h3>
                             <p class="pref-column__p">Sports betting, lottery and<br> bingo playing for the fun</p>
                         </div>
                         <div class="pref-column">
-                            <img class="pref-column__img" src="assets/images/preference-tests.svg" alt="Preference tests picture">
+                            <div class="pic">
+                                <img class="pref-column__img" src="assets/images/preference-tests.svg" alt="Preference tests picture">
+                            </div>
                             <h3 class="pref-column__h3">Preference tests</h3>
                             <p class="pref-column__p">The Myspace page defines<br> the individual.</p>
                         </div>
                         <div class="pref-column">
-                            <img class="pref-column__img" src="assets/images/five-second-tests.svg" alt="Five second tests picture">
+                            <div class="pic">
+                                <img class="pref-column__img" src="assets/images/five-second-tests.svg" alt="Five second tests picture">
+                            </div>
                             <h3 class="pref-column__h3">Five second tests</h3>
                             <p class="pref-column__p">Personal choices and the<br> overall personality of the<br> person.</p>
                         </div>
@@ -118,7 +164,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="picture"><img src="assets/images/image_section_03.svg" alt="Image The Design Thinking superpowers"></div>
+                    <div class="picture">
+                        <img src="assets/images/image_section_03.svg" alt="Image The Design Thinking superpowers">
+                    </div>
                 </div>
             </section>
 
@@ -155,7 +203,9 @@
                               </div>
                         </div>
                     </div>
-                    <div class="picture"><img src="assets/images/image_section_04.svg" alt="Image The Design Thinking superpowers"></div>
+                    <div class="picture">
+                        <img src="assets/images/image_section_04.svg" alt="Image The Design Thinking superpowers">
+                    </div>
                 </div>
             </section>
 
@@ -193,7 +243,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="picture"><img src="assets/images/image_section_05.svg" alt="Image The Design Thinking superpowers"></div>
+                    <div class="picture">
+                        <img src="assets/images/image_section_05.svg" alt="Image The Design Thinking superpowers">
+                    </div>
                 </div>
             </section>
 
@@ -202,7 +254,9 @@
         <footer class="footer">
             <div class="container footer__container flex">
                 <div class="footer-picture">
-                    <img class="footer__img" src="assets/images/logo_productly.svg" alt="Logo Productly">
+                    <div class="footer_logo_pic">
+                        <img src="assets/images/logo_productly.svg" alt="Logo Productly">
+                    </div>
                 </div>
                 <nav class="footer__nav-about">
                     <ul class="footer__ul-about">
@@ -230,6 +284,17 @@
             </div>
         </footer>
     </div>
+
+    <script src="assets/js/jquery-3.6.0.min.js" ></script>
+    <script>
+        $(function() {
+            $('.hamburger').on('click', function(){
+                $('.hamburger').toggleClass('is-active');
+                $('#side_block, #page_overlay').toggleClass('open');
+                $('body').toggleClass('lock');
+            })
+        })
+    </script>
 
 </body>
 </html>
