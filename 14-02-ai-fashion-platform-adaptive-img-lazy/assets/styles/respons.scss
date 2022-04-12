@@ -1,0 +1,38 @@
+@media screen and (max-width:734px) {
+    .fashion {
+        h1 {
+            font-size: 2.0625rem;
+            margin-bottom: 52px;
+        }  
+        p {
+            margin-bottom: 39px;
+            padding-top: 112px;
+        }  
+    }
+    .margin_bottom_m p + p{
+        margin-bottom: 81px;
+    }
+    .margin_bottom_xs p + p {
+        margin-bottom: 62px;
+    }    
+    section:last-of-type {
+        padding-bottom: 100px;
+    }
+}
+
+
+@media screen and (max-width:288px) {
+    .fashion {
+        h1 {
+            line-height: 50px;
+            font-size: 33px;
+        }
+    }
+    .margin_bottom_m p + p{
+        margin-bottom: 65px;
+    }
+    section:last-of-type {
+        padding-bottom: 69px;
+    }
+}
+

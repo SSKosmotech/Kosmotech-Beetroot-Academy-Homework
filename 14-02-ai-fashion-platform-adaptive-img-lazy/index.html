@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denis Novik RWD Hamburger</title>
     <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Red+Hat+Display&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="assets/styles/index.min.css">
     <link rel="stylesheet" href="assets/styles/respons.min.css">
 </head>
@@ -16,16 +18,21 @@
 <body>
 
 <main>
-    <section>
+    <section class="fashion">
         <div class="container">
             <p>Case study</p>
             <h1>AI Fashion Platform</h1>
-            <img src="#" alt="AI Fashion Platform foto">
+               <picture class="pic _s">
+                    <source srcset="assets/images/ai-fashion-platform@288.jpg" media="(max-width:288px)">
+                    <source srcset="assets/images/ai-fashion-platform@734.jpg" media="(max-width:734px)">
+                    <img src="assets/images/ai-fashion-platform.jpg" alt="AI Fashion Platform foto">
+                </picture>
+            <!-- <img src="assets/images/ai-fashion-platform.jpg" alt="AI Fashion Platform foto"> -->
         </div>
     </section>
     
     <section>
-        <div class="container">
+        <div class="container margin_bottom_m">
             <h2>Project Overview</h2>
             <p>
                FashHanger is a bespoke sustainable high-fashion<br>
@@ -39,11 +46,17 @@
                of the buyer’s journey.
             </p>
         </div>
+    </section>
     
     <section>
-        <div class="container">
+        <div class="container margin_bottom_xs">
             <h2>User Research and Personas</h2>
-            <img src="#" alt="User Research and Personas foto">
+            <picture class="pic">
+                <source srcset="assets/images/user-research-and-personas@288.jpg" media="(max-width:288px)">
+                <source srcset="assets/images/user-research-and-personas@734.jpg" media="(max-width:734px)">
+                <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/user-research-and-personas.jpg" alt="User Research and Personas foto">
+            </picture>
+            <!-- <img src="assets/images/user-research-and-personas.jpg" alt="User Research and Personas foto"> -->
             <p>
                 Who is your user? Indicate her KEY personality traits and help round out her overall image.
             </p>
@@ -57,9 +70,14 @@
     </section>
 
     <section>
-        <div class="container">
+        <div class="container margin_bottom_m">
             <h2>Initial Sketches</h2>
-            <img src="#" alt="Initial Sketches foto">
+            <picture class="pic">
+                <source srcset="assets/images/initial-sketches@288.jpg" media="(max-width:288px)">
+                <source srcset="assets/images/initial-sketches@734.jpg" media="(max-width:734px)">
+                <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/initial-sketches.jpg" alt="Initial Sketches foto">
+            </picture>
+            <!-- <img src="assets/images/initial-sketches.jpg" alt="Initial Sketches foto"> -->
             <p>
                 In the beginning, It’s just about brainstorming.
             </p>
@@ -75,7 +93,12 @@
     <section>
         <div class="container">
             <h2>Final Design</h2>
-            <img src="#" alt="Final Design foto">
+            <picture class="pic">
+                <source srcset="assets/images/final-design@288.jpg" media="(max-width:288px)">
+                <source srcset="assets/images/final-design@734.jpg" media="(max-width:734px)">
+                <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/final-design.jpg" alt="Final Design foto">
+            </picture>
+            <!-- <img src="assets/images/final-design.jpg" alt="Final Design foto"> -->
             <p>
                 I played with adding a wireframe of the website flow that would lead you in to each screen. For each of those screens I<br>
                 added a floating footer that allows users to see where they are in that particular flow and jump around as needed.” We’re<br>
@@ -85,6 +108,8 @@
     </section>
 
 </main>
+
+<script src="assets/js/lazyload.js"></script>
 
 </body>
 </html>
