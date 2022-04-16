@@ -1,0 +1,30 @@
+@media screen and (max-width: 860px) {
+  .awards_services_item {
+    grid-template-columns: 30% 70%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .awards_services_item {
+    grid-template-columns: 1fr;
+  }
+
+  .awards_service {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .avard_services_item {
+    padding: 30px 0;
+  }
+
+  .award_item {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 30px 1fr;
+    margin-bottom: 45px;
+  }
+
+  .award_title {
+    grid-column-start: span 2;
+  }
+}
