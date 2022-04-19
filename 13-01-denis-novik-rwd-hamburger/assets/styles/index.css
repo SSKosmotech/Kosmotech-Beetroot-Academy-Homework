@@ -178,7 +178,13 @@ img {
   top: 0px;
   left: 0px;
   z-index: 10;
-  background-color: #fff;
+  background: rgba(255, 255, 255, 0.6);
+  transition: all 0.2s ease;
+}
+.header.scroll {
+  height: 85px;
+  box-shadow: 0 0 5px #999;
+  backdrop-filter: blur(20px);
 }
 
 main {

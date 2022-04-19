@@ -86,8 +86,16 @@ img {
     top: 0px;
     left: 0px;
     z-index: 10;
-    background-color: $background_color_white;
+    // background-color: $background_color_white;
+    background: rgba(255, 255, 255, .6);
+    transition: all 0.2s ease;
     // height: 175px;
+    &.scroll {
+        height: 85px;
+        box-shadow: 0 0 5px #999;
+        backdrop-filter: blur(20px);
+        // border: 1px solid red;
+    }
 }
 
 main {

@@ -173,15 +173,53 @@
 
 
 <script src="assets/js/jquery-3.6.0.min.js"></script>
+
 <script>
-    $(function() {
-        $('.hamburger').on('click', function() {
+    function toggleMenu (){
             $('.hamburger').toggleClass('is-active');
-            $('#aside_block, #page_overlay').toggleClass('open');
-            $('body').toggleClass('lock');
-        })
-    })
+                    $('#aside_block, #page_overlay').toggleClass('open');
+                    $('body').toggleClass('lock');
+            }
+    
+            $(function() {
+                $('.hamburger, #page_overlay, .mobile-menu a').on('click', function(){
+                    toggleMenu ();
+                })
+            })
+
+            $(function(){
+                $('.mobile-menu a, .main-menu a').on('click', function(e){
+                    e.preventDefault(); //заборонили браузеру проскролити до id
+                  //  $($(this).attr('href')).offset().top //($(this).attr('href')) це буде відбиратися конкретна лінка з списку #mobile_menu a
+                    
+                //   $('html, body').animate({scrollTop:$($(this).attr('href')).offset().top-$('header').height()}, 500)
+                  $('html, body').animate({scrollTop:$($(this).attr('href')).offset().top-$('header').outerHeight()}, 300)
+
+                })
+            })
+
+            $(window).on('scroll', ()=>{
+                    if($(window).scrollTop()>85) {
+                        $(".header").addClass("scroll")
+                    }else{
+                        $(".header").removeClass("scroll")
+                    }
+            })
+
+      
 </script>
 
 </body>
 </html>
+
+
+
+
+        <!-- window.addEventListener('scroll', function(){
+            if(window.scrollY > 85) {
+                document.getElementById('.header').classList.add('scroll')
+            }else{
+                document.getElementById('.header').classList.remove('scroll')
+        }
+        }) -->
+
