@@ -26,6 +26,8 @@ body {
 img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    vertical-align: top;
     -o-object-fit: contain;
        object-fit: contain;
 }
@@ -50,13 +52,15 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
     height: 100%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .container {
+    width: 90%;
     max-width: 1110px;
     margin: 0 auto;
-    width: 90%;
-    /* border: 1px solid blue; */
+    // border: 1px solid blue;
     /* height: 100%; */
 }
 
@@ -146,6 +150,10 @@ img {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+}
+
+.header__logo {
+    margin-top: -12px;
 }
 
 .header__logo img, .footer_logo_pic img {
@@ -489,9 +497,6 @@ i {
     -webkit-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
-
-    
-
     &.open {
         -webkit-transform: translateX(0);
             -ms-transform: translateX(0);
