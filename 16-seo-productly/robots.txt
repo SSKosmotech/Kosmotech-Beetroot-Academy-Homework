@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sskosmotech.github.io/Kosmotech-Beetroot-Academy-Homework/uk_UA_sitemap.xml
+Host: sskosmotech.github.io
