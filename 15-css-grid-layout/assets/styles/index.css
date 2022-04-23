@@ -113,7 +113,6 @@ img {
   gap: 20px 25px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  border: 1px solid red;
 }
 
 .pic {
