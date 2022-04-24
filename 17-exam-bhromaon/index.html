@@ -70,57 +70,60 @@
 
     <!-- <div id="page_overlay"></div> -->
 
-    <div class="page-wrap">
-        <header id="header" class="lazy-bg bgimg" data-src="assets/images/first_screen_bg.jpg">
-            <div class="container">
+        <header id="header" class="main_container lazy-bg bgimg" data-src="assets/images/first_screen_bg.jpg">
+           
                 <div class="first_screen">
-                    <h1>Bhromaon</h1>
-                    <div>Safe Travel Anywhere</div>
-                    <form action="#" method="post">
-                        <label for="search">Search</label>
-                        <input type="search" id="search" name="search" placeholder="Search Your Travel Destination">
-                        <button type="submit" value="search" class="search">Search</button>         
-                    </form>   
-                    <div>
-                        Scroll Down
-                    </div> 
-                    <div class="pic">
-                        <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/scroll_arrow.svg" alt="Scroll Arrow Picture">
-                    </div>
+                        <h1>Bhromaon</h1>
+                        <div class="header_text">Safe Travel Anywhere</div>
+                        <form action="#" method="post">
+                            <label for="search">Search</label>
+                            <input type="search" id="search" name="search" placeholder="Search Your Travel Destination">
+                            <button type="submit" value="search" class="search">Search</button>         
+                        </form>
+                        <a href="#who_we_are">Scroll Down
+                        </a>
+                        <a href="#who_we_are">
+                            <svg width="15" height="9" viewbox="0 0 15 9" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.12496 4.6512L0.749997 1.27634L1.59371 0.432431L7.49993 6.33875L13.4062 0.362174L14.25 1.20608L7.49993 8.0263L6.65621 7.18266L4.12496 4.6512Z"/>
+                            </svg>
+                        </a>
+                        <!-- <div class="pic">
+                            <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/scroll_arrow.svg" alt="Scroll Arrow Picture">
+                        </div> -->
                 </div>
 
-               <div class="wrap_menu">
-                    <!-- <div class="hamb_menu">
-                        <button class="hamburger hamburger--emphatic" type="button">
-                            <span class="hamburger-box">
-                            <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
-                    </div> -->
-                    
-                    <div class="header_logo">
-                        <div class="pic">
-                            <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/logo_bhromaon.svg" alt="Logo Bhromaon">
+                <div class="wrap_menu">
+                    <div class="wrap_menu_inner">
+                        <!-- <div class="hamb_menu">
+                            <button class="hamburger hamburger--emphatic" type="button">
+                                <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div> -->
+                        
+                        <div class="header_logo">
+                            <div class="pic">
+                                <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/logo_bhromaon.svg" alt="Logo Bhromaon">
+                            </div>
                         </div>
-                    </div>
-                    <nav class="main_menu">
-                        <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
-                            <li><a itemprop="url" href="#who_we_are">Who We Are</a></li>
-                            <li><a itemprop="url" href="#what_we_do">What We Do</a></li>
-                            <li><a itemprop="url" href="#travel_with_us">Travel With Us</a></li>
-                            <li><a itemprop="url" href="#contact_us">Contact Us</a></li>
-                            
-                        </ul>
-                    </nav>          
-               </div>
-                
-            </div>
+                        <nav class="main_menu">
+                            <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
+                                <li><a itemprop="url" href="#who_we_are">Who We Are</a></li>
+                                <li><a itemprop="url" href="#what_we_do">What We Do</a></li>
+                                <li><a itemprop="url" href="#travel_with_us_pool">Travel With Us</a></li>
+                                <li><a itemprop="url" href="#contact_us">Contact Us</a></li>
+                                
+                            </ul>
+                        </nav>   
+                    </div>       
+                </div>
         </header>
 
         <main class="main">
 
-            <section id="who_we_are" class="lazy-bg bgimg" data-src="assets/images/why_choose_us_bg.jpg">
-                <div class="container">
+            <section id="who_we_are" class="main_container lazy-bg bgimg" data-src="assets/images/why_choose_us_bg.jpg">
+                <div class="container flex">
                     
                     <div class="choose_text">
                         <h2>Why Choose Us</h2>
@@ -147,7 +150,7 @@
                 </div>
             </section>
 
-            <section id="what_we_do">
+            <section id="what_we_do" class="main_container">
                 <div class="container">
 
                     <div class="benefits_block">
@@ -184,7 +187,7 @@
                 </div>
             </section>
 
-            <section id="travel_with_us_pool" class="lazy-bg bgimg" data-src="assets/images/travel_with_us_pool_bg.jpg">
+            <section id="travel_with_us_pool" class="main_container lazy-bg bgimg" data-src="assets/images/travel_with_us_pool_bg.jpg">
                 <div class="container">
                     <div class="travel_text">
                         <div>Spain</div>
@@ -198,7 +201,7 @@
                 </div>
             </section>
 
-            <section id="travel_with_us_sea" class="lazy-bg bgimg" data-src="assets/images/travel_with_us_sea_bg.jpg">
+            <section id="travel_with_us_sea" class="main_container lazy-bg bgimg" data-src="assets/images/travel_with_us_sea_bg.jpg">
                 <div class="container">
                     <div class="travel_text">
                         <div>Spain</div>
@@ -212,7 +215,7 @@
                 </div>
             </section>
 
-            <section id="reviews" class="lazy-bg bgimg" data-src="assets/images/what_our_tourist_say_bg.jpg">
+            <section id="reviews" class="main_container lazy-bg bgimg" data-src="assets/images/what_our_tourist_say_bg.jpg">
                 <div class="container">
                     <h2>What Our Tourist Say</h2>
                     <div class="reviews_picture">
@@ -236,7 +239,7 @@
            
         </main>
 
-        <footer class="footer" id="contact_us">
+        <footer class="main_container footer" id="contact_us">
             <div class="container">
                 <div class="footer_logo">
                     <div class="pic">
@@ -271,7 +274,6 @@
                 </nav>
              </div>
         </footer>
-    </div>
 
     <!-- <script src="assets/js/jquery-3.6.0.min.js" ></script> -->
     <script src="assets/js/lazyload.prod.js"></script>
