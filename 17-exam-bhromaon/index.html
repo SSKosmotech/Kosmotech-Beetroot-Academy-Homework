@@ -38,10 +38,7 @@
     <meta name="twitter:title" content="SEO Productly Homework - Productly" />
     <meta name="twitter:description" content="This is a homework on the topic of SEO, made by student of the Beetroot Academy — Simonov Serhii" />
     <meta name="twitter:image" content="https://sskosmotech.github.io/Kosmotech-Beetroot-Academy-Homework/16-seo-productly/assets/images/image_section_01.png" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="assets/styles/fonts_style.min.css">
     <link rel="stylesheet" href="assets/styles/index.min.css">
     <link rel="stylesheet" href="assets/styles/respons.min.css">
@@ -74,7 +71,7 @@
     <!-- <div id="page_overlay"></div> -->
 
     <div class="page-wrap">
-        <header id="header">
+        <header id="header" class="lazy-bg bgimg" data-src="assets/images/first_screen_bg.jpg">
             <div class="container">
                 <div class="first_screen">
                     <h1>Bhromaon</h1>
@@ -88,7 +85,7 @@
                         Scroll Down
                     </div> 
                     <div class="pic">
-                        <img src="assets/images/scroll_arrow.svg" alt="Scroll Arrow Picture">
+                        <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/scroll_arrow.svg" alt="Scroll Arrow Picture">
                     </div>
                 </div>
 
@@ -103,7 +100,7 @@
                     
                     <div class="header_logo">
                         <div class="pic">
-                            <img src="assets/images/logo_bhromaon.svg" alt="Logo Bhromaon">
+                            <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/logo_bhromaon.svg" alt="Logo Bhromaon">
                         </div>
                     </div>
                     <nav class="main_menu">
@@ -122,7 +119,7 @@
 
         <main class="main">
 
-            <section id="who_we_are">
+            <section id="who_we_are" class="lazy-bg bgimg" data-src="assets/images/why_choose_us_bg.jpg">
                 <div class="container">
                     
                     <div class="choose_text">
@@ -140,10 +137,10 @@
 
                     <div class="choose_img">
                         <div class="pic">
-                            <img src="assets/images/why_choose_us_river.jpg" alt="Why Choose Us River Picture">
+                            <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/why_choose_us_river.jpg" alt="Why Choose Us River Picture">
                         </div>
                         <div class="pic">
-                            <img src="assets/images/why_choose_us_mountains.jpg" alt="Why Choose Us Mountains Picture">
+                            <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/why_choose_us_mountains.jpg" alt="Why Choose Us Mountains Picture">
                         </div>
                     </div>
 
@@ -187,7 +184,7 @@
                 </div>
             </section>
 
-            <section id="travel_with_us">
+            <section id="travel_with_us_pool" class="lazy-bg bgimg" data-src="assets/images/travel_with_us_pool_bg.jpg">
                 <div class="container">
                     <div class="travel_text">
                         <div>Spain</div>
@@ -201,7 +198,7 @@
                 </div>
             </section>
 
-            <section>
+            <section id="travel_with_us_sea" class="lazy-bg bgimg" data-src="assets/images/travel_with_us_sea_bg.jpg">
                 <div class="container">
                     <div class="travel_text">
                         <div>Spain</div>
@@ -215,12 +212,12 @@
                 </div>
             </section>
 
-            <section>
+            <section id="reviews" class="lazy-bg bgimg" data-src="assets/images/what_our_tourist_say_bg.jpg">
                 <div class="container">
                     <h2>What Our Tourist Say</h2>
                     <div class="reviews_picture">
                         <div class="pic">
-                            <img src="assets/images/reviews_picture.jpg" alt="Reviews Picture">
+                            <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/reviews_picture.jpg" alt="Reviews Picture">
                         </div>
                     </div>
                     <div class="reviews_text">
@@ -243,7 +240,7 @@
             <div class="container">
                 <div class="footer_logo">
                     <div class="pic">
-                        <img src="assets/images/logo_bhromaon.svg" alt="Logo Bhromaon">
+                        <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/logo_bhromaon.svg" alt="Logo Bhromaon">
                     </div>
                 </div>
                 <div>Safe Travel Anywhere</div>
@@ -277,7 +274,7 @@
     </div>
 
     <!-- <script src="assets/js/jquery-3.6.0.min.js" ></script> -->
-    <!-- <script src="assets/js/lazyload.prod.js"></script> -->
+    <script src="assets/js/lazyload.prod.js"></script>
     <!-- <script>
        function toggleMenu (){
             $('.hamburger').toggleClass('is-active');
