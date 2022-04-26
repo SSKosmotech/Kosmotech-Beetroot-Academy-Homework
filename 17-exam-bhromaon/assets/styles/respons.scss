@@ -138,6 +138,10 @@
     section#travel_with_us_pool .travel_text, section#travel_with_us_sea .travel_text {
         padding-bottom: 0;
     }
+
+    section#reviews .reviews_text {
+        padding: 30px 20px 20px 40px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -214,12 +218,10 @@
         }
     }
 
-    .mobile_menu {
-        a {
-            font-size: 1.2rem;
-            line-height: 2.175rem;
-        }
+    #side_block {
+        width: 70%;
     }
+
     #side_block .wrapper {
         gap: 60px;
     }
@@ -239,8 +241,34 @@
     .header_text {
         font-size: 1rem;
     }
-    
 
+    footer ul {
+        gap: 40px;
+        li {
+            margin-right: 0;
+        }
+    }
+
+    section#reviews .reviews_text {
+        padding: 30px 20px 20px 20px;
+    }
 }
 
+@media screen and (max-width: 320px) {
+    footer ul {
+        gap: 20px;
+        li {
+            margin-right: 0;
+        }
+    }
+
+    .btn_travel {
+        padding: 0 58px;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+        letter-spacing: 0.06rem;
+    }
+}
 

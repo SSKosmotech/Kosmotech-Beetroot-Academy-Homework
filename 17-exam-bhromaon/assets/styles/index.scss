@@ -275,6 +275,28 @@ img {
     vertical-align: top;
 }
 
+// .pic {
+//     // max-width: 357px;
+//     position: relative;
+//     overflow: hidden;
+// }
+
+// .pic::before {
+//     content: '';
+//     display: block;
+//     padding-top: 100%;
+// }
+
+// .pic img {
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     height: 100%;
+//     -webkit-transform: translate(-50%, -50%);
+//         -ms-transform: translate(-50%, -50%);
+//             transform: translate(-50%, -50%);
+// }
+
 .bgimg {
     background-position: center;
     background-repeat: no-repeat;
@@ -575,8 +597,8 @@ h2 {
     // grid-template-rows: 1fr 1fr;
     // gap: 10px;
     .pic {
-        width: 350px;
-        height: 220px;
+        // width: 350px;
+        // height: 220px;
         &:first-child {
             margin-right: 90px;
             margin-bottom: 10px;

@@ -551,10 +551,6 @@ h2 {
   padding: 0 60px;
 }
 
-.choose_img .pic {
-  width: 350px;
-  height: 220px;
-}
 .choose_img .pic:first-child {
   margin-right: 90px;
   margin-bottom: 10px;
