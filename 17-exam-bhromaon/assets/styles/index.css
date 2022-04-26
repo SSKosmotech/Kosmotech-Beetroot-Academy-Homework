@@ -153,8 +153,8 @@ header.scroll {
   height: 98px;
   -webkit-box-shadow: 0 0 5px #5474FD;
   box-shadow: 0 0 5px #5474FD;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
 }
 header.fixed {
   position: fixed;
@@ -571,7 +571,7 @@ h2 {
 }
 
 #side_block {
-  width: 100%;
+  width: 50%;
   position: fixed;
   left: 0;
   top: 0;
