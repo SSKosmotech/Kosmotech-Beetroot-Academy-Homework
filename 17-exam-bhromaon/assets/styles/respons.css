@@ -1,6 +1,7 @@
 @media screen and (max-width: 1160px) {
   .main_container {
     max-width: calc(100% - 60px);
+    width: 100%;
   }
 
   header.fixed {
