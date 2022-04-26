@@ -487,6 +487,7 @@ h2 {
     }
     .pic {
         margin-bottom: 30px;
+        cursor: pointer;
         &:hover > svg {
             fill: var(--color-white);
         }
@@ -628,10 +629,10 @@ h2 {
         -webkit-box-pack: start;
             -ms-flex-pack: start;
                 justify-content: flex-start;
-        gap: 100px;
     }
     .header_logo {
         position: relative;
+        margin-bottom: 60px;
         img {
             // padding-top: 30px;
             // margin-bottom: 5px;
@@ -675,7 +676,8 @@ h2 {
 }
 
 .mobile_menu {
-    & ul {
+    margin-bottom: 60px;
+    ul {
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -687,16 +689,20 @@ h2 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    gap: 30px;
+    // gap: 30px;
     @include fz(18);
     text-align: center;
     }
-    a {
-        text-decoration: none;
-        color: var(--color-white);
-        @include fz(30);
-        line-height: 2.375rem;
+    li {
+        margin-bottom: 20px;
+        a {
+            text-decoration: none;
+            color: var(--color-white);
+            @include fz(30);
+            line-height: 2.375rem;
+        }
     }
+    
 }
 
 

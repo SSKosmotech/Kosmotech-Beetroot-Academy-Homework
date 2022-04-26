@@ -238,10 +238,6 @@
         }
     }
     
-    #side_block .wrapper {
-        gap: 60px;
-    }
-
     input[type=search] {
         max-width: calc(100% - 60px)
     }
@@ -265,14 +261,6 @@
 
     #side_block {
         width: 70%;
-    }
-
-    #side_block .wrapper {
-        gap: 60px;
-    }
-
-    .mobile_menu ul {
-        gap: 20px;
     }
 
     input[type=search] {
@@ -322,12 +310,33 @@
     }
 
     .btn_travel {
-        padding: 0 58px;
+        padding: 0 56px;
     }
 
     h2 {
         font-size: 1.7rem;
         letter-spacing: 0.06rem;
+    }
+
+    section#travel_with_us_pool h3, section#travel_with_us_sea h3 {
+        font-size: 1.15rem;
+    }
+
+    section#travel_with_us_pool .travel_text, section#travel_with_us_sea .travel_text {
+        padding-bottom: 50px;
+    }
+
+    .choose_text {
+        margin-bottom: 50px;
+    }
+
+    .mobile_menu {
+        margin-bottom: 35px;
+        li {
+            a {
+                font-size: 1.675rem;
+            }
+        }
     }
 }
 
