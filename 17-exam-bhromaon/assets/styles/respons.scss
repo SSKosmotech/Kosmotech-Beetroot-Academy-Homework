@@ -1,13 +1,79 @@
 @media screen and (max-width: 1160px) {
-    .main_container {
-        max-width: calc(100% - 60px);
-        width: 100%;
-    }
-    header.fixed {
-        left: 30px;
-    }
+    // .main_container {
+    //     max-width: calc(100% - 60px);
+    //     width: 100%;
+    // }
+    // header.fixed {
+    //     left: 30px;
+    // }
     .container {
         width: 90%;
+    }
+
+    .choose_img {
+        .pic {
+            &:first-child {
+                margin-right: 0px;
+                margin-bottom: 10px;
+            }
+            &:last-child {
+                margin-left: 0px;
+            }
+        }
+    }
+
+    section#who_we_are .container {
+        padding: 90px 0 90px;
+    }
+
+
+    section#reviews {
+        h2 {
+            margin-bottom: 60px
+        }
+        .container {
+            padding: 60px 0 60px;
+        }
+    }
+    
+    .reviews_content_wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    section#who_we_are .container {
+        flex-direction: column;
+        padding: 60px 0 60px;
+        align-items: center;
+    }
+
+    .choose_text h2 {
+        padding-top: 0;
+    }
+
+    .btn {
+        margin-bottom: 50px;
+    }
+
+    .choose_img {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        .pic:first-child {
+            margin-bottom: 0;
+        }
+    }
+
+    section#travel_with_us_pool .container, section#travel_with_us_sea .container {
+        padding: 120px 0 80px;
+    }
+
+    footer .container {
+        padding: 80px 0 53px;
     }
 }
 
@@ -15,15 +81,18 @@
     .main_menu {
         display: none;
     }
+
     .hamb_menu {
         display: block;
     }
+
     header {
         background-color: #5474FD;
         &.scroll {
             height: 110px;
         }
     }
+
     .wrap_menu {
         padding: 28px 0 35px;
     }
@@ -31,6 +100,147 @@
         padding-bottom: 10px;
     }
 
+    h1 {
+        font-size: 2.7rem;
+    }
+
+    .header_text {
+        font-size: 1.275rem;
+    }
+
+    h2 {
+        font-size: 2.05rem;
+    }
+
 }
 
-  
+@media screen and (max-width: 805px) {
+    .choose_img {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 1.90rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    form {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    section#travel_with_us_pool .container, section#travel_with_us_sea .container {
+        padding: 80px 0 60px;
+    }
+
+    section#travel_with_us_pool .travel_text, section#travel_with_us_sea .travel_text {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    section#what_we_do {
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    .benefits_block {
+        align-self: flex-end;
+        &:first-child, &:last-child{
+            align-self: flex-start;
+        }
+        &::after {
+            display: none;
+        }
+    }
+
+    section#what_we_do .container {
+        padding: 50px 0 60px;
+    }
+
+    footer .container {
+        padding: 50px 0 53px;
+    }
+
+    .footer p {
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer_socials {
+        a {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .mobile_menu {
+        a {
+            font-size: 1.5rem;
+            line-height: 2.375rem;
+        }
+    }
+    
+    #side_block .wrapper {
+        gap: 60px;
+    }
+
+    input[type=search] {
+        max-width: calc(100% - 60px)
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .benefits_block {
+        align-self: center;
+        &:first-child, &:last-child {
+            align-self: center;
+        }
+        .pic {
+            margin-bottom: 10px;
+        }
+    }
+
+    section#what_we_do {
+        .container {
+            gap: 60px;
+        }
+    }
+
+    .mobile_menu {
+        a {
+            font-size: 1.2rem;
+            line-height: 2.175rem;
+        }
+    }
+    #side_block .wrapper {
+        gap: 60px;
+    }
+
+    .mobile_menu ul {
+        gap: 20px;
+    }
+
+    input[type=search] {
+        letter-spacing: .075rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .header_text {
+        font-size: 1rem;
+    }
+    
+
+}
+
+
