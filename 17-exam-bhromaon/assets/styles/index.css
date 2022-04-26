@@ -362,8 +362,9 @@ input[type=search]:focus {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding-top: 257px;
 }
 .first_screen > .pic {
   width: 17px;

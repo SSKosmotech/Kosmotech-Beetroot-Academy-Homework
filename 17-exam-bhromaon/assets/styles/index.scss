@@ -379,9 +379,9 @@ input[type=search] {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    // padding-top: 264px;
+    padding-top: 257px;
     > .pic {
         width: 17px;
         height: 11px;
