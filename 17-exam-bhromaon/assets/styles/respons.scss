@@ -37,17 +37,27 @@
     }
     
     .reviews_content_wrapper {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         gap: 30px;
     }
 }
 
 @media screen and (max-width: 1090px) {
     section#who_we_are .container {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding: 60px 0 60px;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .choose_text h2 {
@@ -59,10 +69,15 @@
     }
 
     .choose_img {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         gap: 20px;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         .pic:first-child {
             margin-bottom: 0;
         }
@@ -116,7 +131,10 @@
 
 @media screen and (max-width: 805px) {
     .choose_img {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     h2 {
@@ -126,8 +144,13 @@
 
 @media screen and (max-width: 750px) {
     form {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         gap: 10px;
     }
 
@@ -147,16 +170,23 @@
 @media screen and (max-width: 650px) {
     section#what_we_do {
         .container {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             gap: 10px;
         }
     }
 
     .benefits_block {
-        align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
         &:first-child, &:last-child{
-            align-self: flex-start;
+            -ms-flex-item-align: start;
+                align-self: flex-start;
         }
         &::after {
             display: none;
@@ -205,9 +235,11 @@
 
 @media screen and (max-width: 415px) {
     .benefits_block {
-        align-self: center;
-        &:first-child, &:last-child {
+        -ms-flex-item-align: center;
             align-self: center;
+        &:first-child, &:last-child {
+            -ms-flex-item-align: center;
+                align-self: center;
         }
         .pic {
             margin-bottom: 10px;

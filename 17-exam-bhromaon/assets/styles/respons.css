@@ -23,15 +23,25 @@
   }
 
   .reviews_content_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 30px;
   }
 }
 @media screen and (max-width: 1090px) {
   section#who_we_are .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding: 60px 0 60px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -44,9 +54,14 @@
   }
 
   .choose_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   .choose_img .pic:first-child {
@@ -99,6 +114,9 @@
 }
 @media screen and (max-width: 805px) {
   .choose_img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -108,7 +126,12 @@
 }
 @media screen and (max-width: 750px) {
   form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 10px;
   }
@@ -127,15 +150,22 @@
 }
 @media screen and (max-width: 650px) {
   section#what_we_do .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 10px;
   }
 
   .benefits_block {
+    -ms-flex-item-align: end;
     align-self: flex-end;
   }
   .benefits_block:first-child, .benefits_block:last-child {
+    -ms-flex-item-align: start;
     align-self: flex-start;
   }
   .benefits_block::after {
@@ -175,9 +205,11 @@
 }
 @media screen and (max-width: 415px) {
   .benefits_block {
+    -ms-flex-item-align: center;
     align-self: center;
   }
   .benefits_block:first-child, .benefits_block:last-child {
+    -ms-flex-item-align: center;
     align-self: center;
   }
   .benefits_block .pic {
