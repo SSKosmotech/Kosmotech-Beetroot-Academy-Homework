@@ -600,6 +600,32 @@ h2 {
   justify-content: flex-start;
   gap: 100px;
 }
+#side_block .header_logo {
+  position: relative;
+}
+#side_block .header_logo img {
+  padding-top: 30px;
+}
+#side_block .header_logo::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  top: 20px;
+  left: -10px;
+  border-top: 1px solid var(--color-white);
+  border-left: 1px solid var(--color-white);
+}
+#side_block .header_logo::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  bottom: -10px;
+  right: -10px;
+  border-bottom: 1px solid var(--color-white);
+  border-right: 1px solid var(--color-white);
+}
 
 #page_overlay {
   position: fixed;
