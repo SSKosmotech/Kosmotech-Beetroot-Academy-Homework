@@ -327,13 +327,15 @@
                     $('#side_block, #page_overlay').toggleClass('open');
                     $('body').toggleClass('lock');
             }
-    
+            
+            //активація і дезактивація hamburger меню по клікам на: гамбургер, оверлей, мобільні пункти меню
             $(function() {
                 $('.hamburger, #page_overlay, .mobile_menu a').on('click', function(){
                     toggleMenu ();
                 })
             })
 
+            //плавний скрол до секції, при клікі на мобільні і головні пункти меню
             $(function(){
                 $('.mobile_menu a, .main-menu a').on('click', function(e){
                     e.preventDefault(); //заборонили браузеру проскролити до id
@@ -345,6 +347,7 @@
                 })
             })
 
+            //активація "скляного" горизонтального меню
             $(window).on('scroll', ()=>{
                     if($(window).scrollTop()>127) {
                         $(".header").addClass("scroll")

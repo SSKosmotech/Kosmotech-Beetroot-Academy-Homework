@@ -47,6 +47,15 @@
 
     <div id="side_block">
         <div class="wrapper">
+            
+            <div class="header_logo">
+                <div class="pic">
+                    <a href="#">
+                        <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/logo_bhromaon.svg" alt="Logo Bhromaon">
+                    </a>
+                </div>
+            </div>
+
 
             <nav class="mobile_menu">
                             <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
@@ -97,37 +106,36 @@
 
 
         <header id="header" class="main_container">
-           
+            <div class="container">
+                <div class="wrap_menu">
 
-                    <div class="wrap_menu">
-
-                        <div class="header_logo">
-                            <div class="pic">
-                                <a href="#">
-                                    <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/logo_bhromaon.svg" alt="Logo Bhromaon">
-                                </a>
-                            </div>
+                    <div class="header_logo">
+                        <div class="pic">
+                            <a href="#">
+                                <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/logo_bhromaon.svg" alt="Logo Bhromaon">
+                            </a>
                         </div>
-                        <nav class="main_menu">
-                            <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
-                                <li><a itemprop="url" href="#who_we_are">Who We Are</a></li>
-                                <li><a itemprop="url" href="#what_we_do">What We Do</a></li>
-                                <li><a itemprop="url" href="#travel_with_us_pool">Travel With Us</a></li>
-                                <li><a itemprop="url" href="#contact_us">Contact Us</a></li>
-                                
-                            </ul>
-                        </nav> 
-                        
-                        <div class="hamb_menu">
-                            <button class="hamburger hamburger--spin" type="button">
-                                <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                                </span>
-                            </button>
-                        </div>
+                    </div>
+                    <nav class="main_menu">
+                        <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <li><a itemprop="url" href="#who_we_are">Who We Are</a></li>
+                            <li><a itemprop="url" href="#what_we_do">What We Do</a></li>
+                            <li><a itemprop="url" href="#travel_with_us_pool">Travel With Us</a></li>
+                            <li><a itemprop="url" href="#contact_us">Contact Us</a></li>
+                            
+                        </ul>
+                    </nav> 
+                    
+                    <div class="hamb_menu">
+                        <button class="hamburger hamburger--spin" type="button">
+                            <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
 
-                    </div>       
-
+                </div>       
+            </div>
         </header>
 
         <main class="main">
@@ -313,11 +321,11 @@
                 })
             })
 
-        //поавний скрол до секції, при клікі на мобільні і головні пункти меню
+        //плавний скрол до секції, при клікі на мобільні і головні пункти меню
             $(function(){
                 $('.mobile_menu a, .main_menu a').on('click', function(e){
                     e.preventDefault(); //заборонили браузеру проскролити до id
-                  $('html, body').animate({scrollTop:$($(this).attr('href')).offset().top-$('header').outerHeight()}, 500)
+                  $('html, body').animate({scrollTop:$($(this).attr('href')).offset().top-$('header').outerHeight()}, 800)
 
                 })
             })

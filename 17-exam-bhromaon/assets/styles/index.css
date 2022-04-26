@@ -162,7 +162,7 @@ header.fixed {
   top: 0px;
   left: 0px;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(84, 116, 253, 0.5);
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -335,7 +335,6 @@ form {
   width: 100%;
   justify-content: center;
   margin-bottom: 108px;
-  border: 2px solid var(--color-white);
   outline: 2px;
 }
 
@@ -572,11 +571,13 @@ h2 {
 }
 
 #side_block {
-  width: 60%;
+  width: 100%;
   position: fixed;
   left: 0;
   top: 0;
-  background-color: #caddff;
+  color: var(--color-white);
+  background: rgba(84, 116, 253, 0.5);
+  backdrop-filter: blur(50px);
   padding: 20px;
   height: 100vh;
   z-index: 12;
@@ -591,6 +592,13 @@ h2 {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
+}
+#side_block .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 100px;
 }
 
 #page_overlay {
@@ -619,13 +627,13 @@ h2 {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 30px;
   font-size: 18px;
+  text-align: center;
 }
 .mobile_menu a {
   text-decoration: none;
-  color: #2F281E;
-  font-weight: 400;
+  color: var(--color-white);
   font-size: 30px;
   line-height: 38px;
 }

@@ -1,1 +1,1 @@
-@media screen and (max-width:750px){.main_menu{display:none}.hamb_menu{display:block}}
+@media screen and (max-width:1160px){.main_container{max-width:calc(100% - 60px)}header.fixed{left:30px}.container{width:90%}}@media screen and (max-width:860px){.main_menu{display:none}.hamb_menu{display:block}header{background-color:#5474FD}header.scroll{height:110px}.wrap_menu{padding:28px 0 35px}header_logo{padding-bottom:10px}}
