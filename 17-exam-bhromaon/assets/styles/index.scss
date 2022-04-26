@@ -546,7 +546,7 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 13px;
+    // gap: 13px;
     height: 60px;
     border: 2px solid var(--color-white);
     &:hover {
@@ -555,12 +555,14 @@ h2 {
     &:hover svg {
         fill: #FF6363;
     }
-    p {
+    span {
         @include fz(14);
         letter-spacing: 0.0875rem;
         line-height: var(--line-height);
+        margin-right: 13px;
     }
 }
+
 
 .btn_travel {
     padding: 0 60px;

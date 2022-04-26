@@ -14,7 +14,7 @@
         .pic {
             &:first-child {
                 margin-right: 0px;
-                margin-bottom: 10px;
+                // margin-bottom: 10px;
             }
             &:last-child {
                 margin-left: 0px;
@@ -44,7 +44,10 @@
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        gap: 30px;
+        // gap: 30px;
+    }
+    .reviews_picture {
+        margin-bottom: 30px;
     }
 }
 
@@ -72,14 +75,16 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        justify-content: flex-start;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        gap: 20px;
+        // gap: 20px;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
         .pic:first-child {
             margin-bottom: 0;
+            margin-right: 20px;
         }
     }
 
@@ -135,6 +140,10 @@
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+        .pic:first-child {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
     }
 
     h2 {
@@ -151,7 +160,10 @@
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        gap: 10px;
+    }
+
+    input[type=search] {
+        margin-bottom: 20px;
     }
 
     section#travel_with_us_pool .container, section#travel_with_us_sea .container {
@@ -178,6 +190,10 @@
                 -ms-flex-direction: column;
                     flex-direction: column;
             gap: 10px;
+        }
+        
+        .first_screen {
+            padding-top: 100px;
         }
     }
 
@@ -235,6 +251,7 @@
 
 @media screen and (max-width: 415px) {
     .benefits_block {
+        margin-bottom: 60px;
         -ms-flex-item-align: center;
             align-self: center;
         &:first-child, &:last-child {
@@ -243,12 +260,6 @@
         }
         .pic {
             margin-bottom: 10px;
-        }
-    }
-
-    section#what_we_do {
-        .container {
-            gap: 60px;
         }
     }
 
@@ -277,9 +288,9 @@
     }
 
     footer ul {
-        gap: 40px;
+        // gap: 40px;
         li {
-            margin-right: 0;
+            margin-right: 30px;
         }
     }
 
@@ -288,11 +299,25 @@
     }
 }
 
+@media screen and (max-width: 375px) {
+    .first_screen {
+        padding-top: 150px;
+    }
+}
+
 @media screen and (max-width: 320px) {
+    .first_screen {
+        padding-top: 80px;
+    }
+
+    .btn {
+        margin-bottom: -30px;
+    }
+   
+
     footer ul {
-        gap: 20px;
         li {
-            margin-right: 0;
+            margin-right: 20px;
         }
     }
 

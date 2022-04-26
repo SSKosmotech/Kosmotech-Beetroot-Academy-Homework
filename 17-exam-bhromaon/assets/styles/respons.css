@@ -5,7 +5,6 @@
 
   .choose_img .pic:first-child {
     margin-right: 0px;
-    margin-bottom: 10px;
   }
   .choose_img .pic:last-child {
     margin-left: 0px;
@@ -30,7 +29,10 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 30px;
+  }
+
+  .reviews_picture {
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 1090px) {
@@ -57,15 +59,16 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: flex-start;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    gap: 20px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
   .choose_img .pic:first-child {
     margin-bottom: 0;
+    margin-right: 20px;
   }
 
   section#travel_with_us_pool .container, section#travel_with_us_sea .container {
@@ -119,6 +122,10 @@
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .choose_img .pic:first-child {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 
   h2 {
     font-size: 1.9rem;
@@ -133,7 +140,10 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 10px;
+  }
+
+  input[type=search] {
+    margin-bottom: 20px;
   }
 
   section#travel_with_us_pool .container, section#travel_with_us_sea .container {
@@ -158,6 +168,9 @@
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 10px;
+  }
+  section#what_we_do .first_screen {
+    padding-top: 100px;
   }
 
   .benefits_block {
@@ -205,6 +218,7 @@
 }
 @media screen and (max-width: 415px) {
   .benefits_block {
+    margin-bottom: 60px;
     -ms-flex-item-align: center;
     align-self: center;
   }
@@ -214,10 +228,6 @@
   }
   .benefits_block .pic {
     margin-bottom: 10px;
-  }
-
-  section#what_we_do .container {
-    gap: 60px;
   }
 
   #side_block {
@@ -244,23 +254,30 @@
     font-size: 1rem;
   }
 
-  footer ul {
-    gap: 40px;
-  }
   footer ul li {
-    margin-right: 0;
+    margin-right: 30px;
   }
 
   section#reviews .reviews_text {
     padding: 30px 20px 20px 20px;
   }
 }
-@media screen and (max-width: 320px) {
-  footer ul {
-    gap: 20px;
+@media screen and (max-width: 375px) {
+  .first_screen {
+    padding-top: 150px;
   }
+}
+@media screen and (max-width: 320px) {
+  .first_screen {
+    padding-top: 80px;
+  }
+
+  .btn {
+    margin-bottom: -30px;
+  }
+
   footer ul li {
-    margin-right: 0;
+    margin-right: 20px;
   }
 
   .btn_travel {

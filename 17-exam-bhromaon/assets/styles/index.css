@@ -602,7 +602,6 @@ h2 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 13px;
   height: 60px;
   border: 2px solid var(--color-white);
 }
@@ -612,10 +611,11 @@ h2 {
 .search:hover svg {
   fill: #FF6363;
 }
-.search p {
+.search span {
   font-size: 0.875rem;
   letter-spacing: 0.0875rem;
   line-height: var(--line-height);
+  margin-right: 13px;
 }
 
 .btn_travel {
