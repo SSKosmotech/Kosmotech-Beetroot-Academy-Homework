@@ -603,14 +603,14 @@ h2 {
   position: relative;
 }
 #side_block .header_logo img {
-  margin-bottom: 5px;
+  margin-top: 10px;
 }
 #side_block .header_logo::before {
   content: "";
   position: absolute;
   width: 50px;
   height: 30px;
-  top: 20px;
+  top: 0;
   left: -10px;
   border-top: 1px solid var(--color-white);
   border-left: 1px solid var(--color-white);
