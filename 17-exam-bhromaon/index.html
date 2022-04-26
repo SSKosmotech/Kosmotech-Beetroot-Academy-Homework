@@ -300,7 +300,7 @@
 
         //фіксація горизонтального меню, яке знаходиться нижче першого екрану
         $(window).on('scroll', function(){
-            if($(window).scrollTop()>$(".first_screen").height()){
+            if($(window).scrollTop()>$("section.main_container").height()){
                 $('header').addClass('fixed');
             }else{
                 $('header').removeClass('fixed');
