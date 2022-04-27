@@ -261,10 +261,7 @@
 }
 @media screen and (max-width: 320px) {
   .first_screen {
-    padding-top: 60;
-  }
-  .first_screen a {
-    margin-top: -20px;
+    padding-top: 60px;
   }
 
   form {
@@ -272,7 +269,7 @@
   }
 
   .btn {
-    margin-bottom: -30px;
+    margin-bottom: -50px;
   }
 
   footer ul li {
