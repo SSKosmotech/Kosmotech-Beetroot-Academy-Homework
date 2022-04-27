@@ -578,16 +578,16 @@ h2 {
   /* Old browsers */
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: -o-linear-gradient(48deg, #496bfe 38%, #5474fd 38%);
-  background: linear-gradient(42deg, #496bfe 38%, #5474fd 38%);
+  background: -o-linear-gradient(42deg, #496bfe 46%, #5474fd 46%);
+  background: linear-gradient(42deg, #496bfe 46%, #5474fd 46%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#496bfe", endColorstr="#5474fd",GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
+  background-position: center top;
+  background-size: 300% auto;
 }
 .btn:hover {
-  color: #FF6363;
-  background: -webkit-linear-gradient(48deg, #5474fd 38%, #496bfe 38%);
-  /* Chrome10-25,Safari5.1-6 */
+  background-position: left top;
 }
 .btn:focus {
   outline: none;
@@ -608,6 +608,7 @@ h2 {
 }
 .search:hover {
   background: #496bfe;
+  color: #FF6363;
 }
 .search:hover svg {
   fill: #FF6363;

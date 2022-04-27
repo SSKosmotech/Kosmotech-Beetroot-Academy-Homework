@@ -489,12 +489,15 @@ h2 {
     // border: none;
     border: 2px solid transparent;
     background: #496bfe; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-    background: -o-linear-gradient(48deg, #496bfe 38%,#5474fd 38%);
-    background: linear-gradient(42deg, #496bfe 38%,#5474fd 38%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -o-linear-gradient(42deg, #496bfe 46%,#5474fd 46%);
+    background: linear-gradient(42deg, #496bfe 46%,#5474fd 46%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#496bfe', endColorstr='#5474fd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-position: center top;
+    background-size: 300% auto;
     &:hover {
-        color: #FF6363;
-        background: -webkit-linear-gradient(48deg, #5474fd 38%,#496bfe 38%); /* Chrome10-25,Safari5.1-6 */
+        // color: #FF6363;
+        // background: -webkit-linear-gradient(48deg, #5474fd 38%,#496bfe 38%); /* Chrome10-25,Safari5.1-6 */
+        background-position: left top;
     }
     &:focus {
         outline: none;
@@ -515,6 +518,8 @@ h2 {
     border: 2px solid var(--color-white);
     &:hover {
         background: #496bfe;
+        color: #FF6363;
+
     }
     &:hover svg {
         fill: #FF6363;
