@@ -486,7 +486,8 @@ h2 {
     font-family: 'Aleo', sans-serif;
     letter-spacing: 0.075rem;
     font-size: var(--text-size);
-    border: none;
+    // border: none;
+    border: 2px solid transparent;
     background: #496bfe; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
     background: -o-linear-gradient(48deg, #496bfe 38%,#5474fd 38%);
     background: linear-gradient(42deg, #496bfe 38%,#5474fd 38%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
