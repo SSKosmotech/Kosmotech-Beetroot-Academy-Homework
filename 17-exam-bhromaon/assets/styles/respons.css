@@ -1,3 +1,8 @@
+@media screen and (min-width: 2550px) {
+  .first_screen {
+    padding-top: 500px;
+  }
+}
 @media screen and (max-width: 1160px) {
   .container {
     width: 90%;
@@ -82,6 +87,10 @@
   }
 }
 @media screen and (max-width: 860px) {
+  .first_screen {
+    padding-top: 200px;
+  }
+
   .main_menu {
     display: none;
   }
@@ -171,8 +180,9 @@
     flex-direction: column;
     gap: 10px;
   }
-  section#what_we_do .first_screen {
-    padding-top: 100px;
+
+  .first_screen {
+    padding-top: 150px;
   }
 
   .benefits_block {
@@ -267,7 +277,7 @@
   }
 
   form {
-    margin-bottom: 75px;
+    margin-bottom: 150px;
   }
 
   .btn {
