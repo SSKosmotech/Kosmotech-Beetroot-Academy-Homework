@@ -19,7 +19,6 @@ $base_fz: 16;
 @import 'hamburger';
 
 body {
-    // background-color: var(--bcg-color);
     font-family: var(--font-family);
     color: var(--text-color);
     font-size: var(--text-size);
@@ -34,16 +33,12 @@ body {
     // max-width: calc(100% - 60px);
     // max-width: var(--width-main-container);
     margin: 0 auto;
-    // border: 1px solid blue;
-    // height: 100%;
 }
 
 .container {
     width: 100%;
     max-width: var(--width-container);
     margin: 0 auto;
-    // border: 1px solid red;
-    // height: 100%;
 }
 
 header {
@@ -69,8 +64,6 @@ header {
 }
 
 section#who_we_are {
-    // background-image: url(../images/why_choose_us_bg.jpg);
-    // height: 685px;
     .container {
         padding: 118px 0 117px;
     }
@@ -86,8 +79,6 @@ section#what_we_do {
 
 section#travel_with_us_pool,
 section#travel_with_us_sea {
-    // background-image: url(../images/travel_with_us_pool_bg.jpg);
-    // height: 700px;
     .container {
         padding: 227px 0 99px;
         display: -webkit-box;
@@ -98,7 +89,6 @@ section#travel_with_us_sea {
                 justify-content: flex-start;
     }
     p:first-of-type {
-        // font-family: 'Josefin Sans';
         @include fz(20);
         letter-spacing: 0.09375rem;
         margin-bottom: 23px;
@@ -115,7 +105,6 @@ section#travel_with_us_sea {
         margin-bottom: 46px;
     }
     .travel_text {
-        // display: block;
         background-color: var(--bcg-color);
         opacity: 0.9;
         padding: 49px 40px 50px 30px;
@@ -123,8 +112,6 @@ section#travel_with_us_sea {
 }
 
 section#travel_with_us_sea {
-    // background-image: url(../images/travel_with_us_sea_bg.jpg);
-    // height: 700px;
     .container {
         -webkit-box-pack: end;
             -ms-flex-pack: end;
@@ -133,8 +120,6 @@ section#travel_with_us_sea {
 }
 
 section#reviews {
-    // background-image: url(../images/what_our_tourist_say_bg.jpg);
-    // height: 731px;
     .container {
         padding: 128px 0 199px;
     }
@@ -196,7 +181,6 @@ footer {
                 @include fz(16);
             }
             a:hover {
-                // text-decoration: underline;
                 color: #5474FD;
             }
         }
@@ -223,7 +207,6 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    // flex-direction: column;
 }
 
 .flex_center {
@@ -262,9 +245,6 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    // max-width: 100%;
-    // max-height: 100%;
-    // object-fit: contain;
 }
 
 h1 {
@@ -292,19 +272,15 @@ form {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 109px;
-    // border: 2px solid var(--color-white);
     outline: 2px;
 }
 
 input[type=search] {
-    // opacity: 0;
     max-width: 500px;
     width: 100%;
     height: 60px;
     text-align: center;
-    // padding-left: 20%;
     border:none;
-    // outline: 2px;
     background: var(--color-white);
     font-family: var(--font-family);
     font-family: 'Josefin Sans';
@@ -351,14 +327,12 @@ input[type=search] {
         &:hover {
             text-decoration: underline;
             color: #FF6363;
-            // color: #5474FD;
             &::after {
                 border-right: 2px solid #FF6363;
                 border-bottom: 2px solid #FF6363;
             }
         }
         &::after {
-            // content: url(../images/scroll_arrow.svg);
             content: '';
             display: block;
             position: absolute;
@@ -379,7 +353,6 @@ input[type=search] {
         }
     }
 }
-
 
 .wrap_menu {
     max-width: var(--width-container);
@@ -403,7 +376,6 @@ input[type=search] {
             height: 20px;
         }
     }
-
 }
 
 .main_menu {
@@ -479,9 +451,6 @@ h2 {
         -ms-flex-align: center;
             align-items: center;
     position: relative;
-    // &:first-child {
-    //     padding-left: 70px;
-    // }
     h2 {
         color: var(--text-color);
     }
@@ -547,7 +516,6 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    // gap: 13px;
     height: 60px;
     border: 2px solid var(--color-white);
     &:hover {
@@ -572,8 +540,6 @@ h2 {
 
 .choose_img {
     .pic {
-        // width: 350px;
-        // height: 220px;
         &:first-child {
             margin-right: 90px;
             margin-bottom: 10px;
@@ -597,8 +563,6 @@ h2 {
     top: 0;
     color: var(--color-white);
     background: rgba(84, 116, 253, .5);
-    // background-color: #5474FD;
-    // box-shadow: 0 0 5px #5474FD;
     -webkit-backdrop-filter: blur(50px);
             backdrop-filter: blur(50px);
     padding: 20px;
@@ -634,8 +598,6 @@ h2 {
         position: relative;
         margin-bottom: 60px;
         img {
-            // padding-top: 30px;
-            // margin-bottom: 5px;
             margin-top: 10px;
         }
         &::before {
@@ -689,7 +651,6 @@ h2 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    // gap: 30px;
     @include fz(18);
     text-align: center;
     }

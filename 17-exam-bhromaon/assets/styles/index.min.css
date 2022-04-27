@@ -1,4 +1,4 @@
-:root{--text-color:#E8E8E8;--text-size:1rem;--font-family:"Josefin Sans",sans-serif;--line-height:1.625rem;--bcg-color:#232323;--color-white:#fff;--width-main-container:1770px;--width-container:1110px}*,::after,::before{padding:0;margin:0;box-sizing:border-box}body,html{width:100%;height:100%}a,a::after,button,input[type=button],input[type=search],svg{transition:all .2s ease}/*!
+:root{--text-color:#E8E8E8;--text-size:1rem;--font-family:"Josefin Sans",sans-serif;--line-height:1.625rem;--bcg-color:#232323;--color-white:#fff;--width-main-container:1770px;--width-container:1110px}*,::after,::before{padding:0;margin:0;box-sizing:border-box}body,html{width:100%;height:100%}a,button,input[type=button],input[type=search],svg{transition:all .2s ease}/*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
  * @author Jonathan Suh @jonsuh
