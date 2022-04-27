@@ -76,16 +76,57 @@ section#what_we_do {
     }
 }
 
-section#travel_with_us_pool,
-section#travel_with_us_sea {
-    .container {
-        padding: 227px 0 99px;
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    &_start {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: start;
             -ms-flex-pack: start;
                 justify-content: flex-start;
+    }
+    &_end {
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+    }
+    &_center {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    &_column {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+}
+
+section#travel_with_us_pool,
+section#travel_with_us_sea {
+    .container {
+        padding: 227px 0 99px;
+
     }
     p:first-of-type {
         @include fz(20);
@@ -104,19 +145,15 @@ section#travel_with_us_sea {
         margin-bottom: 46px;
     }
     .travel_text {
+        max-width: 543px;
+        width: 100%;
         background-color: var(--bcg-color);
         opacity: 0.9;
         padding: 49px 40px 50px 30px;
     }
 }
 
-section#travel_with_us_sea {
-    .container {
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
-    }
-}
+
 
 section#reviews {
     .container {
@@ -127,6 +164,8 @@ section#reviews {
         margin-bottom: 91px;
     }
     .reviews_text {
+        max-width: 665px;
+        width: 100%;
         -webkit-box-flex: 1;
             -ms-flex-positive: 1;
                 flex-grow: 1;
@@ -195,41 +234,6 @@ footer {
         color: var(--color-white);
         margin-bottom: 18px;
     }
-}
-
-.flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-}
-
-.flex_center {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-}
-
-.flex_column {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
 }
 
 img {
@@ -417,6 +421,8 @@ h2 {
 }
 
 .choose_text {
+    max-width: 560px;
+    width: 100%;
     h2 {
         
         padding-top: 93px;
