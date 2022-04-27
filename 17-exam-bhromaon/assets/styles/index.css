@@ -231,7 +231,7 @@ section#reviews .reviews_text {
   -ms-flex-positive: 1;
   flex-grow: 1;
   background-color: #333333;
-  padding: 49px 30px 28px 62px;
+  padding: 47px 30px 28px 60px;
 }
 section#reviews h4 {
   font-size: 1.25rem;
@@ -249,7 +249,8 @@ section#reviews p::before {
   position: relative;
   background-repeat: no-repeat;
   top: 3px;
-  margin-right: 8px;
+  left: -4px;
+  margin-right: 2px;
 }
 
 footer {
