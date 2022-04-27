@@ -303,4 +303,8 @@
   .mobile_menu li a {
     font-size: 1.675rem;
   }
+
+  input[type=search] {
+    padding-left: 10px;
+  }
 }
