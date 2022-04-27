@@ -261,11 +261,11 @@
 }
 @media screen and (max-width: 320px) {
   .first_screen {
-    padding-top: 65px;
+    padding-top: 0;
   }
 
   form {
-    margin-bottom: 55px;
+    margin-bottom: 0;
   }
 
   .btn {
