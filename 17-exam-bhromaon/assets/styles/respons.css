@@ -260,6 +260,14 @@
   }
 }
 @media screen and (max-width: 320px) {
+  .first_screen {
+    padding-top: 65px;
+  }
+
+  form {
+    margin-bottom: 75px;
+  }
+
   .btn {
     margin-bottom: -30px;
   }
