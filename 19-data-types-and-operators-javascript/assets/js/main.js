@@ -134,3 +134,17 @@ function abc2cba() {
     abc2cba = lastNum * 100 + middleNum * 10 + firstNum;
     alert(`Тризначне число ${abc} задом наперед — ${abc2cba}`);
  }
+
+ function bankInterest() {
+    const amountDepositIn = parseFloat(prompt('Введіть суму вкалду депозиту'));
+    const amountDepositInRound = amountDepositIn.toFixed(2);
+    const annualInterestRate = amountDepositInRound * 0.05;
+    const annualInterestRateRound = annualInterestRate.toFixed(2);
+    const bankInterest = annualInterestRateRound / 12 * 2;
+    const bankInterestRound = bankInterest.toFixed(2);
+    if (amountDepositInRound > 0) {
+        alert(`Через 2 місяці з вашого вкладу на суму ${amountDepositInRound} із ставкою 0.05 річних — сума нарахованих відсотків буде дорівнювати —  ${bankInterestRound}\ грн`);
+    } else {
+        alert("Вибачте, але ви ввели літери або від\'ємне значення або 0, введіть будь ласка додатнє");
+    }
+ }
