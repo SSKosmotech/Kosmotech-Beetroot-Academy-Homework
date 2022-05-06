@@ -614,22 +614,95 @@ function task7() {
     document.getElementById('task_7_result').innerText = rez;
 }
 
-function task8() {
-    let i = 0;
-    while (i < 9) {
-        const num = document.getElementById('task_8_number').value;
+// function task8() {
+//     let i = 0;
+//     while (i < 9) {
+//         const num = document.getElementById('task_8_number').value;
+//     }
+
+//     document.getElementById('task_8_result').innerText = num;
+// }
+
+    function task9() {
+        let dayWeek = new Date().getDay();
+        let d = dayWeek;
+        let answer = true;
+        while(answer === true) {
+            switch(d) {
+                case 1:
+                    dayWeek = 'Понеділок'
+                    d ++;
+                    break;
+                case 2:
+                    dayWeek = 'Вівторок'
+                    d ++;
+                    break;
+                case 3:
+                    dayWeek = 'Середа'
+                    d ++;
+                    break;
+                case 4:
+                    dayWeek = 'Четвер'
+                    d ++;
+                    break;
+                case 5:
+                    dayWeek = 'Пятниця'
+                    d ++;
+                    break;
+                case 6:
+                    dayWeek = 'Субота'
+                    d ++;
+                    break;
+                case 7:
+                    dayWeek = 'Неділя'
+                    d = 1;
+                    break;
+                }
+            answer = confirm(`День тижня: ${dayWeek}. Хочеш побачити наступний день?`);
+        }
+    }
+         
+    function task10() {
+        const num = parseInt(prompt('Введи число від 0...100'));
+        let zero = 0;
+        let high = 100;
+        let error;
+        let N;
+        if (isNaN(num) || num < 0 || num > 100) {
+            error = 'Введи число від 0...100.';
+            alert(error);
+        } else {
+                while (N != num) {
+                    N = Math.round((zero+high) / 2);
+                    let sign = prompt(`Ваше число більше \>, меньше \<, чи дорівнює ${N}`);
+                    switch(sign) {
+                        case '=':
+                            alert(`УРА, Ви загадали ${N}`);
+                            break;
+                        case '>':
+                            zero = N;
+                            break;
+                        case '<':
+                            high = N;
+                            break;
+                    }
+                }  
+            }
     }
 
-    // let positive = 0;
-    // let negative = 0;
-    // let zero = 0;
-    
-    // let rez = '';
-    // if (isNaN(num)) {
-    //     rez = 'Введіть будь ласка числа.';
-    // } 
-    document.getElementById('task_8_result').innerText = num;
-}
+
+    function task11() {
+        let rez = '';
+        let multiplication;
+        for (let num = 2; num < 10; num++) {
+            for (let i = 1; i < 11; i++) {
+                multiplication = num * i;
+                rez += num + ' * ' + i + ' = ' + multiplication + '; \n'
+            }
+        }
+        document.getElementById('task_11_result').innerText = rez;
+    }
+
 
 
 
