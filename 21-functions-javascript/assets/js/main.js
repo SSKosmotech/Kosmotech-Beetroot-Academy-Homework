@@ -34,6 +34,7 @@ function task3() {
     let rez = 0;
     let num = parseInt(document.getElementById('task_3_number').value);
     rez = factorial(num);
+    rez = `Факторіалом числа ${num} буде: ${rez}`;
     showResult(rez, 'task_3_result');
 }
 
@@ -74,6 +75,7 @@ function task5() {
         num2 = parseInt(document.getElementById('task_5_number2').value);
     rez = '';
     rez = square(num1, num2);
+    rez = `Площа буде = ${rez}`;
     showResult(rez, 'task_5_result');
 }
 
