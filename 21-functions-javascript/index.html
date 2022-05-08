@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+   
+        <div class="container pt-4">
+        <!--  <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                1) Вивести # решітку стільки раз, скільки вказав користувач.
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <input type="number" id="task_1_number" class="me-3" />
+                            <button type="button" class="btn btn-info" onclick="task1()">Show hash</button>
+                        </div>
+                        <div class="col-4">
+                            <p>Результат:</p>
+                            <div id="task_1_result"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> <p>
+                            2) Пользователь ввел число, а на экран вывелись все числа от введенного до 0.
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <input type="number" id="task_2_number" class="me-3" />
+                        <button type="button" class="btn btn-info" onclick="task2()">Show hash</button>
+                    </div>
+                    <div class="col-4">
+                        <p>Результат:</p>
+                        <div id="task_2_result"></div>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-4"> 
+                                <p>
+                                    4) Запросить 2 числа и найти все общие делители.
+                                </p></div>
+                            <div class="col-4">
+                                <input type="number" id="task_4_number1" class="me-3" />
+                                <input type="number" id="task_4_number2" class="me-3" />
+                                <button type="button" class="btn btn-info" onclick="task4()">Show hash</button>
+                            </div>
+                            <div class="col-4">
+                                <p>Результат:</p>
+                                <div id="task_4_result"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+            </div>
+
+        </div> -->
+
+        <!-- <div class="container pt-4">
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                1) Запитай у користувача його вік і визначи, ким він є: дитиною (0-11), підлітком (12-17), дорослим (18_59) або пенсіонером (60 ...), передбач можливість введення невірних даних.
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <input type="number" id="task_1_number" class="me-3" />
+                            <button type="button" class="btn btn-info" onclick="task1()">Show hash</button>
+                        </div>
+                        <div class="col-4">
+                            <p>Результат:</p>
+                            <div id="task_1_result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                2) Запитай у користувача число від 0 до 9 і виведи йому спецсимвол, який розташований на цій клавіші (1 !, 2 @, 3 # і т. д).
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <input type="number" id="task_2_number" class="me-3" />
+                            <button type="button" class="btn btn-info" onclick="task2()">Show hash</button>
+                        </div>
+                        <div class="col-4">
+                            <p>Результат:</p>
+                            <div id="task_2_result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                3) Підрахуй суму всіх чисел в заданому користувачем діапазоні.
+                                <br>  Введіть мінімальне і максимальне числа діапазону (включно.)
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <input type="number" id="task_3_number1" class="me-3" />
+                            <input type="number" id="task_3_number2" class="me-3" />
+                            <button type="button" class="btn btn-info" onclick="task3()">Show hash</button>
+                        </div>
+                        <div class="col-4">
+                            <p>Результат:</p>
+                            <div id="task_3_result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                4) Запитай у користувача 2 числа і знайди найбільший спільний дільник.
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <input type="number" id="task_4_number1" class="me-3" />
+                            <input type="number" id="task_4_number2" class="me-3" />
+                            <button type="button" class="btn btn-info" onclick="task4()">Show hash</button>
+                        </div>
+                        <div class="col-4">
+                            <p>Результат:</p>
+                            <div id="task_4_result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                5) Запитай у користувача число і виведи всі дільники цього числа.
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <input type="number" id="task_5_number" class="me-3" />
+                            <button type="button" class="btn btn-info" onclick="task5()">Show hash</button>
+                        </div>
+                        <div class="col-4">
+                            <p>Результат:</p>
+                            <div id="task_5_result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                6) Запитай у користувача п’ятирозрядне число і визначи, чи є воно паліндромом.
+                                <br>
+                                Однаково читається в обох напрямках (зліва направо та справа наліво).
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <input type="number" id="task_6_number" class="me-3" />
+                            <button type="button" class="btn btn-info" onclick="task6()">Show hash</button>
+                        </div>
+                        <div class="col-4">
+                            <p>Результат:</p>
+                            <div id="task_6_result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                7) Запитай у користувача суму покупки і виведи суму до оплати зі знижкою:
+                                <br>
+                                від 200 до 300 - знижка буде 3%; 
+                                <br>
+                                від 300 до 500 - 5%;
+                                <br>
+                                від 500 і вище - 7%.
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <input type="number" id="task_7_number" class="me-3" />
+                            <button type="button" class="btn btn-info" onclick="task7()">Show hash</button>
+                        </div>
+                        <div class="col-4">
+                            <p>Результат:</p>
+                            <div id="task_7_result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                8) Запитай у користувача 10 чисел і порахуй, скільки він ввів додатніх, від’ємних і нулів. 
+                                <br>
+                                При цьому також порахуй, скільки з них парних і непарних. 
+                                <br>
+                                Виведи статистику на екран. Враховуй, що достатньо однієї змінної (не 10) для введення чисел користувачем.
+
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-info" onclick="checkTen()">Show hash</button>
+                        </div>
+                        <div class="col-4">
+                            <p>Результат:</p>
+                            <div id="task_8_result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                9) Зацикли відображення днів тижня таким чином: «День тижня. Хочеш побачити наступний день? » і так до тих пір, поки користувач натискає OK.
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-info" onclick="task9()">Show hash</button>
+                        </div>
+                        <div class="col-4">
+                            <p>Результат:</p>
+                            <div id="task_9_result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                        <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                10) Гра «Вгадай число». Запропонуй користувачеві загадати число від 0 до 100 і відгадай його наступним способом: кожну ітерацію циклу діли діапазон чисел навпіл, записуй результат в N і питай у користувача «Ваше число більше N, меньше N або дорівнює N?». 
+                                <br>
+                                Залежно від того що вказав користувач, зменшуй діапазон. Початковий діапазон від 0 до 100, поділи навпіл і отримай 50.
+                                <br>
+                                Якщо користувач вказав, що його число більше 50, то зміни діапазон на від 50 до 100. І так до тих пір, поки користувач не вибере дорівнює N (буде корисним почитати про алгоритм: "бінарний пошук").
+
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-info" onclick="task10()">Show hash</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                11) Виведи таблицю множення для всіх чисел від 2 до 9. Кожне число необхідно помножити на числа від 1 до 10.
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-info" onclick="task11()">Show hash</button>
+                        </div>
+                        <div class="col-4">
+                            <p>Результат:</p>
+                            <div id="task_11_result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                ask
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-info" onclick="ask()">Show hash</button>
+                        </div>
+                        <div class="col-4">
+                           <p>Результат:</p>
+                            <div id="task_11_result"></div> 
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            
+            
+            
+            <!-- <<========================================================================>> -->
+
+
+
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                1) Створи функцію, яка буде виводити кількість переданих їй аргументів.
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-info" onclick="task1()">Show hash</button>
+                        </div>
+                         <div class="col-4">
+                           <p>Результат:</p>
+                            <div id="task_1_result"></div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                2) Напиши функцію, яка приймає 2 числа і повертає :
+                                <br>
+                                -1, якщо перше число менше, ніж друге; 
+                                <br>
+                                1 - якщо перше число більше, ніж друге; 
+                                <br>
+                                0 - якщо числа рівні.
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <input type="number" id="task_2_number1" class="me-3" />
+                            <input type="number" id="task_2_number2" class="me-3" />
+                            <button type="button" class="btn btn-info" onclick="task2()">Show hash</button>
+                        </div>
+                         <div class="col-4">
+                           <p>Результат:</p>
+                            <div id="task_2_result"></div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                3) Напиши функцію, яка обчислює факторіал переданого їй числа.
+
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <input type="number" id="task_3_number" class="me-3" />
+                            <button type="button" class="btn btn-info" onclick="task3()">Show hash</button>
+                        </div>
+                         <div class="col-4">
+                           <p>Результат:</p>
+                            <div id="task_3_result"></div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                4) Напиши функцію, яка приймає три окремі цифри і перетворює їх в одне число. Наприклад: цифри 1, 4, 9 перетворяться в число 149.
+
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <input type="number" id="task_4_number1" class="me-3" />
+                            <input type="number" id="task_4_number2" class="me-3" />
+                            <input type="number" id="task_4_number3" class="me-3" />
+                            <button type="button" class="btn btn-info" onclick="task4()">Show hash</button>
+                        </div>
+                         <div class="col-4">
+                           <p>Результат:</p>
+                            <div id="task_4_result"></div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                5) Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу. Якщо в функцію передали 1 параметр, то вона обчислює площу квадрата.
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <input type="number" id="task_5_number1" class="me-3" />
+                            <input type="number" id="task_5_number2" class="me-3" />
+                            <button type="button" class="btn btn-info" onclick="task5()">Show hash</button>
+                        </div>
+                         <div class="col-4">
+                           <p>Результат:</p>
+                            <div id="task_5_result"></div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                6) Напиши функцію, яка перевіряє, чи є передане їй число “досконалим числом”. Досконале число - це число, яке дорівнює сумі всіх своїх дільників.
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <input type="number" id="task_6_number" class="me-3" />
+                            <button type="button" class="btn btn-info" onclick="task6()">Show hash</button>
+                        </div>
+                         <div class="col-4">
+                           <p>Результат:</p>
+                            <div id="task_6_result"></div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <p>
+                                7) Напиши функцію, яка приймає мінімальне і максимальне значення для діапазону, і виводить тільки ті числа з діапазону, які є досконалими. Використовуй написану раніше функцію, щоб дізнатися, чи є це число досконалим.
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <input type="number" id="task_7_number1" class="me-3" />
+                            <input type="number" id="task_7_number2" class="me-3" />
+                            <button type="button" class="btn btn-info" onclick="task7()">Show hash</button>
+                        </div>
+                         <div class="col-4">
+                           <p>Результат:</p>
+                            <div id="task_7_result"></div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+        </div>
+
+
+
+
+
+
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
