@@ -145,6 +145,7 @@ function task7() {
     let num = 0,
     min = parseInt(document.getElementById('task_7_number1').value),
     max = parseInt(document.getElementById('task_7_number2').value),
+    checkRez = 0,
     i = min;
     rez = '';
     if(getAndCheck('task_7_number1')!==false && getAndCheck('task_7_number2')!==false){
@@ -154,10 +155,12 @@ function task7() {
         return false;
     }
 
-    if(diapazon(min, max) === 0) {
+    checkRez = diapazon(min, max);
+
+    if(checkRez === 0) {
         rez = `В діапазоні від ${min} до ${max} — НЕМАЄ досконалих чисел.`
     } else {
-        rez = diapazon(min, max);
+        rez = `В діапазоні від ${min} до ${max} досконалими є: ${checkRez}.`
     }
     showResult(rez, 'task_7_result');
 }
