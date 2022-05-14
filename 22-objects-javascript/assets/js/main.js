@@ -1,3 +1,5 @@
+// <<=============================Minimum=============================>>
+
 const car = {
     mark: 'Ford',
     model: 'Shelby Mustang GT500',
@@ -9,7 +11,7 @@ const car = {
     'Car Refueling': 'Yes'
 }
 
-function info() {
+function infoCar() {
     let rez = '';
     rez += '<ul>';
     for(let key in car){
@@ -21,7 +23,7 @@ function info() {
 } 
 
 function task1(){
-    let r = info();
+    let r = infoCar();
     showResult(r, 'task_1_result');
 }
 
@@ -78,8 +80,7 @@ function task3(){
     showResult(r, 'task_3_result');
 }
 
-function checkRefueling(a){
-    debugger
+function checkRefueling(a = false){
     if(a === "false") {
         return car['Car Refueling'] = "No" ;
     }else{
@@ -115,7 +116,7 @@ function task4(){
 }
 
 
-function checkFloatValue(value){
+function checkFloatValue(value = true){
     if(value===''){
         return false
     }
@@ -126,15 +127,15 @@ function checkFloatValue(value){
     return value;
 }
 
-function whatDriveTime(d, s){
+function whatDriveTime(d = 0, s = 0){
     return t = (d / s).toFixed(2);
 }
 
-function checkBreak(t){
+function checkBreak(t = 0){
     return t = parseInt(t / 4);
 }
 
-function checkDriver(N){
+function checkDriver(N = false){
     for(let key in car.drivers){
         if(N === car.drivers[key]){
             return true;
@@ -142,7 +143,7 @@ function checkDriver(N){
     }
 }
 
-function checkFuel(dist, tank, fuelCons){
+function checkFuel(dist = 0, tank = 0, fuelCons = 0){
     oneMove = tank * 100 / fuelCons;
     if(oneMove <= dist){
         refuel = parseInt(dist / oneMove);
@@ -152,3 +153,109 @@ function checkFuel(dist, tank, fuelCons){
     }
     return rez;
 }
+
+// <<=============================Norma=============================>>
+
+
+const time = {
+    hours: 20,
+    minutes: 59,
+    seconds: 45
+}
+
+function task5(){
+    let r = infoTime();
+    showResult(r, 'task_5_result');
+}
+
+function infoTime() {
+    let rez = '';
+    rez += '<ul>';
+    for(let key in time){
+        rez += '<li>'+key+': '+time[key]+'</li>'
+    }
+    rez += '</ul>';
+    return rez;
+} 
+
+
+function task6() {
+    let sec = parseInt(document.getElementById('task_6_from').value),
+        min = parseInt(document.getElementById('task_7_from').value),
+        hr = parseInt(document.getElementById('task_8_from').value);
+    let rez = '';
+
+    let timeSec = timeFirstInSec(time.hours, time.minutes, time.seconds);
+    
+    sec = checkIsNan(sec);
+    min = checkIsNan(min);
+    hr = checkIsNan(hr);
+
+    if(!isNaN(sec) || !isNaN(min) || !isNaN(hr) ){
+        rez = timeSec+hr*3600+min*60+sec;
+        rezHr = findHr(rez);
+        rezMin = findMin(rez, rezHr);
+        rezSec = findSec(rez, rezHr);
+        rez = rezHr+' : '+rezMin+' : '+rezSec
+    }else{
+        rez = `Введіть коректне число (більше 0)`;
+    }
+    document.getElementById('task_6_result').innerText = rez;
+}
+
+function timeFirstInSec(h, m, s){
+    r = h*3600+m*60+s;
+    return r;
+}
+
+function addZero(n=0) {
+    let r = '';
+    if(n<10){
+        r = '0'+n
+    } else {
+        r = ''+n
+    }
+    return r;
+}
+
+function checkIsNan(x){
+    if(isNaN(x)){
+        x = 0;
+    }
+    return x;
+}
+
+function findHr(r){
+    return addZero(Math.floor(r/3600));
+}
+
+function findMin(r, rHr){
+    return addZero(Math.floor(r/60)-rHr*60);
+}
+
+function findSec(r, rHr){
+    return addZero((r-rHr*3600)%60);
+}
+
+// function checkSec(s = true){
+//     if(s >= 0 && s <= 59){
+//         return true;
+//     }
+// }
+
+// function checkMin(m = true){
+//     if(m >= 0 && m <= 59){
+//         return true;
+//     }
+// }
+
+// function checkHr(h = true){
+//     if(h >= 0 && h <= 23){
+//         return true;
+//     }
+// }
+
+// код вище, переписаний у вигляді стрілкової функції
+// const addZero = (n=0) => n<10 ? '0'+n : ''+n;
+
+// const nowDate = `${addZero(2)}/${addZero(4)}/2022 ${addZero(4)}:${addZero(23)}`;
