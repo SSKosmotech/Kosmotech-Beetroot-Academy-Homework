@@ -237,25 +237,3 @@ function findSec(r, rHr){
     return addZero((r-rHr*3600)%60);
 }
 
-// function checkSec(s = true){
-//     if(s >= 0 && s <= 59){
-//         return true;
-//     }
-// }
-
-// function checkMin(m = true){
-//     if(m >= 0 && m <= 59){
-//         return true;
-//     }
-// }
-
-// function checkHr(h = true){
-//     if(h >= 0 && h <= 23){
-//         return true;
-//     }
-// }
-
-// код вище, переписаний у вигляді стрілкової функції
-// const addZero = (n=0) => n<10 ? '0'+n : ''+n;
-
-// const nowDate = `${addZero(2)}/${addZero(4)}/2022 ${addZero(4)}:${addZero(23)}`;
