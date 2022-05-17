@@ -1929,13 +1929,17 @@ const drobb = {
 }
 
 function findNzd(ch, zn){
+    let nzd = 0;
+    if(ch < 0){
+        ch = ch * -1;
+    }
     for(let i = Math.min(ch, zn); i > 0; i--){
         if(ch % i === 0 && zn % i === 0){
             nzd = i;
             break;
         }
     }
-    return nzd
+    return nzd;
 }
 
 function additionalMultiplier(commDenom, zn, ch){
@@ -1947,28 +1951,70 @@ function findCommonDenominator(zn1, zn2, nzd){
 }
 
 
-drobb.setValue('value1', 9, 1);
-drobb.setValue('value2', 5, 3);
+
 // drobb.setValue('value1', 1, 2);
 // drobb.setValue('value2', 3, 12);
 // drobb.setValue('value3', 4, 6);
+ 
+function task9(){
+    debugger
+    let ch1 = checkIntValue(document.getElementById('task_9_from').value),
+        zn1 = checkIntValue(document.getElementById('task_10_from').value),
+        ch2 = checkIntValue(document.getElementById('task_11_from').value),
+        zn2 = checkIntValue(document.getElementById('task_12_from').value),
+        type = document.getElementById('type_action').value,
+        rez = {};
+       
+    drobb.setValue('value1', ch1, zn1);
+    drobb.setValue('value2', ch2, zn2);
+ 
+    if(ch1 !== false && ch2 !== false && zn1 !== false && zn2 !== false){
+        switch(type){
+            case 'add_drobb':
+                rez = drobb.addition();
+                break;
+            case 'minus_drobb':
+                rez = drobb.subtraction();
+                break;
+            case 'multiply_drobb':
+                rez = drobb.multiply();
+                break;
+            case 'divide_drobb':
+                rez = drobb.divide();
+                break;
+        }
+    }else{
+        rez = 'Введіть цілі числа';
+    }
 
-console.log('=======multiply========');
+debugger
+    document.getElementById('task_9_result').innerHTML = rez.ch;
+    document.getElementById('task_10_result').innerHTML = rez.zn;
+}
+ 
+function checkIntValue(value){
+    if(value===''){
+        return false
+    }
+    value = parseInt(value)
+    if(isNaN(value) || value < 0){
+        return false
+    }
+    return value;
+}
+ 
 const multip = drobb.multiply();
+console.log('=======multiply========');
 console.log(multip);
-
-console.log('=======divide========');
+ 
 const div = drobb.divide();
+console.log('=======divide========');
 console.log(div);
-
-console.log('=======addition========');
+ 
 const add = drobb.addition();
+console.log('=======addition========');
 console.log(add);
-
-
-console.log('=======subtraction========');
-const sub = drobb.subtraction();
-console.log(sub);
-
+ 
 /////////////////////////////////дроби////////////////////////////////
+
 
