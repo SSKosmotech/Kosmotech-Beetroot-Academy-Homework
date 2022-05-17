@@ -387,7 +387,6 @@ function task9(){
         rez = 'Введіть цілі числа';
     }
 
-debugger
     document.getElementById('task_9_result').innerHTML = rez.ch;
     document.getElementById('task_10_result').innerHTML = rez.zn;
 }
