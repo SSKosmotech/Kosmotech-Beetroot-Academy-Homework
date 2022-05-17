@@ -358,7 +358,6 @@ function findCommonDenominator(zn1, zn2, nzd){
 // drobb.setValue('value3', 4, 6);
  
 function task9(){
-    debugger
     let ch1 = checkIntValue(document.getElementById('task_9_from').value),
         zn1 = checkIntValue(document.getElementById('task_10_from').value),
         ch2 = checkIntValue(document.getElementById('task_11_from').value),
