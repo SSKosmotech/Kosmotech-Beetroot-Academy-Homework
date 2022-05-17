@@ -1879,14 +1879,28 @@ const drobb = {
             commonChislitel = this.value1.ch + this.value2.ch;
             commonDenominator = this.value1.zn;
         }else{
-            for(let i = Math.min(this.value1.zn, this.value2.zn); i > 0; i--){
-                if(this.value1.zn % i === 0 && this.value2.zn % i === 0){
-                    nzd = i;
-                    break;
-                }
-            }
-            commonDenominator = this.value1.zn * this.value2.zn / nzd;
-            commonChislitel = (commonDenominator / this.value1.zn) * this.value1.ch + (commonDenominator / this.value2.zn) * this.value2.ch;
+            nzd = findNzd(this.value1.zn, this.value2.zn);
+            commonDenominator = findCommonDenominator(this.value1.zn, this.value2.zn, nzd);
+            commonChislitel = additionalMultiplier(commonDenominator, this.value1.zn, this.value1.ch) + additionalMultiplier(commonDenominator, this.value2.zn, this.value2.ch);
+        }
+        const result = {
+                ch: commonChislitel,
+                zn: commonDenominator
+            };
+        
+        return this.short(result);
+    },
+    subtraction: function(){
+        let commonDenominator = 0;
+        let commonChislitel = 0;
+        let nzd = 0;
+        if(this.value1.zn==this.value2.zn){
+            commonChislitel = this.value1.ch - this.value2.ch;
+            commonDenominator = this.value1.zn;
+        }else{
+            nzd = findNzd(this.value1.zn, this.value2.zn);
+            commonDenominator = findCommonDenominator(this.value1.zn, this.value2.zn, nzd);
+            commonChislitel = additionalMultiplier(commonDenominator, this.value1.zn, this.value1.ch) - additionalMultiplier(commonDenominator, this.value2.zn, this.value2.ch);
         }
         const result = {
                 ch: commonChislitel,
@@ -1897,13 +1911,9 @@ const drobb = {
     },
     short: function(rez){
         //TODO: знайти найбільший загальний дільник (якщо він є, то ділимо на нього і повертаємо результат)
-        let nzd = 0;
-        for(let i = Math.min(rez.ch, rez.zn); i > 0; i--){
-            if(rez.ch % i === 0 && rez.zn % i === 0){
-                nzd = i;
-                break;
-            }
-        }
+        let nzd = {};
+
+        nzd = findNzd(rez.ch, rez.zn);
 
         // if(rez.ch%rez.zn===0){
         if(nzd !== 0){
@@ -1918,23 +1928,47 @@ const drobb = {
     }
 }
 
-drobb.setValue('value1', 4, 5);
-drobb.setValue('value2', 1, 10);
+function findNzd(ch, zn){
+    for(let i = Math.min(ch, zn); i > 0; i--){
+        if(ch % i === 0 && zn % i === 0){
+            nzd = i;
+            break;
+        }
+    }
+    return nzd
+}
+
+function additionalMultiplier(commDenom, zn, ch){
+    return (commDenom / zn) * ch;
+}
+
+function findCommonDenominator(zn1, zn2, nzd){
+    return zn1 * zn2 / nzd;
+}
+
+
+drobb.setValue('value1', 9, 1);
+drobb.setValue('value2', 5, 3);
 // drobb.setValue('value1', 1, 2);
 // drobb.setValue('value2', 3, 12);
 // drobb.setValue('value3', 4, 6);
 
-const multip = drobb.multiply();
 console.log('=======multiply========');
+const multip = drobb.multiply();
 console.log(multip);
 
-const div = drobb.divide();
 console.log('=======divide========');
+const div = drobb.divide();
 console.log(div);
 
-const add = drobb.addition();
 console.log('=======addition========');
+const add = drobb.addition();
 console.log(add);
+
+
+console.log('=======subtraction========');
+const sub = drobb.subtraction();
+console.log(sub);
 
 /////////////////////////////////дроби////////////////////////////////
 
