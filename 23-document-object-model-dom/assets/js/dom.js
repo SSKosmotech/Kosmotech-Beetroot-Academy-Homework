@@ -358,7 +358,7 @@ button_traffic_light.onclick = function(){
             }else{
                 traffic_circle3.style.background = 'green';
                 traffic_circle2.style.background = '#666';
-                traffic_circle1.style.background = '#666)';
+                traffic_circle1.style.background = '#666';
             }  
 }
 
