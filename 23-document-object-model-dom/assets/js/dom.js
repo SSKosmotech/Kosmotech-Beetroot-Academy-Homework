@@ -349,14 +349,6 @@ appStyle(style.traffic_circle3, traffic_circle3);
 traffic_circle1.style.background = 'red';
 
 button_traffic_light.onclick = function(){
-
-    // for(let i = 0; i < 3; i++){
-      
-
-    // }
-
-    debugger
-
     if(traffic_circle1.style.background === 'red'){
         traffic_circle2.style.background = 'yellow';
         traffic_circle1.style.background = 'rgb(102, 102, 102)';
