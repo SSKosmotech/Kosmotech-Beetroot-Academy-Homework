@@ -351,14 +351,14 @@ traffic_circle1.style.background = 'red';
 button_traffic_light.onclick = function(){
     if(traffic_circle1.style.background === 'red'){
         traffic_circle2.style.background = 'yellow';
-        traffic_circle1.style.background = 'rgb(102, 102, 102)';
+        traffic_circle1.style.background = '#666';
     }else if(traffic_circle3.style.background === 'green'){
                 traffic_circle1.style.background = 'red';  
-                traffic_circle3.style.background = 'rgb(102, 102, 102)';
+                traffic_circle3.style.background = '#666';
             }else{
                 traffic_circle3.style.background = 'green';
-                traffic_circle2.style.background = 'rgb(102, 102, 102)';
-                traffic_circle1.style.background = 'rgb(102, 102, 102)';
+                traffic_circle2.style.background = '#666';
+                traffic_circle1.style.background = '#666)';
             }  
 }
 
