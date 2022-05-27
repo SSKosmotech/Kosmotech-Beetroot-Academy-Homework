@@ -185,7 +185,7 @@ const style = {
 	    border: '6px solid #000',
 	    margin: 'auto'
     },
-    traffic_circle: {
+    traffic_circle1: {
         background:'#666',
         width: '120px',
         height: '120px',
@@ -193,6 +193,27 @@ const style = {
         marginLeft: '10px',
         marginTop: '20px',
         lineHeight: '120px',
+        transition: 'all 0.2s ease'
+    },
+    traffic_circle2: {
+        background:'#666',
+        width: '120px',
+        height: '120px',
+        borderRadius: '50%',
+        marginLeft: '10px',
+        marginTop: '20px',
+        lineHeight: '120px',
+        transition: 'all 0.2s ease'
+    },
+    traffic_circle3: {
+        background:'#666',
+        width: '120px',
+        height: '120px',
+        borderRadius: '50%',
+        marginLeft: '10px',
+        marginTop: '20px',
+        lineHeight: '120px',
+        transition: 'all 0.2s ease'
     }
 };
 
@@ -308,33 +329,80 @@ button_traffic_light.setAttribute('type', 'button');
 button_traffic_light.innerText = 'Chancge Traffic Light';
 
 
-
 const traffic_wrapper = document.createElement('div');
-const traffic_circle = document.createElement('div');
+const traffic_circle1 = document.createElement('div');
+const traffic_circle2 = document.createElement('div');
+const traffic_circle3 = document.createElement('div');
 
 
 appStyle(style.button_traffic_light, button_traffic_light);
 appStyle(style.traffic_wrapper, traffic_wrapper);
-appStyle(style.traffic_circle, traffic_circle);
+appStyle(style.traffic_circle1, traffic_circle1);
+appStyle(style.traffic_circle2, traffic_circle2);
+appStyle(style.traffic_circle3, traffic_circle3);
 
-for(i=0; i < 3; i++ ){
-    let circle_clone = traffic_circle.cloneNode(true);
-    traffic_wrapper.append(circle_clone);
 
-}
+// button_traffic_light.onclick = function(){
+//     // if(traffic_circle.style.background === '#666'){
+//     // }
+//     // debugger
+//     if(traffic_circle2.style.background === 'rgb(102, 102, 102)' && traffic_circle3.style.background === 'rgb(102, 102, 102)'){
+//         traffic_circle.style.background = '#f00';
+//     }else{
+//         if(traffic_circle.style.background === 'rgb(102, 102, 102)' && traffic_circle3.style.background === 'rgb(102, 102, 102)'){
+//             traffic_circle2.style.background = '#ff0';
+//             traffic_circle.style.background = '#666';
+//             traffic_circle3.style.background = '#666';
+//         }else{
+//             traffic_circle3.style.background = '#0f0';
+//             traffic_circle.style.background = '#666';
+//             traffic_circle2.style.background = '#666';   
+//         }
+//     }
+// }
+
+// traffic_circle1.classList.toggle("red_color");
+// traffic_circle2.classList.add("yellow_color");
+// traffic_circle3.classList.add("green_color");
+
+traffic_circle1.style.background = 'red';
 
 button_traffic_light.onclick = function(){
-    // if(traffic_circle.style.background === '#666'){
+
+    // for(let i = 0; i < 3; i++){
+      
+
     // }
-    style.traffic_circle.push('#fff');
+
+    debugger
+
+    if(traffic_circle1.style.background === 'red'){
+        traffic_circle2.style.background = 'yellow';
+        traffic_circle1.style.background = 'rgb(102, 102, 102)';
+    }else if(traffic_circle3.style.background === 'green'){
+                traffic_circle1.style.background = 'red';  
+                traffic_circle3.style.background = 'rgb(102, 102, 102)';
+            }else{
+                traffic_circle3.style.background = 'green';
+                traffic_circle2.style.background = 'rgb(102, 102, 102)';
+                traffic_circle1.style.background = 'rgb(102, 102, 102)';
+            }  
 }
+
+traffic_wrapper.append(traffic_circle1);
+traffic_wrapper.append(traffic_circle2);
+traffic_wrapper.append(traffic_circle3);
+
+
+// for(i=0; i < 3; i++ ){
+//     let circle_clone = traffic_circle1.cloneNode(true);
+//     traffic_wrapper.append(circle_clone);
+// }
+
+
 
 
 
 const wrap_traffic_light = document.querySelector('#traffic_light');
 wrap_traffic_light.append(button_traffic_light);
 wrap_traffic_light.append(traffic_wrapper);
-
-
-
-
