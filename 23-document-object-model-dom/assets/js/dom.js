@@ -342,25 +342,6 @@ appStyle(style.traffic_circle2, traffic_circle2);
 appStyle(style.traffic_circle3, traffic_circle3);
 
 
-// button_traffic_light.onclick = function(){
-//     // if(traffic_circle.style.background === '#666'){
-//     // }
-//     // debugger
-//     if(traffic_circle2.style.background === 'rgb(102, 102, 102)' && traffic_circle3.style.background === 'rgb(102, 102, 102)'){
-//         traffic_circle.style.background = '#f00';
-//     }else{
-//         if(traffic_circle.style.background === 'rgb(102, 102, 102)' && traffic_circle3.style.background === 'rgb(102, 102, 102)'){
-//             traffic_circle2.style.background = '#ff0';
-//             traffic_circle.style.background = '#666';
-//             traffic_circle3.style.background = '#666';
-//         }else{
-//             traffic_circle3.style.background = '#0f0';
-//             traffic_circle.style.background = '#666';
-//             traffic_circle2.style.background = '#666';   
-//         }
-//     }
-// }
-
 // traffic_circle1.classList.toggle("red_color");
 // traffic_circle2.classList.add("yellow_color");
 // traffic_circle3.classList.add("green_color");
