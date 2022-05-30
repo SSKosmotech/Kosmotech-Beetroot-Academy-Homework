@@ -27,25 +27,23 @@ document.addEventListener('keydown', function(e){
         e.preventDefault();
         div_edit.style.display = "none";
         text_area.style.display = "block";
-    }
-})
-
-document.addEventListener('keydown', function(e){
+    };
     if(e.ctrlKey && e.code === "KeyS"){
         e.preventDefault();
         let some_text = document.querySelector(".get_text").value;
-        div_edit.innerText = some_text;
+        div_edit.textContent = some_text;
         div_edit.style.display = "block";
         text_area.style.display = "none";
-    }
+        div_edit.appendChild(resize_point);
+    };
 })
-
 
 
 // <<================================================================>>
 // 2. Створити HTML-сторінку з великою таблицею. При кліку на заголовок стовпця, необхідно відсортувати дані цього стовпця. Врахуй, що числові значення повинні сортуватися як числа, а не як рядки.
 
-const table_sort = document.createElement('table');
+const my_table = document.createElement('table');
+my_table.setAttribute('id', 'myTable');
 const table_thead_sort = document.createElement('thead');
 table_thead_sort.setAttribute('id', 'table_head');
 const table_tbody_sort = document.createElement('tbody');
@@ -56,9 +54,10 @@ table_tbody_sort.setAttribute('id', 'table_body');
 
 // table_tr_sort.append(table_th_sort);
 // table_thead_sort.append(table_tr_sort);
-table_sort.append(table_thead_sort);
-table_sort.append(table_tbody_sort);
-document.getElementById('table').append(table_sort);
+my_table.append(table_thead_sort);
+my_table.append(table_tbody_sort);
+document.getElementById('div_table').append(my_table);
+
 
 // document.querySelector('th') = 'test';
 
@@ -72,6 +71,11 @@ const DATA = [
         name: 'Airi Satou',
         age: 33,
         startDate: '28.11.2009'
+    },
+    {
+        name: 'Bob Dou',
+        age: 29,
+        startDate: '15.10.2008'
     },
     {
         name: 'Michelle House',
@@ -96,14 +100,26 @@ const DATA = [
 ];
 
 
+document.addEventListener('click', function(event){
+    if(event.target.classList.contains("name")){
+        console.log('click name');
+        sortTable(0);
+    }else if(event.target.classList.contains("age")){
+        console.log('click age');
+        sortTable(1);
+    }else if(event.target.classList.contains("start_date")){
+        console.log('click start_date');
+        sortTable(2);
+}
+});
 
 function viewHeaderTable(){
     let html = '';
         html = `
             <tr>
-                <th class="name">| Name </th>
-                <th class="age">| Age </th>
-                <th class="start_date">| Start date</th>
+                <th class="name">Name </th>
+                <th class="age">Age </th>
+                <th class="start_date">Start date</th>
             </tr>
         `
     document.getElementById('table_head').innerHTML = html;
@@ -114,9 +130,9 @@ function viewBodyTable(){
     DATA.forEach(element =>{
         html += `
         <tr>
-            <td>| ${element.name}</td>
-            <td>| ${element.age}</td>
-            <td>| ${element.startDate}</td>
+            <td>${element.name}</td>
+            <td>${element.age}</td>
+            <td>${element.startDate}</td>
         </tr>
     `
     })
@@ -126,48 +142,165 @@ function viewBodyTable(){
 viewHeaderTable();
 viewBodyTable();
 
-document.addEventListener('click', function(event){
-            // debugger
-    // if(event.target.nodeName === "TH"){
-    if(event.target.classList.contains("age")){
-        console.log('click age');
-        sort_number();
-    }else if(event.target.classList.contains("name")){
-        console.log('click name');
-        sort_text();
-    }else if(event.target.classList.contains("start_date")){
-        console.log('click start_date');
-        // sort_text();
-        sort_date();
+function sortTable(n) {
+    let table, 
+        rows, 
+        switching, 
+        i, 
+        x, 
+        y, 
+        shouldSwitch, 
+        dir, 
+        switchcount = 0;
+    table = document.getElementById("myTable");
+    switching = true;
+    //Set the sorting direction to ascending:
+    dir = "asc"; 
+    /*Make a loop that will continue until
+    no switching has been done:*/
+    while (switching) {
+      //start by saying: no switching is done:
+      switching = false;
+      rows = table.rows;
+      /*Loop through all table rows (except the
+      first, which contains table headers):*/
+      for (i = 1; i < (rows.length - 1); i++) {
+        //start by saying there should be no switching:
+        shouldSwitch = false;
+        /*Get the two elements you want to compare,
+        one from current row and one from the next:*/
+        x = rows[i].getElementsByTagName("TD")[n];
+        y = rows[i + 1].getElementsByTagName("TD")[n];
+ 
+
+        /*check if the two rows should switch place,
+        based on the direction, asc or desc:*/
+        if (dir == "asc") {
+            if (x.innerText.toLowerCase() > y.innerText.toLowerCase()) {
+            //if (x.innerText.split('.') > y.innerText.split('.')) {
+            // if (Number(x.innerText) > Number(y.innerText)) {
+            //if so, mark as a switch and break the loop:
+            shouldSwitch= true;
+            break;
+          }
+        } else if (dir == "desc") {
+              if (x.innerText.toLowerCase() < y.innerText.toLowerCase()) {
+            //if (x.innerText.split('.') < y.innerText.split('.')) {
+            // if (Number(x.innerText) < Number(y.innerText)) {
+            //if so, mark as a switch and break the loop:
+            shouldSwitch = true;
+            break;
+          }
+        }
+      }
+      if (shouldSwitch) {
+        /*If a switch has been marked, make the switch
+        and mark that a switch has been done:*/
+        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+        switching = true;
+        //Each time a switch is done, increase this count by 1:
+        switchcount ++;      
+      } else {
+        /*If no switching has been done AND the direction is "asc",
+        set the direction to "desc" and run the while loop again.*/
+        if (switchcount == 0 && dir == "asc") {
+          dir = "desc";
+          switching = true;
+        }
+      }
     }
-    viewBodyTable();
-    
-});
+  }
 
-document.addEventListener('mouseover', function(event){
-    if(event.target.nodeName === "TH"){
-        // console.log('mouseover TH');
-        event.target.style.cursor = 'pointer';
-    }
-});
 
-function sort_number(){
-    return DATA.sort((a, b) => Number(a.age) - Number(b.age));
-    // rez = DATA.sort((a, b) => Number(b.age) - Number(a.age));
-    // rez = DATA.sort((a, b) => Number(a.age) - Number(b.age));
-};
+//   function convertDate(d) {
+//     var p = d.toString().split(".");
+//     return +(p[2]+p[1]+p[0]);
+//   }
 
-function sort_text(){
-    return DATA.sort((a,b)=>a.name.localeCompare(b.name));
-};
+// function sort_date(){
+//     DATA.sort(function (a, b) {
+//         a = a.startDate.split('.');
+//         b = b.startDate.split('.');
+//         return a[2] - b[2] || a[1] - b[1] || a[0] - b[0];
+//     });
+// };
 
-function sort_date(){
-    DATA.sort(function (a, b) {
-        a = a.startDate.split('.');
-        b = b.startDate.split('.');
-        return a[2] - b[2] || a[1] - b[1] || a[0] - b[0];
-    });
-};
+
+
+// document.addEventListener('click', function(event){
+//     // debugger
+// // if(event.target.nodeName === "TH"){
+// if(event.target.classList.contains("age")){
+// console.log('click age');
+// sort_number();
+// }else if(event.target.classList.contains("name")){
+// console.log('click name');
+// sort_text();
+// }else if(event.target.classList.contains("start_date")){
+// console.log('click start_date');
+// // sort_text();
+// sort_date();
+// }
+
+// viewBodyTable();
+
+// });
+
+// function viewHeaderTable(){
+//     let html = '';
+//         html = `
+//             <tr>
+//                 <th class="name">| Name </th>
+//                 <th class="age">| Age </th>
+//                 <th class="start_date">| Start date</th>
+//             </tr>
+//         `
+//     document.getElementById('table_head').innerHTML = html;
+// }
+
+// function viewBodyTable(){
+//     let html = '';
+//     DATA.forEach(element =>{
+//         html += `
+//         <tr>
+//             <td>| ${element.name}</td>
+//             <td>| ${element.age}</td>
+//             <td>| ${element.startDate}</td>
+//         </tr>
+//     `
+//     })
+//     document.getElementById('table_body').innerHTML = html; 
+// }
+
+// viewHeaderTable();
+// viewBodyTable();
+
+
+
+// document.addEventListener('mouseover', function(event){
+//     if(event.target.nodeName === "TH"){
+//         // console.log('mouseover TH');
+//         event.target.style.cursor = 'pointer';
+//     }
+// });
+
+// function sort_number(){
+//     return DATA.sort((a, b) => Number(a.age) - Number(b.age));
+//     // rez = DATA.sort((a, b) => Number(b.age) - Number(a.age));
+//     // rez = DATA.sort((a, b) => Number(a.age) - Number(b.age));
+// };
+
+// function sort_text(){
+//     return DATA.sort((a,b)=>a.name.localeCompare(b.name));
+// };
+
+// function sort_date(){
+//     DATA.sort(function (a, b) {
+//         a = a.startDate.split('.');
+//         b = b.startDate.split('.');
+//         return a[2] - b[2] || a[1] - b[1] || a[0] - b[0];
+//     });
+// };
 
 
 // <<================================================================>>
