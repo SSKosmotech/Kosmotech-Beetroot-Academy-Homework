@@ -65,37 +65,37 @@ const DATA = [
     {
         name: 'Zorita Serrano',
         age: 30,
-        startDate: '01.06.2012'
+        startDate: '01/06/2012'
     },
     {
         name: 'Airi Satou',
         age: 33,
-        startDate: '28.11.2009'
+        startDate: '28/11/2009'
     },
     {
         name: 'Bob Dou',
         age: 29,
-        startDate: '15.10.2008'
+        startDate: '15/10/2008'
     },
     {
         name: 'Michelle House',
         age: 37,
-        startDate: '02.05.2011'
+        startDate: '02/05/2011'
     },
     {
         name: 'Yuri Berry',
         age: 40,
-        startDate: '25.06.2009'
+        startDate: '25/06/2009'
     },
     {
         name: 'Jennifer Chang',
         age: 28,
-        startDate: '14.11.2010'
+        startDate: '14/11/2010'
     },
     {
         name: 'Shou Itou',
         age: 20,
-        startDate: '14.08.2011'
+        startDate: '14/08/2011'
     }
 ];
 
@@ -169,14 +169,18 @@ function sortTable(n) {
         shouldSwitch = false;
         /*Get the two elements you want to compare,
         one from current row and one from the next:*/
-        x = rows[i].getElementsByTagName("TD")[n];
-        y = rows[i + 1].getElementsByTagName("TD")[n];
- 
 
+        // x = rows[i].getElementsByTagName("TD")[n];
+        x = rows[i].getElementsByTagName("TD")[n].innerText.split('/').reverse().join('/ ');
+        // y = rows[i + 1].getElementsByTagName("TD")[n];
+        y = rows[i + 1].getElementsByTagName("TD")[n].innerText.split('/').reverse().join('/ ');
+      
         /*check if the two rows should switch place,
         based on the direction, asc or desc:*/
         if (dir == "asc") {
-            if (x.innerText.toLowerCase() > y.innerText.toLowerCase()) {
+            if (x > y) {
+            // if (parseInt(x.innerHtml) > parseInt(y.innerHtml)) {
+            // if (x.innerText.toLowerCase() > y.innerText.toLowerCase()) {
             //if (x.innerText.split('.') > y.innerText.split('.')) {
             // if (Number(x.innerText) > Number(y.innerText)) {
             //if so, mark as a switch and break the loop:
@@ -184,7 +188,10 @@ function sortTable(n) {
             break;
           }
         } else if (dir == "desc") {
-              if (x.innerText.toLowerCase() < y.innerText.toLowerCase()) {
+            if (x < y) {
+            // if (parseInt(x.innerHtml) < parseInt(y.innerHtml)) {
+            // if (parseInt(x.innerHtml) < parseInt(y.innerHtml)) {
+            //   if (x.innerText.toLowerCase() < y.innerText.toLowerCase()) {
             //if (x.innerText.split('.') < y.innerText.split('.')) {
             // if (Number(x.innerText) < Number(y.innerText)) {
             //if so, mark as a switch and break the loop:
@@ -224,9 +231,6 @@ function sortTable(n) {
 //         return a[2] - b[2] || a[1] - b[1] || a[0] - b[0];
 //     });
 // };
-
-
-
 // document.addEventListener('click', function(event){
 //     // debugger
 // // if(event.target.nodeName === "TH"){
@@ -338,5 +342,3 @@ function stopResize(e){
     document.removeEventListener('mouseup', stopResize);
 
 }
-
-
