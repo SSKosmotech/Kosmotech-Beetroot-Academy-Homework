@@ -1,0 +1,41 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #212534;
+  font-family: "Mulish", sans-serif;
+  color: #111111;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  vertical-align: top;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  background-image: url(../images/bck_image_jquery.jpg);
+  width: 1000px;
+  overflow: hidden;
+  opacity: 0.2;
+  margin: 0 auto;
+  margin-top: 82px;
+}

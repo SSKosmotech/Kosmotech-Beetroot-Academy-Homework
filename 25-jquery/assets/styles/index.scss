@@ -1,0 +1,40 @@
+$font_family: 'Mulish', sans-serif;
+$text_color: #111111;
+$font_size: 1rem;
+$line_height: 1.625rem;
+$background_color: #212534;
+
+@import 'parts/reset';
+
+body {
+    background-color: $background_color;
+    font-family: $font_family;
+    color: $text_color;
+    font-size: $font_size;
+    // font-weight: 400;
+    line-height:$line_height;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    vertical-align: top;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    background-image: url(../images/bck_image_jquery.jpg);
+    width: 1000px;
+    // height: 860px;
+    overflow: hidden;
+    opacity: 0.2;
+    margin: 0 auto;
+    margin-top: 82px;
+}
