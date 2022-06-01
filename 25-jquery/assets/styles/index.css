@@ -40,7 +40,16 @@ img {
   margin-top: 82px;
   position: relative;
   border: 1px solid red;
-  background-image: url("../images/bck_image_jquery.jpg");
+}
+.wrapper:before {
+  content: " ";
+  background: url("../images/bck_image_jquery.jpg");
+  opacity: 0.2;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
 }
 
 .icon {
