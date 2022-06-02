@@ -16,21 +16,29 @@
 </head>
 
 <body>
-
     <div class="wrapper">
 
         <header id="header">
             <div class="container">
+
+                <div class="hamb_menu">
+                    <button class="hamburger hamburger--spin" type="button">
+                        <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+
                 <div class="tab">
-                    <div class="tab_button">
+                    <div class="tab_button active" id="tab_button_1">
                         <i class="icon icon-info-icon"></i>
                         <button class="tablinks">Information</button>
                     </div>
-                    <div class="tab_button">
+                    <div class="tab_button" id="tab_button_2">
                         <i class="icon icon-spades-icon"></i>
                         <button class="tablinks">Ratings Info</button>
                     </div>
-                    <div class="tab_button">
+                    <div class="tab_button" id="tab_button_3">
                         <i class="icon icon-bag-icon"></i>
                         <button class="tablinks">Where to buy</button>
                     </div>
@@ -39,7 +47,7 @@
         </header>
 
         <main>
-            <div class="container">
+            <div class="container tab_content show">
                 <div class="about_game_block flex_row">
 
                     <div class="rating_block">
@@ -62,7 +70,10 @@
                             </div>
 
                             <div class="game_name_donut">
-                                <span class="icon-star-icon"></span>
+                                <!-- <span class="icon-star-icon"></span> -->
+                                <span class="chart" data-percent="87">
+                                    <span class="percent">8.7</span>
+                                  </span>
 
                             </div>
 
@@ -70,7 +81,14 @@
 
                         <div class="game_about">
                             <p>
-                                Far Cry 6 is a 2021 action-adventure first-person shooter game developed by Ubisoft Toronto. It is the sixth main installment in the Far Cry series and the successor Far Cry 5.
+                                Far Cry 6 is a 2021 action-adventure first-
+                                <br>
+                                person shooter game developed by Ubisoft
+                                <br>
+                                Toronto. It is the sixth main installment in the
+                                <br>
+                                Far Cry series and the successor Far Cry 5.
+
                             </p>
                         </div>
 
@@ -90,6 +108,21 @@
         
             </div>
 
+            <div class="container tab_content">
+                <div class="about_game_block">
+                    <h2>Rating Information</h2>
+                    <p>8.7 stars</p>
+                </div>
+            </div>
+
+            <div class="container tab_content">
+                <div class="about_game_block">
+                    <h2>Where to Buy</h2>
+                    <p>$59.96</p>
+                </div>
+
+            </div>
+
         </main>
 
     </div>
@@ -99,5 +132,7 @@
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/jquery.star-rating-svg.js"></script>
+<script src="assets/js/easypiechart.js"></script>
+<script src="assets/js/jquery.easypiechart.js"></script>
 </body>
 </html>

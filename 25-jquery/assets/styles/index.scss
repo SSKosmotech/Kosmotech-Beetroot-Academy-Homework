@@ -5,6 +5,7 @@ $line_height: 1.375rem;
 $background_color: #212534;
 
 @import 'parts/reset';
+@import 'hamburger';
 
 body {
     background-color: $background_color;
@@ -34,12 +35,13 @@ img {
 .wrapper {
     max-width: 1000px;
     width: 100%;
-    height: 860px;
+    // max-height: 860px;
+    // height: 100%;
     overflow: hidden;
     margin: 0 auto;
-    margin-top: 82px;
     position: relative;
-    border: 1px solid red;
+    margin-top: 82px;
+    margin-bottom: 79px;
     // background-color: rgba(255, 255, 255, 0.2);
     &:before {
         content: ' ';
@@ -50,6 +52,8 @@ img {
         width: 100%;
         height: 100%;
         z-index: -100;
+        max-height: 860px;
+        height: 100%;
         // left: 0;
         // top: 0;
         // z-index: 1;
@@ -61,27 +65,55 @@ img {
     }
 }
 
-.icon {
-    font-size: 1.375rem;
-    margin-bottom: 15px;
+.tab_content {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.active {
+    display: block;
+    .tablinks{
+        color: #fff; 
+    }
+     .icon:before {
+        color: #fff;
+    }
 }
 
 .tab {
     display: flex;
     background-color: #2B3040;
     justify-content: center;
-    padding: 30px 0;
+    padding: 28px 0;
     margin-top: 154px;
     &_button {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-right: 55px;
+        padding-right: 75px;
         &:last-child {
             padding-right: 0;
         }
     }
+}
+
+.tab_button {
+    &:hover .tablinks{
+       color: #fff; 
+    }
+    &:hover .icon:before {
+        color: #fff;
+    }
+}
+
+
+.icon {
+    font-size: 1.395rem;
+    margin-bottom: 15px;
 }
 
 .tablinks {
@@ -93,10 +125,13 @@ img {
     text-transform: uppercase;
 }
 
+
+
 .about_game_block {
     background-color: #212534;
-    padding: 60px 40px;
+    padding: 58px 40px;
     flex-direction: row;
+    margin-bottom: 157px;
 }
 
 .rating_block {
@@ -136,7 +171,6 @@ h1 {
 
 .game_about{
     & p {
-
         margin-bottom: 50px;
     }
 }
@@ -164,8 +198,9 @@ h1 {
     line-height: 1.25rem;
     font-size: 1rem;
     border-radius: 2px;
-    background: #13E28D; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-    border: none;
+    background: #13E28D;
+    // border: none;
+    border: 2px solid transparent;
     // border: 2px solid transparent;
     &:hover {
         background: #2B3040;
@@ -173,8 +208,24 @@ h1 {
     }
     &:focus {
         outline: none;
-        border: 2px solid #FF6363;
+        border: 2px solid crimson;
     }
 }
 
+.chart {
+    position: relative;
+    // overflow: visible;
+}
+
+.percent {
+    font-size: 1.25rem;
+    position: absolute;
+    top: -35px;
+    left: 24px;
+    // line-height: 1.375rem;
+}
+
+.hamb_menu {
+    display: none;
+}
 

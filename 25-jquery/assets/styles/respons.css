@@ -1,5 +1,61 @@
-@media screen and (max-width: 1060px) {
-  
+@media screen and (max-width: 580px) {
+  .flex_row {
+    flex-direction: column;
+    align-items: center;
   }
 
- 
+  .wrapper {
+    margin-bottom: 250px;
+  }
+
+  .my_star {
+    margin-bottom: 50px;
+  }
+
+  .about_game_block {
+    padding-top: 40px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  h1 + p {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .game_name_donut {
+    margin-bottom: 50px;
+  }
+
+  .game_about p {
+    font-size: 1.25rem;
+    margin-bottom: 50px;
+  }
+
+  .wrapper {
+    margin-top: 0px;
+    overflow: visible;
+  }
+  .wrapper:before {
+    display: none;
+  }
+
+  .game_pricing_price {
+    margin-bottom: 20px;
+  }
+
+  .tab_content {
+    display: block;
+  }
+
+  .tab {
+    display: none;
+  }
+
+  .hamb_menu {
+    display: block;
+  }
+}
