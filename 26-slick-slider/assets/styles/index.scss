@@ -1,0 +1,232 @@
+// $font_family: Gilroy, sans-serif;
+$text_color: #070707;
+$font_size: 1.125rem;
+$line_height: 1.5625rem;
+$background_color_white: #fff;
+
+@import 'parts/reset';
+
+@font-face {
+    font-family: Gilroy, sans-serif;
+    src: url(../fonts/Gilroy-Regular.woff2) format("woff2"),
+    url(../fonts/Gilroy-Bold.woff2) format("woff2"),
+    url(../fonts/Gilroy-Regular.woff) format("woff"),
+    url(../fonts/Gilroy-Bold.woff) format("woff");
+}
+
+body {
+    background-color: $background_color_white;
+    font-family: Gilroy, sans-serif;
+    color: $text_color;
+    font-size: $font_size;
+    // font-weight: 400;
+    line-height:$line_height;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.container {
+    width: 90%;
+    max-width: 940px;
+    margin: 0 auto;
+    &--shadow {
+        border-bottom: 1px solid #828282;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5)); 
+    }
+    &__image {
+        width: 167px;
+        height: 223px;
+        margin: 0 30px;
+    }
+    &__h1 {
+        font-size: 47.3392px;
+        line-height: 64px;
+    }
+    &__h1--margin_bottom {
+        margin-bottom: 25px;
+    }
+    &__h2 {
+        text-align: center;
+        font-size: 34px;
+        line-height: 46px;
+        font-weight: 700;
+        &--xs {
+            margin-bottom: 21px;
+        }
+        &--s {
+            margin-bottom: 28px;
+        }
+        &--l {
+            margin-bottom: 44px;
+        }
+        &--xl {
+            margin-bottom: 67px;
+        }
+    }
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    background-color: $background_color_white;
+    // height: 175px;
+}
+
+main {
+    margin-top: 75px;
+}
+
+.main-menu {
+    &__ul {
+        text-align: center;
+        list-style: none;
+        &--padding {
+            padding: 30px 0;
+        }
+    }
+    &__li {
+        display: inline-block;
+        &--margin {
+            margin: 0 20px;
+        }
+    }
+    &__a {
+        font-size: 18px;
+        line-height: 25px;
+        color: #828282;
+        text-decoration: none;
+    }
+    &__a:hover {
+        color: $text_color;
+    }
+    &__a.active {
+        color: $text_color;
+    }
+}
+
+.section {
+    &--padding {
+        padding: 100px 0;
+    }
+    &--white {
+        background-color: $background_color_white;
+    }
+    &--padding_top {
+        padding-top: 33px;
+    }
+    &--gray {
+        background-color: #F6F6F6;
+    }
+}
+
+.footer--padding {
+    padding: 100px 0;
+}
+
+.content__p {
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    margin: 0 auto;
+    &--margin_bottom_s {
+        margin-bottom: 47px;
+    }
+    &--margin_bottom_l {
+        margin-bottom: 78px;
+    }
+    &--footer_changes {
+        max-width: 275px;
+        margin-bottom: 78px;
+    }
+}
+
+.portfolio-assets {
+    text-align: center;
+    &__img--margin_bottom {
+        margin-bottom: 15px;
+    }
+    &__a {
+        color: $text_color;
+    }
+    &__a:hover {
+        text-decoration: none;
+    }
+}
+
+.center-button, 
+.contacts-images {
+    text-align: center;
+}
+
+.portfolio--margin_bottom {
+    margin-bottom: 130px;
+}
+
+.portfolio:last-of-type {
+    margin-bottom: 0;
+}
+
+.contacts-images__img {
+    width: 40px;
+    height: 40px;
+    margin: 0 30px;
+    margin-bottom: 44px;
+}
+
+ /* .button_style {
+    color: #F6F6F6;
+    background-color: #000;
+    font-size: 18px;
+    width: 180px;
+    height: 42px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 37px;
+} */
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #333;
+    height: 42px;
+    line-height: 38px;
+    border: 2px solid #333;
+    padding: 0 20px;
+    /* border: 0; */
+    text-decoration: none;
+    border-radius: 21px;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    font-family: Gilroy, Arial, Helvetica, sans-serif;
+    margin-bottom: 37px;
+    &:hover {
+        background-color: $background_color_white;
+        color: #333;
+    }
+}
+
+.footer-text__p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 19px;
+    width: 100%;
+    max-width: 243px;
+    margin: 0 auto;
+    font-weight: 400;
+    color: #828282;
+}
+
+.hamb_menu {
+    display: none;
+}
