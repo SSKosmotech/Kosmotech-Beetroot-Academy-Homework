@@ -1,0 +1,1 @@
+"use strict";$(function(){$(".main_slider").slick({infinite:!0,dots:!0,lazyLoad:"progressive"}),$(".product_slider").slick({slidesToShow:5,slidesToScroll:1,centerMode:!0,arrows:!0,dots:!1,speed:300,centerPadding:"20px",infinite:!0,autoplaySpeed:5e3,autoplay:!0})});

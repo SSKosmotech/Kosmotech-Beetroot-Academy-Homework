@@ -8,110 +8,204 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="assets/styles/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/styles/slick-theme.css"/>
 
     <link rel="stylesheet" href="assets/styles/index.min.css">
     <link rel="stylesheet" href="assets/styles/respons.min.css">
 </head>
 
 <body>
+    <div class="wrap">
+        <header class="header">
+                <div class="container">
+                    <div class="header_logo">
+                        <img src="assets/images/OnWave_header_logo.svg" alt="Header Logo">
+                    </div>
+                    <nav class="main_menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Catalog</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>     
+                    </nav>
+                    <div class="wrap_profiles">
+                        <div class="search_foto">
+                            <svg viewbox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M36 34.1172L25.944 24.0611C28.3605 21.1601 29.5655 17.439 29.3084 13.6721C29.0513 9.90519 27.3518 6.38241 24.5635 3.83662C21.7751 1.29083 18.1127 -0.0819787 14.338 0.00378988C10.5633 0.0895584 6.96692 1.6273 4.29711 4.29711C1.6273 6.96692 0.0895584 10.5633 0.00378988 14.338C-0.0819787 18.1127 1.29083 21.7751 3.83662 24.5635C6.38241 27.3518 9.90519 29.0513 13.6721 29.3084C17.439 29.5655 21.1601 28.3605 24.0611 25.944L34.1172 36L36 34.1172ZM2.71076 14.6949C2.71076 12.3246 3.41361 10.0076 4.73045 8.03686C6.04728 6.06608 7.91894 4.53004 10.1088 3.62299C12.2986 2.71594 14.7082 2.47862 17.0329 2.94103C19.3576 3.40344 21.4929 4.54482 23.1689 6.22083C24.845 7.89684 25.9863 10.0322 26.4487 12.3569C26.9112 14.6816 26.6738 17.0912 25.7668 19.281C24.8597 21.4708 23.3237 23.3425 21.3529 24.6593C19.3821 25.9762 17.0651 26.679 14.6949 26.679C11.5176 26.6755 8.47142 25.4117 6.22472 23.1651C3.97802 20.9184 2.71428 17.8722 2.71076 14.6949Z"/>
+                                </svg>
+                        </div>
+                        <div class="contact_profile">
+                            <svg viewbox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 1C9.0586 1 1 9.0586 1 19C1 28.9414 9.0586 37 19 37C28.9414 37 37 28.9414 37 19C37 9.0586 28.9414 1 19 1Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5 30C5 30 9.03726 24.9286 18.9991 24.9286C28.9609 24.9286 33 30 33 30H5ZM18.9991 18.6917C20.4402 18.6917 21.8223 18.1285 22.8413 17.126C23.8603 16.1234 24.4328 14.7637 24.4328 13.3459C24.4328 11.9281 23.8603 10.5683 22.8413 9.56577C21.8223 8.56322 20.4402 8 18.9991 8C17.558 8 16.1759 8.56322 15.1569 9.56577C14.1378 10.5683 13.5654 11.9281 13.5654 13.3459C13.5654 14.7637 14.1378 16.1234 15.1569 17.126C16.1759 18.1285 17.558 18.6917 18.9991 18.6917V18.6917Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- <div class="hamb_menu">
+                        hamb_menu
+                    </div> -->
+                </div>
+        </header>
 
-    <header class="header">
-        <div class="container ">
-            <div class="header_logo">
-                <img src="assets/images/OnWave_header_logo.png" alt="Header Logo">
-            </div>
-            <nav class="main_menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Catalog</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Contacts</a></li>
-                </ul>     
-            </nav>
-            <div class="search">
-                <img src="" alt="">
-            </div>
-            <div class="contact_avatar">
-                <img src="" alt="">
-            </div>
-            <!-- <div class="hamb_menu">
-                hamb_menu
-            </div> -->
-        </div>
-    </header>
+        <main>
+        
+            <section>
+                <div class="container">
 
-<main>
+                        <div class="main_slider">
+                            <div class="slider_item" style="background-image: url('assets/images/slider-find-your-own-style.jpg');">
+                                <h1>find your<br>own style</h1>
+                                <button type="button" class="btn btn_white">View more</button>
+                            </div>
+                            <div class="slider_item" style="background-image: url('assets/images/slider-expand-your-horizons.jpg');">
+                                <h1>expand your<br>horizons</h1>
+                                <button type="button" class="btn btn_white">View more</button>
+                            </div>
+                            <div class="slider_item" style="background-image: url('assets/images/slider-discover-new-options.jpg');">
+                                <h1>discover<br>new options</h1>
+                                <button type="button" class="btn btn_white">View more</button>
+                            </div>
+                        </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <h2>new arrivals</h2>
+
+                    <div class="product_slider">
+
+                        <div class="product_slider_content">                          
+                            <p class="label">in stock</p>
+                            <div class="slider_img">
+                                <img src="assets/images/guitar_photo_01.png" alt="Guitar_Photo 01">
+                            </div>
+                            <p class="name">Hagstrom Alvar Limited Edition</p>
+                            <p class="price">€2.990,00</p>
+                        </div>
+                        <div class="product_slider_content">
+                            <p class="label">in stock</p>
+                            <div class="slider_img">
+                                <img src="assets/images/guitar_photo_02.png" alt="Guitar_Photo 02">
+                            </div>
+                            <p class="name">Hagstrom Tremar Viking Deluxe Cloudy Seas</p>
+                            <p class="price">€1.300,00</p>
+                        </div>
+                        <div class="product_slider_content">
+                            <p class="label sold">Sold</p>
+                            <div class="slider_img">
+                                <img src="assets/images/guitar_photo_03.png" alt="Guitar_Photo 03">
+                            </div>                            
+                            <p class="name">Gibson Les Paul Standard 60s</p>
+                            <p class="price">€3.749,00</p>
+                        </div>
+                        <div class="product_slider_content">
+                            <p class="label">in stock</p>
+                            <div class="slider_img">
+                                <img src="assets/images/guitar_photo_04.png" alt="Guitar_Photo 04">
+                            </div>
+                            <p class="name">Suhr Standard Plus Trans Blue Denim</p>
+                            <p class="price">€3.449,00</p>
+                        </div>
+                        <div class="product_slider_content">
+                            <p class="label">in stock</p>
+                            <div class="slider_img">
+                                <img src="assets/images/guitar_photo_05.png" alt="Guitar_Photo 05">
+                            </div>
+                            <p class="name">Fender Telecaster Black Paisley Limited Edition</p>
+                            <p class="price">€1.499,00</p>
+                        </div>
+                        <div class="product_slider_content">
+                            <p class="label">in stock</p>
+                            <div class="slider_img">
+                                <img src="assets/images/guitar_photo_01.png" alt="Guitar_Photo 01">
+                            </div>
+                            <p class="name">Hagstrom Alvar Limited Edition</p>
+                            <p class="price">€2.990,00</p>
+                        </div>
+                        <div class="product_slider_content">
+                            <p class="label">in stock</p>
+                            <div class="slider_img">
+                                <img src="assets/images/guitar_photo_02.png" alt="Guitar_Photo 02">
+                            </div>
+                            <p class="name">Hagstrom Tremar Viking Deluxe Cloudy Seas</p>
+                            <p class="price">€1.300,00</p>
+                        </div>
+
+
+                    </div>
+
+                    <button type="button" class="btn">View more</button>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <h2>our partners</h2>
+                    <div class="partners_slider">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer" id="contacts_section">
+            <div class="container">
+                <div class="footer_logo">
+                    <img src="assets/images/OnWave_footer_logo.svg" alt="Footer logo">
+                </div>
+                <nav class="footer_menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Catalog</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>     
+                </nav>
+                <p>Contact Us</p>
+                <nav class="footer_socials">
+                    <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <li><a itemprop="url" href="https://www.instagram.com/" rel="nofollow, noreferrer" target="_blank" title="Instagram">
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </li>
+                        <li><a itemprop="url" href="https://uk-ua.facebook.com/" rel="nofollow, noreferrer" target="_blank" title="Facebook">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li><a itemprop="url" href="https://www.pinterest.com/" rel="nofollow, noreferrer" target="_blank" title="Pinterest">
+                                <i class="icon-pinterest"></i>
+                            </a>
+                        </li>
+                        <li><a itemprop="url" href="https://twitter.com/" rel="nofollow, noreferrer" target="_blank" title="Twitter">
+                                <i class="icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li><a itemprop="url" href="https://www.youtube.com/" rel="nofollow, noreferrer" target="_blank" title="Youtube">
+                                <i class="icon-youtube-play"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="0800 300 4040"></a>
+                <p>© Copyright 2022. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
     
-    <section>
-        <div class="container">
-               <div class="main_slider">
-                   <img src="" alt="">
-                   <h1>Find your own style</h1>
-                   <button type="button">View more</button>
-               </div>
-        </div>
-    </section>
 
-    <section>
-        <h2>new arrivals</h2>
-        <div class="product_slider">
-            <img src="" alt="">
-        </div>
-        <button type="button">View more</button>
-    </section>
 
-    <section>
-        <h2>our partners</h2>
-        <div class="partners_slider">
-            <img src="" alt="">
-        </div>
-    </section>
-
-</main>
-
-<footer class="footer footer--padding" id="contacts_section">
-        <div class="container">
-            <div class="footer_logo">
-                <img src="" alt="Footer logo">
-            </div>
-            <nav class="footer_menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Catalog</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Contacts</a></li>
-                </ul>     
-            </nav>
-            <p>Contact Us</p>
-            <nav class="footer_socials">
-                <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
-                    <li><a itemprop="url" href="https://www.instagram.com/" rel="nofollow, noreferrer" target="_blank" title="Instagram">
-                            <i class="icon-instagram"></i>
-                        </a>
-                    </li>
-                    <li><a itemprop="url" href="https://uk-ua.facebook.com/" rel="nofollow, noreferrer" target="_blank" title="Facebook">
-                            <i class="icon-facebook"></i>
-                        </a>
-                    </li>
-                    <li><a itemprop="url" href="https://www.pinterest.com/" rel="nofollow, noreferrer" target="_blank" title="Pinterest">
-                            <i class="icon-pinterest"></i>
-                        </a>
-                    </li>
-                    <li><a itemprop="url" href="https://twitter.com/" rel="nofollow, noreferrer" target="_blank" title="Twitter">
-                            <i class="icon-twitter"></i>
-                        </a>
-                    </li>
-                    <li><a itemprop="url" href="https://www.youtube.com/" rel="nofollow, noreferrer" target="_blank" title="Youtube">
-                            <i class="icon-youtube-play"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <a href="0800 300 4040"></a>
-            <p>© Copyright 2022. All rights reserved.</p>
-        </div>
-</footer>
+   
+    <script type="text/javascript" src="assets/js/jquery.js"></script>   
+    
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>   
+    
+    <script type="text/javascript" src="assets/js/main.js"></script>   
 
 </body>
 </html>
