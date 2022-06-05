@@ -140,6 +140,11 @@ img {
   display: flex;
 }
 
+.header_logo {
+  width: 182px;
+  height: 34px;
+}
+
 .footer .container {
   background-color: #35312D;
 }
@@ -344,6 +349,7 @@ h2 {
 .sold {
   color: #000;
   background-color: #F8F1EA;
+  font-weight: 500;
 }
 
 .name {
