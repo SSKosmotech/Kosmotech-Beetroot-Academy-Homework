@@ -183,6 +183,7 @@
 @media screen and (max-width: 768px) {
   .slider_item {
     padding-left: 176px;
+    padding-top: 60px;
   }
 
   h1 {

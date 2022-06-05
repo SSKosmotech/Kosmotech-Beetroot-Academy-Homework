@@ -3,7 +3,7 @@ $(function(){
         infinite: true,
         dots: true,
         arrows: false,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 3000,
         adaptiveHeight: true,
         responsive: [
@@ -42,7 +42,7 @@ $(function(){
         // centerMode: true,
         infinite: true,
         slidesToScroll: 1,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 3000,
         responsive: [
             {
@@ -108,7 +108,7 @@ $(function(){
         slidesToScroll: 1,
         // slidesPerRow: 5,
         centerPadding: '150px',
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 5000,
         lazyLoad: 'ondemand',
         responsive: [
