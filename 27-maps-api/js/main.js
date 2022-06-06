@@ -68,6 +68,8 @@ $(function(){
     console.log(LatLng);
     // console.log(LatLng.length);
     console.log(LatLng[5].icn);
+    console.log('{'+LatLng[5].icn+'}');
+
 
     // function getRandomLatLng(LatLng){
     //     for (let i = 0; i < LatLng.length; i ++){
@@ -81,7 +83,8 @@ $(function(){
     // markers.addLayer(L.marker(getRandomLatLng(LatLng)));
     
     for (let i = 0; i < LatLng.length; i ++){
-        let mark = markers.addLayer(L.marker([LatLng[i].lat, LatLng[i].lng], `{'LatLng[i].icn'}`));
+        let mark = markers.addLayer(L.marker([LatLng[i].lat, LatLng[i].lng], '{'+LatLng[i].icn+'}' ));
+        console.log('{'+LatLng[i].icn+'}');
         console.log(mark);
         console.log(LatLng[i].desc);
         let description = LatLng[i].desc;
