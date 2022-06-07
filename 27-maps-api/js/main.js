@@ -32,13 +32,16 @@ $(function(){
     });
 
     let redIcon = new LeafIcon({iconUrl: 'plugins/leaflet/images/leaf-red.png'});
+    let greenIcon = new LeafIcon({iconUrl: 'plugins/leaflet/images/leaf-green.png'});
+
+    
 
     
     let markerContent = [
         {
             lat: 49.226800282531705,
             lng: 28.462006484569336,
-            icn: redIcon,
+            icn: greenIcon,
             desc: '<div style="color: blue; border-bottom: 1px solid blue">Home.<br> <b>Sweet Home<b></div>'
         },
         {
