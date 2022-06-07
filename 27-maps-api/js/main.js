@@ -115,7 +115,7 @@ $(function(){
     // ... Add more layers ...
     
     
-    map.addLayer(markers);
+    // map.addLayer(markers);
 
     
     // L.marker([49.226800282531705, 28.462006484569336], {icon: redIcon}).addTo(map)
