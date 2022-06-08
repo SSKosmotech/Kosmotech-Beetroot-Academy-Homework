@@ -76,7 +76,7 @@ $(function(){
               settings: {
                 slidesToShow: 2,
                 infinite: true,
-                dots: false,
+                dots: true,
                 arrows: false,
                 autoplay: true,
                 autoplaySpeed: 3000,

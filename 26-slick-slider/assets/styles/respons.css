@@ -273,6 +273,14 @@
     max-width: 450px;
     width: 100%;
   }
+
+  #main_slider .slick-dots {
+    bottom: 20px;
+  }
+
+  .slick-dots {
+    bottom: -42px;
+  }
 }
 @media screen and (max-width: 400px) {
   .product_slider {
@@ -297,6 +305,10 @@
 
   .slick-dots li {
     margin: 0 3px;
+  }
+
+  #main_slider .slick-dots {
+    bottom: 20px;
   }
 
   .slick-dots {

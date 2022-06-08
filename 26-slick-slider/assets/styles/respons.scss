@@ -299,6 +299,14 @@
         width: 100%;
     }
 
+    #main_slider .slick-dots {
+        bottom: 20px;
+    }
+
+    .slick-dots {
+        bottom: -42px;
+    }
+
 }
 
 @media screen and (max-width:400px) { 
@@ -329,9 +337,14 @@
         margin: 0 3px;
     }
 
+    #main_slider .slick-dots {
+        bottom: 20px;
+    }
+
     .slick-dots {
         bottom: -55px;
     }
+
 
     h1 {
         font-size: 1rem;
