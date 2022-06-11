@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Project 1. First website with HTML and CSS - Bhromaon||Simonov</title>
+    
+    <meta name="description" content="This is the first project, the first website with HTML and CSS created by student of Beetroot Academy - Simonov Serhii — Bhromaon||Simonov">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="robots" content="all" />
+    <meta name="revisit-after" content="1 days" />
+
+    <!-- Open Graph Basic-->
+    <meta property="og:title" content="Project 1. First website with HTML and CSS - Bhromaon||Simonov" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sskosmotech.github.io/Kosmotech-Beetroot-Academy-Homework/17-exam-bhromaon/" />
+    <meta property="og:image" content="https://sskosmotech.github.io/Kosmotech-Beetroot-Academy-Homework/17-exam-bhromaon/assets/images/first_screen_bg.jpg" />
+    <meta property="og:image:width" content="1770" />
+    <meta property="og:image:height" content="820" />   
+    <meta property="og:description" 
+          content="This is the first project, the first website with HTML and CSS created by 
+          student of Beetroot Academy - Simonov Serhii — Bhromaon||Simonov" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Open Graph Twitter -->
+    <meta name="twitter:title" content="Project 1. First website with HTML and CSS - Bhromaon||Simonov" />
+    <meta name="twitter:description" content="This is the first project, the first website with HTML and CSS created by student of Beetroot Academy - Simonov Serhii — Bhromaon||Simonov" />
+    <meta name="twitter:image" content="https://sskosmotech.github.io/Kosmotech-Beetroot-Academy-Homework/17-exam-bhromaon/assets/images/first_screen_bg.jpg" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
+    <!-- <link rel="stylesheet" href="assets/styles/fonts_style.min.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="assets/styles/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/styles/slick-theme.css"/>
+
+
+    <link rel="stylesheet" href="assets/styles/index.min.css">
+    <link rel="stylesheet" href="assets/styles/respons.min.css">
+</head>
+<body>
+
+    <div id="side_block">
+        <div class="wrapper">
+
+            <div class="header_logo">
+                <div class="pic">
+                    <a href="#">
+                        <img src="assets/images/monticello_logo.png" alt="Logo Mmonticello">
+                    </a>
+                </div>
+            </div>
+
+
+            <nav class="mobile_menu">
+                            <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
+                                <li><a itemprop="url" href="#about_us">About Us</a></li>
+                                <li><a itemprop="url" href="#projects">Projects</a></li>
+                                <li><a itemprop="url" href="#news">News</a></li>
+                                <li><a itemprop="url" href="#contact">Contact</a></li>
+                                
+                            </ul>
+                        </nav>   
+
+            <button class="hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button> 
+
+        </div>
+    </div>
+
+    <div id="page_overlay"></div>
+
+    <!-- <section id="first_screen" class="main_container lazy-bg bgimg" data-src="assets/images/first_screen_bg.jpg">
+
+    </section> -->
+
+
+    <header id="header" class="main_container">
+        <div class="container">
+            
+            
+            <div class="first_screen">
+
+                <div class="wrap_menu">
+
+                    <div class="header_logo">
+                        <div class="pic">
+                            <a href="#">
+                                <img src="assets/images/monticello_logo.png" alt="Logo Mmonticello">
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="main_menu">
+                        <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <li><a itemprop="url" href="#about_us">About Us</a></li>
+                            <li><a itemprop="url" href="#projects">Projects</a></li>
+                            <li><a itemprop="url" href="#news">News</a></li>
+                            <li><a itemprop="url" href="#contact">Contact</a></li>
+                            
+                        </ul>
+                    </nav> 
+    
+                    <nav class="socials">
+                        <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <li><a itemprop="url" href="https://uk-ua.facebook.com/" rel="nofollow, noreferrer" target="_blank" title="Facebook">
+                                    <svg class="socials_svg" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.7188 21H21.375V28H18.25V21H15.7188V18.0938H18.25V15.9062C18.25 15.0729 18.4062 14.3646 18.7188 13.7812C19.0312 13.1979 19.4688 12.7604 20.0312 12.4688C20.6146 12.1562 21.2812 12 22.0312 12C22.3646 12 22.7188 12.0208 23.0938 12.0625C23.4688 12.0833 23.7604 12.1146 23.9688 12.1562L24.2812 12.1875V14.6562H23.0312C22.4479 14.6562 22.0208 14.8125 21.75 15.125C21.5 15.4167 21.375 15.7812 21.375 16.2188V18.0938H24.1562L23.7188 21Z" fill="white"/>
+                                        <circle opacity="0.4" cx="20" cy="20" r="19.5" stroke="white"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li><a itemprop="url" href="https://twitter.com/" rel="nofollow, noreferrer" target="_blank" title="Twitter">
+                                    <svg class="socials_svg" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.3438 16.75C26.3646 16.8333 26.375 16.9688 26.375 17.1562C26.375 18.2604 26.1667 19.3646 25.75 20.4688C25.3333 21.5521 24.7396 22.5521 23.9688 23.4688C23.2188 24.3646 22.2396 25.0938 21.0312 25.6562C19.8229 26.2188 18.4896 26.5 17.0312 26.5C15.1979 26.5 13.5208 26.0104 12 25.0312C12.2292 25.0521 12.4896 25.0625 12.7812 25.0625C14.3021 25.0625 15.6667 24.5938 16.875 23.6562C16.1458 23.6562 15.5 23.4479 14.9375 23.0312C14.3958 22.5938 14.0208 22.0521 13.8125 21.4062C14.0208 21.4271 14.2188 21.4375 14.4062 21.4375C14.6979 21.4375 14.9896 21.4062 15.2812 21.3438C14.7812 21.2396 14.3333 21.0312 13.9375 20.7188C13.5417 20.4062 13.2292 20.0312 13 19.5938C12.7708 19.1354 12.6562 18.6458 12.6562 18.125V18.0625C13.1146 18.3333 13.6042 18.4792 14.125 18.5C13.1458 17.8333 12.6562 16.9167 12.6562 15.75C12.6562 15.1667 12.8125 14.6146 13.125 14.0938C13.9375 15.1146 14.9271 15.9271 16.0938 16.5312C17.2812 17.1354 18.5417 17.4688 19.875 17.5312C19.8333 17.2812 19.8125 17.0312 19.8125 16.7812C19.8125 15.8854 20.125 15.1146 20.75 14.4688C21.3958 13.8229 22.1667 13.5 23.0625 13.5C24.0208 13.5 24.8229 13.8438 25.4688 14.5312C26.2188 14.3854 26.9167 14.125 27.5625 13.75C27.3125 14.5208 26.8333 15.125 26.125 15.5625C26.75 15.4792 27.375 15.3021 28 15.0312C27.5417 15.6979 26.9896 16.2708 26.3438 16.75Z" fill="white"/>
+                                        <circle opacity="0.4" cx="20" cy="20" r="19.5" stroke="white"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li><a itemprop="url" href="https://www.instagram.com/" rel="nofollow, noreferrer" target="_blank" title="Instagram">
+                                    <svg class="socials_svg" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 16.4062C18 16.4062 16.4062 18.0312 16.4062 20C16.4062 22 18 23.5938 20 23.5938C21.9688 23.5938 23.5938 22 23.5938 20C23.5938 18.0312 21.9688 16.4062 20 16.4062ZM20 22.3438C18.7188 22.3438 17.6562 21.3125 17.6562 20C17.6562 18.7188 18.6875 17.6875 20 17.6875C21.2812 17.6875 22.3125 18.7188 22.3125 20C22.3125 21.3125 21.2812 22.3438 20 22.3438ZM24.5625 16.2812C24.5625 15.8125 24.1875 15.4375 23.7188 15.4375C23.25 15.4375 22.875 15.8125 22.875 16.2812C22.875 16.75 23.25 17.125 23.7188 17.125C24.1875 17.125 24.5625 16.75 24.5625 16.2812ZM26.9375 17.125C26.875 16 26.625 15 25.8125 14.1875C25 13.375 24 13.125 22.875 13.0625C21.7188 13 18.25 13 17.0938 13.0625C15.9688 13.125 15 13.375 14.1562 14.1875C13.3438 15 13.0938 16 13.0312 17.125C12.9688 18.2812 12.9688 21.75 13.0312 22.9062C13.0938 24.0312 13.3438 25 14.1562 25.8438C15 26.6562 15.9688 26.9062 17.0938 26.9688C18.25 27.0312 21.7188 27.0312 22.875 26.9688C24 26.9062 25 26.6562 25.8125 25.8438C26.625 25 26.875 24.0312 26.9375 22.9062C27 21.75 27 18.2812 26.9375 17.125ZM25.4375 24.125C25.2188 24.75 24.7188 25.2188 24.125 25.4688C23.1875 25.8438 21 25.75 20 25.75C18.9688 25.75 16.7812 25.8438 15.875 25.4688C15.25 25.2188 14.7812 24.75 14.5312 24.125C14.1562 23.2188 14.25 21.0312 14.25 20C14.25 19 14.1562 16.8125 14.5312 15.875C14.7812 15.2812 15.25 14.8125 15.875 14.5625C16.7812 14.1875 18.9688 14.2812 20 14.2812C21 14.2812 23.1875 14.1875 24.125 14.5625C24.7188 14.7812 25.1875 15.2812 25.4375 15.875C25.8125 16.8125 25.7188 19 25.7188 20C25.7188 21.0312 25.8125 23.2188 25.4375 24.125Z" fill="white"/>
+                                        <circle opacity="0.4" cx="20" cy="20" r="19.5" stroke="white"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                    
+                    <div class="hamb_menu">
+                        <button class="hamburger hamburger--spin" type="button">
+                            <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+    
+                </div>   
+
+
+                <div class="main_slider" id="main_slider">
+                    
+                    <div class="slider_item" style="background-image: url('assets/images/tu-tram-pham-first-screen_01.jpg');">
+                            <h1>Simple & modern</h1>
+                            <p>we make the world beautiful everyday</p>
+                            <!-- <div class="bottom_arrow">
+                                <a href="#">111</a>
+                            </div> -->
+                    </div>
+              
+                    <div class="slider_item" style="background-image: url('assets/images/tu-tram-pham-first-screen_02.jpg');">
+                        <h1>Simple & modern2</h1>
+                        <p>we make the world beautiful everyday</p>
+                        <!-- <div class="bottom_arrow">
+                            <a href="#">222</a>
+                        </div>                     -->
+                    </div>
+
+                    <div class="slider_item" style="background-image: url('assets/images/tu-tram-pham-first-screen_03.jpg');">
+                        <h1>Simple & modern3</h1>
+                        <p>we make the world beautiful everyday</p>
+                        <!-- <div class="bottom_arrow">
+                            <a href="#">333</a>
+                        </div>                     -->
+                    </div> 
+                    
+                    <div class="slider_item" style="background-image: url('assets/images/tu-tram-pham-first-screen_04.jpg');">
+                        <h1>Simple & modern4</h1>
+                        <p>we make the world beautiful everyday</p>
+                        <!-- <div class="bottom_arrow">
+                            <a href="#">444</a>
+                        </div>  -->
+                    </div>
+
+                    <div class="slider_item" style="background-image: url('assets/images/tu-tram-pham-first-screen_05.jpg');">
+                        <h1>Simple & modern5</h1>
+                        <p>we make the world beautiful everyday</p>
+                        <!-- <div class="bottom_arrow">
+                            <a href="#">555</a>
+                        </div> -->
+                    </div>
+
+                </div>
+
+         
+                <a class="bottom_arrow" href="#contacts_section"></a>
+                
+               
+    
+                <!-- <h1>Bhromaon</h1>
+                <div class="header_text">Safe Travel Anywhere</div>
+                <form action="https://www.google.com/search?q=" method="get" class="flex flex_center" target="_blank">
+                    <input type="search" id="search" name="q" placeholder="Search Your Travel Destination" required>
+                    <label for="search"></label>
+                    <button type="submit" value="search" class="search btn">
+                        <span>Search</span>
+                        <svg width="22" height="24" viewbox="0 0 58 57" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M57.2656 53.8123L54.3124 56.7656L37.9999 40.4529C37.0617 41.2968 36.0312 42.0483 34.9062 42.7031C33.7812 43.3601 32.6079 43.9224 31.3906 44.3906C30.1711 44.8608 28.8813 45.2123 27.5233 45.4453C26.1633 45.6803 24.8273 45.7969 23.5156 45.7969C20.3273 45.7969 17.35 45.1881 14.5859 43.9685C11.8195 42.7514 9.40472 41.11 7.34372 39.0467C5.28044 36.9856 3.66326 34.571 2.49212 31.8046C1.31882 29.0404 0.7343 26.1093 0.7343 23.0155C0.7343 19.8295 1.31882 16.8521 2.49212 14.0859C3.66326 11.3218 5.28044 8.90693 7.34372 6.84364C9.40472 4.78259 11.8195 3.16528 14.5859 1.99201C17.35 0.820976 20.3273 0.234162 23.5156 0.234162C26.6094 0.234162 29.5383 0.820976 32.3047 1.99201C35.0688 3.16528 37.4836 4.78259 39.5469 6.84364C41.6079 8.90693 43.2493 11.3218 44.4687 14.0859C45.686 16.8521 46.2968 19.8295 46.2968 23.0155C46.2968 24.3293 46.1781 25.6653 45.9453 27.0232C45.7101 28.3834 45.3585 29.6733 44.8906 30.8904C44.4203 32.1101 43.8579 33.2811 43.2031 34.4061C42.5461 35.531 41.7968 36.5638 40.9531 37.4999L57.2656 53.8123ZM3.12494 23.0155C3.12494 25.828 3.63914 28.4537 4.6718 30.8904C5.7023 33.3295 7.15478 35.485 9.03122 37.3593C10.9054 39.2358 13.0851 40.7123 15.5703 41.7889C18.0531 42.8677 20.703 43.4062 23.5156 43.4062C26.3281 43.4062 28.9516 42.8677 31.3906 41.7889C33.8273 40.7123 35.9829 39.2358 37.8593 37.3593C39.7336 35.485 41.2101 33.3295 42.289 30.8904C43.3657 28.4537 43.9062 25.828 43.9062 23.0155C43.9062 20.203 43.3657 17.5552 42.289 15.0701C41.2101 12.5872 39.7336 10.4076 37.8593 8.53115C35.9829 6.65678 33.8273 5.20444 31.3906 4.17165C28.9516 3.14115 26.3281 2.62484 23.5156 2.62484C20.703 2.62484 18.0531 3.14115 15.5703 4.17165C13.0851 5.20444 10.9054 6.65678 9.03122 8.53115C7.15478 10.4076 5.7023 12.5872 4.6718 15.0701C3.63914 17.5552 3.12494 20.203 3.12494 23.0155Z"/>
+                        </svg>
+                    </button>         
+                </form> -->
+                
+            </div>
+
+
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section id="trade_center" class="main_container lazy-bg bgimg" data-src="assets/images/why_choose_us_bg.jpg">
+            <div class="container">
+
+                <h2>What we do</h2>
+
+                <div class="wrap_commerce">
+                    <div class="wrap_two_img">
+                        <div class="pic">
+                            <img src="" alt="">
+                        </div>
+                        <div class="pic">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="wrap_details">
+                        <p>One world</p>
+                        <h2>Trade center</h2>
+                        <p>Increasing prosperity in our lives can be accomplished<br>
+                           by having the right frame of mind. The truth is, our<br>
+                           thoughts are very powerful.
+                        </p>
+                        <button type="button">More details</button>
+                        <a href="#">New York City, United States - 1776 feet</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="commerce_centre" class="main_container lazy-bg bgimg" data-src="assets/images/why_choose_us_bg.jpg">
+            <div class="container">
+
+                <div class="wrap_commerce">
+                    <div class="wrap_two_img">
+                        <div class="pic">
+                            <img src="" alt="">
+                        </div>
+                        <div class="pic">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="wrap_details">
+                        <p>International</p>
+                        <h2>Commerce centre</h2>
+                        <p>Successful businesses have many things in common,<br>
+                            today we’ll look at the big ‘R’ of recognition and how a<br>
+                            digital advertising network may help.
+                        </p>
+                        <button type="button">More details</button>
+                        <a href="#">Hong Kong - 1588 feet</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="latest_news">
+
+            <div class="container">
+                <h2>Latest news</h2>
+
+                <div class="news_slider">
+    
+                    <div class="news_slider_content"> 
+                        <img src="#" alt="">                         
+                        <h3>
+                            See the unmatched<br>
+                            beauty of the great.
+                        </h3>
+                        <p>
+                           Free directories: directories are perfect<br>
+                           for customers that are searching for...
+                        </p>
+                        <div class="wrap_author">
+                            <img src="" alt="">
+                            <div class="wrap_info_news">
+                                <p>Alja Brun</p>
+                                <p>20 Jan 2020</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="news_slider_content"> 
+                        <img src="#" alt="">                         
+                        <h3>
+                            Effective advertising<br>
+                            pointers.
+                        </h3>
+                        <p>
+                            Having a home based business is a<br>
+                            wonderful asset to your life...
+                        </p>
+                        <div class="wrap_author">
+                            <img src="" alt="">
+                            <div class="wrap_info_news">
+                                <p>Dominic Freeman</p>
+                                <p>13 Dec 2019</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="news_slider_content"> 
+                        <img src="#" alt="">                         
+                        <h3>
+                            Hypnotize yourself into<br>
+                            the ghost.
+                        </h3>
+                        <p>
+                            There are many things that are<br>
+                            important to catalog design...
+                        </p>
+                        <div class="wrap_author">
+                            <img src="" alt="">
+                            <div class="wrap_info_news">
+                                <p>Alice Ward</p>
+                                <p>30 Nov 2019</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="news_slider_content"> 
+                        <img src="#" alt="">                         
+                        <h3>
+                            See the unmatched<br>
+                            beauty of the great.
+                        </h3>
+                        <p>
+                           Free directories: directories are perfect<br>
+                           for customers that are searching for...
+                        </p>
+                        <div class="wrap_author">
+                            <img src="" alt="">
+                            <div class="wrap_info_news">
+                                <p>Alja Brun</p>
+                                <p>20 Jan 2020</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="news_slider_content"> 
+                        <img src="#" alt="">                         
+                        <h3>
+                            Effective advertising<br>
+                            pointers.
+                        </h3>
+                        <p>
+                            Having a home based business is a<br>
+                            wonderful asset to your life...
+                        </p>
+                        <div class="wrap_author">
+                            <img src="" alt="">
+                            <div class="wrap_info_news">
+                                <p>Dominic Freeman</p>
+                                <p>13 Dec 2019</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="news_slider_content"> 
+                        <img src="#" alt="">                         
+                        <h3>
+                            Hypnotize yourself into<br>
+                            the ghost.
+                        </h3>
+                        <p>
+                            There are many things that are<br>
+                            important to catalog design...
+                        </p>
+                        <div class="wrap_author">
+                            <img src="" alt="">
+                            <div class="wrap_info_news">
+                                <p>Alice Ward</p>
+                                <p>30 Nov 2019</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            
+            
+
+        </section>
+
+        <section>
+
+            <div class="container">
+
+                <h2>Gallery</h2>
+
+                <div class="gallery">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+
+                <button type="button">See more</button>
+            </div>
+
+        </section>
+
+        <section id="contacts_section">
+            <div class="container">
+                
+                <div id="map"></div>
+
+                <div class="wrap_form">
+                    <h2>get in touch</h2>
+                    <div class="wrap_form_contacts">
+                        <div class="form_contacts">
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="red" width="18px" height="18px" viewbox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/></svg>
+                            <a href="#">91 Nolan Extensions Suite 670</a>
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="red" width="18px" height="18px" viewbox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"/></svg>
+                            <a href="tel:+001 356-868-2454">+001 356-868-2454</a>
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="red" width="18px" height="18px" viewbox="0 0 512 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M447 56.25C443.5 42 430.7 31.1 416 31.1H96c-14.69 0-27.47 10-31.03 24.25L3.715 304.9C1.247 314.9 0 325.2 0 335.5v96.47c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48v-96.47c0-10.32-1.247-20.6-3.715-30.61L447 56.25zM352 352H160L128 288H72.97L121 96h270l48.03 192H384L352 352z"/></svg>
+                            <a href="mailto:montichello@service.com">montichello@service.com</a>
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="red" width="18px" height="18px" viewbox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C201.7 512 151.2 495 109.7 466.1C95.2 455.1 91.64 436 101.8 421.5C111.9 407 131.8 403.5 146.3 413.6C177.4 435.3 215.2 448 256 448C362 448 448 362 448 256C448 149.1 362 64 256 64C202.1 64 155 85.46 120.2 120.2L151 151C166.1 166.1 155.4 192 134.1 192H24C10.75 192 0 181.3 0 168V57.94C0 36.56 25.85 25.85 40.97 40.97L74.98 74.98C121.3 28.69 185.3 0 255.1 0L256 0zM256 128C269.3 128 280 138.7 280 152V246.1L344.1 311C354.3 320.4 354.3 335.6 344.1 344.1C335.6 354.3 320.4 354.3 311 344.1L239 272.1C234.5 268.5 232 262.4 232 256V152C232 138.7 242.7 128 256 128V128z"/></svg>
+                            <p>From 07:05AM to 19:30PM</p>
+                        </div>
+                        <form action="#">
+                            <input type="text" id="name" placeholder="First Name Last Name">
+                            <label for="name"></label>
+                            <input type="text" id="email">
+                            <label for="email"></label>
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+
+
+
+        <!-- <section id="what_we_do" class="main_container">
+            <div class="container grid">
+
+                <div class="benefits_block">
+                    <div class="pic">
+                        <svg width="58" height="57" viewbox="0 0 58 57" fill="#5474FD" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M57.2656 53.8123L54.3124 56.7656L37.9999 40.4529C37.0617 41.2968 36.0312 42.0483 34.9062 42.7031C33.7812 43.3601 32.6079 43.9224 31.3906 44.3906C30.1711 44.8608 28.8813 45.2123 27.5233 45.4453C26.1633 45.6803 24.8273 45.7969 23.5156 45.7969C20.3273 45.7969 17.35 45.1881 14.5859 43.9685C11.8195 42.7514 9.40472 41.11 7.34372 39.0467C5.28044 36.9856 3.66326 34.571 2.49212 31.8046C1.31882 29.0404 0.7343 26.1093 0.7343 23.0155C0.7343 19.8295 1.31882 16.8521 2.49212 14.0859C3.66326 11.3218 5.28044 8.90693 7.34372 6.84364C9.40472 4.78259 11.8195 3.16528 14.5859 1.99201C17.35 0.820976 20.3273 0.234162 23.5156 0.234162C26.6094 0.234162 29.5383 0.820976 32.3047 1.99201C35.0688 3.16528 37.4836 4.78259 39.5469 6.84364C41.6079 8.90693 43.2493 11.3218 44.4687 14.0859C45.686 16.8521 46.2968 19.8295 46.2968 23.0155C46.2968 24.3293 46.1781 25.6653 45.9453 27.0232C45.7101 28.3834 45.3585 29.6733 44.8906 30.8904C44.4203 32.1101 43.8579 33.2811 43.2031 34.4061C42.5461 35.531 41.7968 36.5638 40.9531 37.4999L57.2656 53.8123ZM3.12494 23.0155C3.12494 25.828 3.63914 28.4537 4.6718 30.8904C5.7023 33.3295 7.15478 35.485 9.03122 37.3593C10.9054 39.2358 13.0851 40.7123 15.5703 41.7889C18.0531 42.8677 20.703 43.4062 23.5156 43.4062C26.3281 43.4062 28.9516 42.8677 31.3906 41.7889C33.8273 40.7123 35.9829 39.2358 37.8593 37.3593C39.7336 35.485 41.2101 33.3295 42.289 30.8904C43.3657 28.4537 43.9062 25.828 43.9062 23.0155C43.9062 20.203 43.3657 17.5552 42.289 15.0701C41.2101 12.5872 39.7336 10.4076 37.8593 8.53115C35.9829 6.65678 33.8273 5.20444 31.3906 4.17165C28.9516 3.14115 26.3281 2.62484 23.5156 2.62484C20.703 2.62484 18.0531 3.14115 15.5703 4.17165C13.0851 5.20444 10.9054 6.65678 9.03122 8.53115C7.15478 10.4076 5.7023 12.5872 4.6718 15.0701C3.63914 17.5552 3.12494 20.203 3.12494 23.0155Z"/>
+                        </svg>
+                    </div>
+                    <h2>Search Places</h2>
+                </div>
+
+                <div class="benefits_block">
+                    <div class="pic">
+                        <svg width="60" height="61" viewbox="0 0 60 61" fill="#FF6363" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M30 0.546839C34.1242 0.546839 38.0156 1.32023 41.6718 2.867C45.3281 4.41403 48.5141 6.54759 51.2343 9.26541C53.9523 11.9857 56.0859 15.1717 57.6328 18.8281C59.1796 22.4843 59.9531 26.3756 59.9531 30.4999C59.9531 34.6263 59.1796 38.5154 57.6328 42.1718C56.0859 45.828 53.9523 49.0162 51.2343 51.7343C48.5141 54.4544 45.3281 56.5859 41.6718 58.1327C38.0156 59.6795 34.1242 60.4531 30 60.4531C25.8735 60.4531 21.9843 59.6795 18.3281 58.1327C14.6718 56.5859 11.4836 54.4544 8.76562 51.7343C6.04543 49.0162 3.914 45.828 2.36716 42.1718C0.820258 38.5154 0.046808 34.6263 0.046808 30.4999C0.046808 26.3756 0.820258 22.4843 2.36716 18.8281C3.914 15.1717 6.04543 11.9857 8.76562 9.26541C11.4836 6.54759 14.6718 4.41403 18.3281 2.867C21.9843 1.32023 25.8735 0.546839 30 0.546839ZM30 58.0624C33.8429 58.0624 37.4288 57.3374 40.7578 55.8828C44.0844 54.4302 47.0156 52.4857 49.5469 50.0467C51.9836 47.5155 53.9282 44.5867 55.3827 41.2576C56.8351 37.9309 57.5625 34.345 57.5625 30.4999C57.5625 26.6569 56.8351 23.0708 55.3827 19.742C53.9282 16.4153 51.9836 13.4841 49.5469 10.9529C47.0156 8.51621 44.0844 6.57178 40.7578 5.11717C37.4288 3.66458 33.8429 2.93725 30 2.93725C26.1548 2.93725 22.5688 3.66458 19.2421 5.11717C15.9132 6.57178 12.9843 8.51621 10.453 10.9529C8.01412 13.4841 6.06955 16.4153 4.6172 19.742C3.16256 23.0708 2.4374 26.6569 2.4374 30.4999C2.4374 34.345 3.16256 37.9309 4.6172 41.2576C6.06955 44.5867 8.01412 47.5155 10.453 50.0467C12.9843 52.4857 15.9132 54.4302 19.2421 55.8828C22.5688 57.3374 26.1548 58.0624 30 58.0624ZM45.0468 19.8123C45.3281 19.4388 45.7258 19.25 46.2421 19.25C46.7563 19.25 47.2023 19.4388 47.5781 19.8123C47.8593 20.188 48 20.6341 48 21.1483C48 21.6646 47.8109 22.0625 47.4375 22.3438L26.9063 42.3123C26.8117 42.5012 26.6469 42.6178 26.414 42.6639C26.1789 42.7122 25.968 42.7342 25.7812 42.7342C25.4999 42.7342 25.2407 42.7122 25.0078 42.6639C24.7727 42.6178 24.6079 42.5012 24.5155 42.3123L16.4999 34.2966C16.1242 33.9232 15.9375 33.4772 15.9375 32.9609C15.9375 32.4466 16.1242 32.0467 16.4999 31.7654C16.7812 31.392 17.179 31.2031 17.6953 31.2031C18.2095 31.2031 18.6554 31.392 19.0311 31.7654L25.7812 38.5154L45.0468 19.8123Z"/>
+                        </svg>
+                    </div>
+                    <h2>Select Places</h2>
+                </div>
+        
+                <div class="benefits_block">
+                    <div class="pic">
+                        <svg width="62" height="59" viewbox="0 0 62 59" fill="#00A2FF" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M61.5859 28.6561C61.5859 29.3131 61.4914 29.9218 61.3046 30.4841C61.1157 31.0467 60.8344 31.563 60.4609 32.0311C60.0852 32.5014 59.6633 32.8748 59.1953 33.1561C58.7251 33.4374 58.2109 33.6724 57.6484 33.8592C57.9296 34.3294 58.1626 34.8218 58.3515 35.3357C58.5382 35.8523 58.6328 36.4388 58.6328 37.0936C58.6328 37.6562 58.5382 38.2185 58.3515 38.7812C58.1626 39.3438 57.9296 39.86 57.6484 40.3279C57.2727 40.7036 56.8508 41.0552 56.3827 41.3826C55.9125 41.7123 55.4445 41.9694 54.9765 42.1562C55.2577 42.6264 55.4906 43.1404 55.6797 43.703C55.8664 44.2656 55.9609 44.828 55.9609 45.3906C55.9609 46.0473 55.8664 46.6342 55.6797 47.1484C55.4906 47.6646 55.2577 48.1567 54.9765 48.6249C54.6008 49.0951 54.1789 49.4927 53.7108 49.8201C53.2407 50.1498 52.7265 50.3608 52.164 50.4529C52.5375 50.9231 52.8188 51.4155 53.0077 51.9295C53.1946 52.446 53.289 53.0325 53.289 53.6873C53.289 54.3443 53.1484 55.0014 52.8671 55.6561C52.5859 56.3132 52.2102 56.8756 51.7421 57.3437C51.1797 57.8139 50.5688 58.1874 49.914 58.4687C49.2571 58.75 48.5539 58.8905 47.8046 58.8905H29.2421C28.5852 58.8905 27.8359 58.7984 26.9922 58.6092C26.1484 58.4226 25.2563 58.1413 24.3203 57.7655C23.382 57.4842 22.4438 57.1327 21.5078 56.7108C20.5695 56.289 19.6313 55.8911 18.6952 55.5154C17.5702 55.0475 16.4672 54.5796 15.3905 54.1091C14.3117 53.6412 13.5383 53.406 13.0702 53.406H0.273408V25.9843L1.3984 25.8435C6.74214 25.8435 10.3984 25.8435 12.3672 25.8435C13.2109 25.8435 13.9843 25.7514 14.6875 25.5623C15.3905 25.3757 16.1157 24.9999 16.8671 24.4373C17.7108 23.9694 18.6711 23.3123 19.75 22.4687C20.8266 21.6248 22.1164 20.5943 23.6171 19.3749C26.5219 16.9381 28.2336 13.8904 28.75 10.2342C29.2641 6.57809 29.5234 4.46871 29.5234 3.90611C29.5234 3.3435 29.664 2.80536 29.9453 2.28882C30.2265 1.77483 30.6001 1.37491 31.0703 1.09358C31.5383 0.720139 32.0304 0.460767 32.5468 0.320223C33.0609 0.179435 33.5532 0.109163 34.0234 0.109163C34.7726 0.109163 35.5219 0.203652 36.2733 0.390495C37.0227 0.579351 37.7257 1.00147 38.3828 1.65618C39.0376 2.31303 39.5539 3.18106 39.9297 4.25765C40.3032 5.33656 40.4922 6.76701 40.4922 8.54668C40.4922 10.1418 40.3735 11.6647 40.1405 13.117C39.9055 14.5717 39.6001 15.9537 39.2265 17.2655C38.9453 18.5794 38.5937 19.7748 38.1718 20.8514C37.75 21.9303 37.3984 22.8445 37.1172 23.5937H56.2421C57.0859 23.5937 57.8109 23.7123 58.4219 23.9452C59.0305 24.1802 59.6172 24.5317 60.1796 24.9999C60.6477 25.4701 60.9992 26.0085 61.2343 26.617C61.4673 27.2279 61.5859 27.9069 61.5859 28.6561ZM56.2421 31.6093C56.7102 31.6093 57.132 31.5388 57.5078 31.3983C57.8813 31.2578 58.1626 31.0467 58.3515 30.7654C58.6328 30.4841 58.8657 30.1809 59.0547 29.8515C59.2414 29.5242 59.3359 29.1263 59.3359 28.6561C59.3359 27.9069 59.0547 27.2498 58.4922 26.6875C57.9296 26.1249 57.1782 25.8435 56.2421 25.8435H47.8046C47.8046 25.938 47.8046 25.938 47.8046 25.8435H33.3203L34.164 24.156C36.7876 17.6874 38.1016 12.4842 38.1016 8.54668C38.1016 5.45289 37.5852 3.64899 36.5547 3.13275C35.5219 2.61846 34.6782 2.35933 34.0234 2.35933C33.7421 2.35933 33.3203 2.49988 32.7578 2.78115C32.1952 3.06248 31.914 3.43824 31.914 3.90611C31.914 4.46871 31.8657 5.40683 31.7734 6.71864C31.679 8.0327 31.3976 9.5311 30.9297 11.2187C30.4594 12.9062 29.7805 14.6419 28.8905 16.4218C27.9985 18.2036 26.757 19.7506 25.164 21.0624C23.5688 22.3763 22.2328 23.477 21.1562 24.367C20.0773 25.259 19.0688 25.9843 18.1327 26.5467C17.1945 27.1093 16.2563 27.5311 15.3203 27.8124C14.382 28.0937 13.3976 28.2342 12.3672 28.2342C11.6157 28.2342 10.7962 28.2342 9.90618 28.2342C9.01408 28.2342 8.1001 28.2342 7.16397 28.2342C6.32026 28.2342 5.49843 28.2342 4.7031 28.2342C3.90541 28.2342 3.2265 28.2342 2.664 28.2342V51.0156H13.0702C13.725 51.0156 14.593 51.2264 15.6719 51.6482C16.7485 52.0702 18.0844 52.6107 19.6796 53.2655C20.4289 53.6412 21.2485 54.0388 22.1406 54.4607C23.0305 54.8828 23.8984 55.2343 24.7421 55.5154C25.6782 55.7967 26.5219 56.0561 27.2733 56.289C28.0227 56.524 28.6796 56.6406 29.2421 56.6406H44.8515H47.8046C48.2726 56.6406 48.6946 56.5482 49.0703 56.3593C49.4438 56.1724 49.7734 55.9375 50.0547 55.6561C50.3359 55.4693 50.5468 55.188 50.6874 54.8123C50.8281 54.4388 50.8984 54.0631 50.8984 53.6873C50.8984 53.2194 50.8281 52.8218 50.6874 52.4921C50.5468 52.1647 50.3359 51.8592 50.0547 51.5779C49.7734 51.2969 49.4438 51.0858 49.0703 50.9453C48.6946 50.8046 48.2726 50.7343 47.8046 50.7343H47.5234V48.3436H50.7577C51.1313 48.3436 51.507 48.2734 51.8828 48.1328C52.2563 47.992 52.5859 47.7813 52.8671 47.4999C53.0539 47.2187 53.2407 46.8913 53.4296 46.5155C53.6164 46.1421 53.7108 45.7663 53.7108 45.3906C53.7108 45.0169 53.6164 44.6411 53.4296 44.2656C53.2407 43.8919 53.0539 43.5625 52.8671 43.2812C52.5859 43.0943 52.2563 42.9075 51.8828 42.7186C51.507 42.532 51.1313 42.4373 50.7577 42.4373H49.7734V40.0468H53.289C53.6625 40.0468 54.0383 39.9763 54.414 39.8358C54.7876 39.6953 55.1172 39.4842 55.3984 39.203C55.6797 38.9216 55.9125 38.5942 56.1016 38.2185C56.2883 37.845 56.3827 37.4693 56.3827 37.0936C56.3827 36.6257 56.2883 36.2038 56.1016 35.8281C55.9125 35.4544 55.6797 35.1734 55.3984 34.9842C55.1172 34.7029 54.7876 34.4702 54.414 34.2811C54.0383 34.0945 53.6625 33.9998 53.289 33.9998H52.164V31.6093H56.2421Z"/>
+                        </svg>
+                    </div>
+                    <h2>Book & Enjoy</h2>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- <section id="travel_with_us_pool" class="main_container lazy-bg bgimg" data-src="assets/images/travel_with_us_pool_bg.jpg">
+            <div class="container flex_start">
+                <div class="travel_text">
+                    <p>Spain</p>
+                    <h3>Grand Spain Madrid</h3>
+                    <p>
+                        But I must explain to you how all this mistaken idea of account to
+                        denouncing pleasure and praising pain was account  born and I
+                        account will give you a complete account of the system
+                    </p>
+                    <button class="btn btn_travel">Book Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="travel_with_us_sea" class="main_container lazy-bg bgimg" data-src="assets/images/travel_with_us_sea_bg.jpg">
+            <div class="container flex_start flex_end">
+                <div class="travel_text">
+                    <p>Spain</p>
+                    <h3>Grand Spain Madrid</h3>
+                    <p>But I must explain to you how all this mistaken idea of account to
+                        denouncing pleasure and praising pain was account  born and I
+                        account will give you a complete account of the system
+                    </p>
+                    <button class="btn btn_travel">Book Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="main_container lazy-bg bgimg" data-src="assets/images/what_our_tourist_say_bg.jpg">
+            <div class="container">
+                <h2>What Our Tourist Say</h2>
+
+                <div class="reviews_content_wrapper flex">
+                    <div class="reviews_picture">
+                        <div class="pic">
+                            <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/reviews_picture.jpg" alt="Reviews Picture">
+                        </div>
+                    </div>
+                    <div class="reviews_text">
+                        <h4>Sam Sumon</h4>
+                        <p>
+                            But I must explain to you how all this mistaken idea of account to
+                            denouncinpleasure and praising pain  But I must explain to you how all this
+                            mistaken idea of account to nai denouncing pleasure and praising pain was
+                            account  born and I account will give you a complete account of the system was
+                            account  born and I account will give you a nai the complete account of the
+                            system
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        
+    </main>
+
+    <footer class="main_container footer">
+        <div class="container lazy-bg" data-src="assets/images/monticello-footer-background.jpg">
+            <div class="wrap_footer">
+                <div class="footer_logo">
+                    <div class="pic">
+                        <a href="#">
+                            <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/monticello_logo.png" alt="Logo Monticello">
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="socials">
+                    <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <li><a itemprop="url" href="https://uk-ua.facebook.com/" rel="nofollow, noreferrer" target="_blank" title="Facebook">
+                                <svg class="socials_svg" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.7188 21H21.375V28H18.25V21H15.7188V18.0938H18.25V15.9062C18.25 15.0729 18.4062 14.3646 18.7188 13.7812C19.0312 13.1979 19.4688 12.7604 20.0312 12.4688C20.6146 12.1562 21.2812 12 22.0312 12C22.3646 12 22.7188 12.0208 23.0938 12.0625C23.4688 12.0833 23.7604 12.1146 23.9688 12.1562L24.2812 12.1875V14.6562H23.0312C22.4479 14.6562 22.0208 14.8125 21.75 15.125C21.5 15.4167 21.375 15.7812 21.375 16.2188V18.0938H24.1562L23.7188 21Z" fill="white"/>
+                                    <circle opacity="0.4" cx="20" cy="20" r="19.5" stroke="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li><a itemprop="url" href="https://twitter.com/" rel="nofollow, noreferrer" target="_blank" title="Twitter">
+                                <svg class="socials_svg" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26.3438 16.75C26.3646 16.8333 26.375 16.9688 26.375 17.1562C26.375 18.2604 26.1667 19.3646 25.75 20.4688C25.3333 21.5521 24.7396 22.5521 23.9688 23.4688C23.2188 24.3646 22.2396 25.0938 21.0312 25.6562C19.8229 26.2188 18.4896 26.5 17.0312 26.5C15.1979 26.5 13.5208 26.0104 12 25.0312C12.2292 25.0521 12.4896 25.0625 12.7812 25.0625C14.3021 25.0625 15.6667 24.5938 16.875 23.6562C16.1458 23.6562 15.5 23.4479 14.9375 23.0312C14.3958 22.5938 14.0208 22.0521 13.8125 21.4062C14.0208 21.4271 14.2188 21.4375 14.4062 21.4375C14.6979 21.4375 14.9896 21.4062 15.2812 21.3438C14.7812 21.2396 14.3333 21.0312 13.9375 20.7188C13.5417 20.4062 13.2292 20.0312 13 19.5938C12.7708 19.1354 12.6562 18.6458 12.6562 18.125V18.0625C13.1146 18.3333 13.6042 18.4792 14.125 18.5C13.1458 17.8333 12.6562 16.9167 12.6562 15.75C12.6562 15.1667 12.8125 14.6146 13.125 14.0938C13.9375 15.1146 14.9271 15.9271 16.0938 16.5312C17.2812 17.1354 18.5417 17.4688 19.875 17.5312C19.8333 17.2812 19.8125 17.0312 19.8125 16.7812C19.8125 15.8854 20.125 15.1146 20.75 14.4688C21.3958 13.8229 22.1667 13.5 23.0625 13.5C24.0208 13.5 24.8229 13.8438 25.4688 14.5312C26.2188 14.3854 26.9167 14.125 27.5625 13.75C27.3125 14.5208 26.8333 15.125 26.125 15.5625C26.75 15.4792 27.375 15.3021 28 15.0312C27.5417 15.6979 26.9896 16.2708 26.3438 16.75Z" fill="white"/>
+                                    <circle opacity="0.4" cx="20" cy="20" r="19.5" stroke="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li><a itemprop="url" href="https://www.instagram.com/" rel="nofollow, noreferrer" target="_blank" title="Instagram">
+                                <svg class="socials_svg" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 16.4062C18 16.4062 16.4062 18.0312 16.4062 20C16.4062 22 18 23.5938 20 23.5938C21.9688 23.5938 23.5938 22 23.5938 20C23.5938 18.0312 21.9688 16.4062 20 16.4062ZM20 22.3438C18.7188 22.3438 17.6562 21.3125 17.6562 20C17.6562 18.7188 18.6875 17.6875 20 17.6875C21.2812 17.6875 22.3125 18.7188 22.3125 20C22.3125 21.3125 21.2812 22.3438 20 22.3438ZM24.5625 16.2812C24.5625 15.8125 24.1875 15.4375 23.7188 15.4375C23.25 15.4375 22.875 15.8125 22.875 16.2812C22.875 16.75 23.25 17.125 23.7188 17.125C24.1875 17.125 24.5625 16.75 24.5625 16.2812ZM26.9375 17.125C26.875 16 26.625 15 25.8125 14.1875C25 13.375 24 13.125 22.875 13.0625C21.7188 13 18.25 13 17.0938 13.0625C15.9688 13.125 15 13.375 14.1562 14.1875C13.3438 15 13.0938 16 13.0312 17.125C12.9688 18.2812 12.9688 21.75 13.0312 22.9062C13.0938 24.0312 13.3438 25 14.1562 25.8438C15 26.6562 15.9688 26.9062 17.0938 26.9688C18.25 27.0312 21.7188 27.0312 22.875 26.9688C24 26.9062 25 26.6562 25.8125 25.8438C26.625 25 26.875 24.0312 26.9375 22.9062C27 21.75 27 18.2812 26.9375 17.125ZM25.4375 24.125C25.2188 24.75 24.7188 25.2188 24.125 25.4688C23.1875 25.8438 21 25.75 20 25.75C18.9688 25.75 16.7812 25.8438 15.875 25.4688C15.25 25.2188 14.7812 24.75 14.5312 24.125C14.1562 23.2188 14.25 21.0312 14.25 20C14.25 19 14.1562 16.8125 14.5312 15.875C14.7812 15.2812 15.25 14.8125 15.875 14.5625C16.7812 14.1875 18.9688 14.2812 20 14.2812C21 14.2812 23.1875 14.1875 24.125 14.5625C24.7188 14.7812 25.1875 15.2812 25.4375 15.875C25.8125 16.8125 25.7188 19 25.7188 20C25.7188 21.0312 25.8125 23.2188 25.4375 24.125Z" fill="white"/>
+                                    <circle opacity="0.4" cx="20" cy="20" r="19.5" stroke="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            
+            <p class="copyrights">Copyrights © 2020 Montichello</p>
+        </div>
+    </footer>
+    
+    <!-- <i class="fa-light fa-clock-nine"></i> -->
+    <!-- <i class="fa-solid fa-clock-nine"></i> -->
+    <!-- <i style="color: red" class="fa-solid fa-phone"></i> -->
+    <!-- <script src="https://kit.fontawesome.com/a021bb2175.js" crossorigin="anonymous"></script> -->
+
+    <script src="assets/js/jquery-3.6.0.min.js" ></script>
+    <script src="assets/js/slick.min.js" ></script>
+
+    <script src="assets/js/lazyload.prod.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- <script>
+
+        //фіксація горизонтального меню, яке знаходиться нижче першого екрану
+        $(window).on('scroll', function(){
+            if($(window).scrollTop()>$("#first_screen").height()){
+                $('header').addClass('fixed');
+            }else{
+                $('header').removeClass('fixed');
+            }
+        })
+
+
+        function toggleMenu (){
+            $('.hamburger').toggleClass('is-active');
+                    $('#side_block, #page_overlay').toggleClass('open');
+                    $('body').toggleClass('lock');
+            }
+    
+        //активація і дезактивація hamburger меню по клікам на: гамбургер, оверлей, мобільні пункти меню
+            $(function() {
+                $('.hamburger, #page_overlay, .mobile_menu a').on('click', function(){
+                    toggleMenu ();
+                })
+            })
+
+        //плавний скрол до секції, при клікі на мобільні і головні пункти меню і стрілка на first_screen 
+            $(function(){
+                $('.mobile_menu a, .main_menu a, .first_screen a').on('click', function(e){
+                    e.preventDefault(); //заборонили браузеру проскролити до id
+                  $('html, body').animate({scrollTop:$($(this).attr('href')).offset().top-$('header').outerHeight()}, 800)
+
+                })
+            })
+        //активація "скляного" горизонтального меню
+            $(window).on('scroll', ()=>{
+                    if($(window).scrollTop()>480) {
+                        $('header').addClass('scroll')
+                    }else{
+                        $('header').removeClass('scroll')
+                    }
+            })
+
+
+    </script> -->
+
+</body>
+</html>

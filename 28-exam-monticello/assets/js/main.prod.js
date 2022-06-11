@@ -1,0 +1,1 @@
+"use strict";$(function(){$(".main_slider").slick({infinite:!0,vertical:!0,swipe:!0,verticalSwiping:!0,dots:!0,arrows:!1,autoplaySpeed:3e3})});

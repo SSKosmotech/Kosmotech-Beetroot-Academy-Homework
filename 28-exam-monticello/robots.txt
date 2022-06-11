@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sskosmotech.github.io/Kosmotech-Beetroot-Academy-Homework/17-exam-bhromaon/en_US_sitemap.xml
+Host: sskosmotech.github.io
