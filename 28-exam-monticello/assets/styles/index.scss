@@ -13,11 +13,11 @@ $line_height: 1.5625rem;
 $background_color_white: #fff;
 // $background_color_white: #2C4058;
 
-$base_fz: 16;
+// $base_fz: 16;
 
-@mixin fz($size_in_px) {
-    font-size:($size_in_px/$base_fz)+rem;
-}
+// @mixin fz($size_in_px) {
+//     font-size:($size_in_px/$base_fz)+rem;
+// }
 
 @import 'parts/reset';
 @import 'hamburger';
@@ -62,7 +62,6 @@ img {
 
 .first_screen {
     position: relative;
-    margin-bottom: 100px;
 }
 
 .wrap_menu {
@@ -291,13 +290,14 @@ h1 {
         content: '';
         display: block;
         position: absolute;
-        width: 5px;
-        height: 5px;
+        width: 6px;
+        height: 6px;
         border-top: 1px solid #fff;
         border-left: 1px solid #fff;
         transform: rotate(225deg);
-        top: -2px;
-        left: 49.9%;
+        // top: -2px;
+        // left: 49.9%;
+
         
     }
     &:hover  {
@@ -325,6 +325,7 @@ h2 {
         text-align: center;
         margin: 0 auto;
         margin-bottom: 30px;
+
     }
 }
 
@@ -333,18 +334,66 @@ h2 {
     flex-wrap: wrap;
 }
 
+.flex_reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
 .wrap_two_img {
+    position: relative;
     max-width: 845px;
     width: 100%;
     height: 527px;
-    background-color: #55B7FF;
+    // background-color: #55B7FF;
     margin-right: 70px;
+    &::before {
+        content: '';
+        display: block;
+        max-width: 585px;
+        width: 100%;
+        height: 470px;
+        background-color: #55B7FF;
+    }
+    & .pic {
+        position: absolute;
+        max-width: 630px;
+        width: 100%;
+        height: 470px;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.reverse_pic {
+    margin-right: 0;
+    &::before {
+        position: absolute;
+        right: 0;
+        background-color: #7E5AFF;
+    }
+    & .pic {
+        left: 0;
+    }
+}
+
+.reverse_margin {
+    margin-right: 62px;
+    margin-left: 215px;
+}
+
+#trade_center,
+#commerce_centre {
+    margin-bottom: 140px;
+}
+
+#trade_center {
+    padding-top: 100px;
 }
 
 .wrap_details {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     padding-top: 151px;
     & p:first-child {
         font-family:$font_family_Montserrat;
@@ -353,10 +402,14 @@ h2 {
         text-transform: uppercase;
     }
     & p:last-of-type {
-        font-family:$font_family_Montserrat;
+        font-family:$font_family_OpenSans;
         font-size: 1.125rem;
         line-height: 1.875rem;
+        // letter-spacing: -0.001rem;
         margin-bottom: 41px;
+    }
+    & a:hover {
+        transform: scale(1.03);
     }
 }
 
@@ -365,7 +418,7 @@ h2.text_h2_left {
     margin-bottom: 19px;
 }
 
-.btn_details {
+.btn_what_do {
     margin-bottom: 60px;
 }
 
@@ -376,10 +429,50 @@ h2.text_h2_left {
     line-height: 1.275rem;
     color: #000;
     text-decoration: none;
+    font-weight: 400;
     // &::before {
     //     display: block;
     //     content: '';
     // }
+}
+
+.btn {
+    display: inline-block;
+    height: 48px;
+    padding: 0 41px;
+    color: #000;
+    cursor: pointer;
+    text-transform: uppercase;
+    line-height: 1.0625rem;
+    font-family: $font_family_Montserrat;
+    font-size: 0.875rem;
+    // border: none;
+    border: 1px solid #2C4058;
+    background-color: #fff;
+    // background: #496bfe; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+    // background: -o-linear-gradient(42deg, #496bfe 46%,#5474fd 46%);
+    // background: linear-gradient(42deg, #496bfe 46%,#5474fd 46%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#496bfe', endColorstr='#5474fd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    // background-position: center top;
+    // background-size: 300% auto;
+    &:hover {
+        // background-position: left top;
+        transform: scale(1.03);
+    }
+    // &:focus {
+    //     // outline: none;
+    //     // border: 1px solid #FF6363;
+    // }
+}
+
+.wght {
+    color: #fff;
+}
+
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 

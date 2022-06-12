@@ -150,7 +150,6 @@ img {
 
 .first_screen {
   position: relative;
-  margin-bottom: 100px;
 }
 
 .wrap_menu {
@@ -359,13 +358,11 @@ h1 {
   content: "";
   display: block;
   position: absolute;
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   border-top: 1px solid #fff;
   border-left: 1px solid #fff;
   transform: rotate(225deg);
-  top: -2px;
-  left: 49.9%;
 }
 .bottom_arrow:hover {
   transform: scale(1.1);
@@ -397,12 +394,59 @@ h2 {
   flex-wrap: wrap;
 }
 
+.flex_reverse {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
 .wrap_two_img {
+  position: relative;
   max-width: 845px;
   width: 100%;
   height: 527px;
-  background-color: #55B7FF;
   margin-right: 70px;
+}
+.wrap_two_img::before {
+  content: "";
+  display: block;
+  max-width: 585px;
+  width: 100%;
+  height: 470px;
+  background-color: #55B7FF;
+}
+.wrap_two_img .pic {
+  position: absolute;
+  max-width: 630px;
+  width: 100%;
+  height: 470px;
+  right: 0;
+  bottom: 0;
+}
+
+.reverse_pic {
+  margin-right: 0;
+}
+.reverse_pic::before {
+  position: absolute;
+  right: 0;
+  background-color: #7E5AFF;
+}
+.reverse_pic .pic {
+  left: 0;
+}
+
+.reverse_margin {
+  margin-right: 62px;
+  margin-left: 215px;
+}
+
+#trade_center,
+#commerce_centre {
+  margin-bottom: 140px;
+}
+
+#trade_center {
+  padding-top: 100px;
 }
 
 .wrap_details {
@@ -418,10 +462,13 @@ h2 {
   text-transform: uppercase;
 }
 .wrap_details p:last-of-type {
-  font-family: "Montserrat";
+  font-family: "Open Sans", sans-serif;
   font-size: 1.125rem;
   line-height: 1.875rem;
   margin-bottom: 41px;
+}
+.wrap_details a:hover {
+  transform: scale(1.03);
 }
 
 h2.text_h2_left {
@@ -429,7 +476,7 @@ h2.text_h2_left {
   margin-bottom: 19px;
 }
 
-.btn_details {
+.btn_what_do {
   margin-bottom: 60px;
 }
 
@@ -440,6 +487,34 @@ h2.text_h2_left {
   line-height: 1.275rem;
   color: #000;
   text-decoration: none;
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-block;
+  height: 48px;
+  padding: 0 41px;
+  color: #000;
+  cursor: pointer;
+  text-transform: uppercase;
+  line-height: 1.0625rem;
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  border: 1px solid #2C4058;
+  background-color: #fff;
+}
+.btn:hover {
+  transform: scale(1.03);
+}
+
+.wght {
+  color: #fff;
+}
+
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer .container {
