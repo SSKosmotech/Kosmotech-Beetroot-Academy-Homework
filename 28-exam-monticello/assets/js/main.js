@@ -143,6 +143,20 @@ $(function(){
     }
 
 
+    lightGallery(document.getElementById('lightgallery'), {
+        plugins: [lgZoom, lgThumbnail],
+        thumbnail: true,
+        speed: 500,
+        controls: true,
+        zoom: true,
+        actualSize: true,
+        animateThumb: false,
+        zoomFromOrigin: true,
+        actualSize: true,
+    });
+
+
+
 
     
         

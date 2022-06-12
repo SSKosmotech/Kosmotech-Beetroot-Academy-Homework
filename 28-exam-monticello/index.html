@@ -46,8 +46,12 @@
     
     <!-- <link rel="stylesheet" href="assets/styles/fonts_style.min.css"> -->
 
-    <link rel="stylesheet" type="text/css" href="assets/styles/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/styles/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/plugins/slickSlider/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/plugins/slickSlider/slick-theme.css"/>
+    <link rel="stylesheet" href="assets/plugins/lightGallery/lightgallery.css">
+    <link rel="stylesheet" href="assets/plugins/lightGallery/lg-zoom.css">
+    <link rel="stylesheet" href="assets/plugins/lightGallery/lg-thumbnail.css">
+    <link rel="stylesheet" href="assets/plugins/lightGallery/lightgallery-bundle.min.css">
 
 
     <link rel="stylesheet" href="assets/styles/index.min.css">
@@ -437,21 +441,58 @@
 
         </section>
 
-        <section>
+        <section id="gallery">
 
             <div class="container">
+                
+                <h2 class="up_line">Gallery</h2>
 
-                <h2>Gallery</h2>
-
-                <div class="gallery">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                <div id="lightgallery" class="gallery">
+                    <a href="assets/images/gallery_main.jpg" class="pic" data-lg-size="580-438">
+                        <img src="assets/images/gallery_main.jpg" alt="Gallery main foto">  
+                            <svg class="loop"
+                                xmlns="http://www.w3.org/2000/svg" height="48px" viewbox="0 0 24 24" width="48px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"/>
+                            </svg>
+                    </a>
+                    <a href="assets/images/gallery_white.jpg" class="pic" data-lg-size="285-214">
+                        <img src="assets/images/gallery_white.jpg" alt="Gallery white foto">    
+                            <svg class="loop"
+                                xmlns="http://www.w3.org/2000/svg" height="48px" viewbox="0 0 24 24" width="48px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"/>
+                            </svg>
+                    </a>
+                    <a href="assets/images/gallery_orange.jpg" class="pic" data-lg-size="285-214">
+                        <img src="assets/images/gallery_orange.jpg" alt="Gallery orange foto">    
+                            <svg class="loop"
+                                xmlns="http://www.w3.org/2000/svg" height="48px" viewbox="0 0 24 24" width="48px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"/>
+                            </svg>
+                    </a>
+                    <a href="assets/images/gallery_round.jpg" class="pic" data-lg-size="285-214">
+                        <img src="assets/images/gallery_round.jpg" alt="Gallery round foto">    
+                            <svg class="loop"
+                                xmlns="http://www.w3.org/2000/svg" height="48px" viewbox="0 0 24 24" width="48px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"/>
+                            </svg>
+                    </a>
+                    <a href="assets/images/gallery_triangle.jpg" class="pic" data-lg-size="285-214">
+                        <img src="assets/images/gallery_triangle.jpg" alt="Gallery triangle foto">    
+                            <svg class="loop"
+                                xmlns="http://www.w3.org/2000/svg" height="48px" viewbox="0 0 24 24" width="48px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"/>
+                            </svg>
+                    </a>
                 </div>
 
-                <button type="button">See more</button>
+
+
+                <!-- <div id="lightgallery">
+                    <a href="img/img1.jpg" data-lg-size="1600-2400">
+                        <img alt=".." src="img/thumb1.jpg" />
+                    </a>
+                    <a href="img/img2.jpg" data-lg-size="1024-800">
+                        <img alt=".." src="img/thumb2.jpg" />
+                    </a>
+                    ...
+                </div> -->
+
+                <button type="button" class="btn">See more</button>
             </div>
 
         </section>
@@ -631,7 +672,10 @@
     <!-- <script src="https://kit.fontawesome.com/a021bb2175.js" crossorigin="anonymous"></script> -->
 
     <script src="assets/js/jquery-3.6.0.min.js" ></script>
-    <script src="assets/js/slick.min.js" ></script>
+    <script src="assets/plugins/slickSlider/slick.min.js" ></script>
+    <script src="assets/plugins/lightGallery/lightgallery.min.js"></script>
+    <script src="assets/plugins/lightGallery/lg-zoom.min.js"></script>
+    <script src="assets/plugins/lightGallery/lg-thumbnail.min.js"></script>
 
     <script src="assets/js/lazyload.prod.js"></script>
     <script src="assets/js/main.js"></script>
