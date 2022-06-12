@@ -1,0 +1,52 @@
+[
+    {
+        "image": "assets/images/see-the-unmatched.jpg",
+        "title": "See the unmatched<br>beauty of the great.",
+        "text": "Free directories: directories are perfect<br>for customers that are searching for...",
+        "date": "20 Jan 2020",
+        "author": {
+            "avatar": "assets/images/ALJA-BRUN.jpg",
+            "name": "Alja Brun"
+        } 
+    },
+    {
+        "image": "assets/images/effective-advertising.jpg",
+        "title": "Effective advertising<br>pointers.",
+        "text": "Having a home based business is a<br>wonderful asset to your life...",
+        "date": "13 Dec 2019",
+        "author": {
+            "avatar": "assets/images/DOMINIC-FREEMAN.jpg",
+            "name": "Dominic Freeman"
+        } 
+    }, 
+    {
+        "image": "assets/images/hypnotize-yourself.jpg",
+        "title": "Hypnotize yourself into<br>the ghost.",
+        "text": " There are many things that are<br>important to catalog design...",
+        "date": "30 Nov 2019",
+        "author": {
+            "avatar": "assets/images/ALICE-WARD.jpg",
+            "name": "Alice Ward"
+        } 
+    },
+    {
+        "image": "assets/images/see-the-unmatched.jpg",
+        "title": "See the unmatched<br>beauty of the great.",
+        "text": "Free directories: directories are perfect<br>for customers that are searching for...",
+        "date": "20 Jan 2020",
+        "author": {
+            "avatar": "assets/images/ALJA-BRUN.jpg",
+            "name": "Alja Brun"
+        } 
+    },
+    {
+        "image": "assets/images/effective-advertising.jpg",
+        "title": "Effective advertising<br>pointers.",
+        "text": "Having a home based business is a<br>wonderful asset to your life...",
+        "date": "13 Dec 2019",
+        "author": {
+            "avatar": "assets/images/DOMINIC-FREEMAN.jpg",
+            "name": "Dominic Freeman"
+        } 
+    }
+]
