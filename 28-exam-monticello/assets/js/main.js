@@ -157,6 +157,23 @@ $(function(){
 
 
 
+    document.getElementById('load_map_link').addEventListener('click', function(event){
+        event.preventDefault();
+        event.stopPropagation();
+        document.getElementById('map').innerHTML = '';
+        initMap();
+    })
+
+    function initMap(){
+        let map = L.map('map').setView([40.67831799088298, -73.89777067307712], 17);
+
+        L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+
+        L.marker([40.67831799088298, -73.89777067307712]).addTo(map)
+        .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+        // .openPopup();
+    }
 
     
         

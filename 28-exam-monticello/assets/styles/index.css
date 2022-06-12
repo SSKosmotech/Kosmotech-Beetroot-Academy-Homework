@@ -716,6 +716,56 @@ h2.text_h2_left {
   display: none;
 }
 
+#map {
+  height: 700px;
+  width: 100%;
+}
+#map > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#map > a:after {
+  content: "Click to interractive map";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+#map > a:hover:after {
+  opacity: 0.6;
+}
+
+#contacts_section {
+  position: relative;
+}
+
+.wrap_form {
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 60px 69px 60px;
+}
+
 .footer .container {
   padding-top: 204px;
   height: 549px;
