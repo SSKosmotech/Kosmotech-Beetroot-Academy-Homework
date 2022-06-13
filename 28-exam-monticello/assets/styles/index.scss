@@ -207,7 +207,10 @@ img {
     flex-direction: column;
     align-content: flex-end;
     top: 33%;
-    width: 94.5%;
+}
+
+#main_slider .slick-dots {
+    width: 5.5%;
 }
 
 #main_slider .slick-dots {
@@ -268,6 +271,8 @@ img {
     justify-content: center;
     bottom: 93px;
     top: 76%;
+    width: 94.5%;
+
 }
 
 .slick-dots li

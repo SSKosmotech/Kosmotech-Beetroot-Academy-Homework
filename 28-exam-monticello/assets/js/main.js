@@ -11,34 +11,27 @@ $(function(){
         arrows: false,
         autoplay: true,
         autoplaySpeed: 3000,
-        // responsive: [
-        //     {
-        //       breakpoint: 768,
-        //       settings: {
-        //         slidesToShow: 1,
-        //         infinite: true,
-        //         dots: true,
-        //         arrows: false,
-        //         autoplay: true,
-        //         autoplaySpeed: 3000,
-        //         slidesToScroll: 1,
-        //         adaptiveHeight: true,
-        //       }
-        //     },
-        //     {
-        //       breakpoint: 320,
-        //       settings: {
-        //         slidesToShow: 1,
-        //         infinite: true,
-        //         dots: true,
-        //         arrows: false,
-        //         autoplay: true,
-        //         autoplaySpeed: 3000,
-        //         slidesToScroll: 1,
-        //         adaptiveHeight: true,
-        //       }
-        //     }
-        // ]
+        responsive: [
+            {
+              breakpoint: 890,
+              settings: {
+                dots: false,
+              }
+            },
+            {
+              breakpoint: 320,
+              settings: {
+                slidesToShow: 1,
+                infinite: true,
+                dots: true,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+              }
+            }
+        ]
     });
 
 
@@ -229,19 +222,17 @@ $(function(){
     })
 
     
-    
-
-    // запуск функції активація і дезактивація hamburger меню (при кліці по таким класам):
-        $('.hamburger, #page_overlay, .mobile_menu a').on('click', function(){
-            toggleMenu ();
-        })
-
     // функція для активація і дезактивація hamburger меню по клікам на: гамбургер, оверлей, мобільні пункти меню
     function toggleMenu (){
         $('.hamburger').toggleClass('is-active');
                 $('#side_block, #page_overlay').toggleClass('open');
                 $('body').toggleClass('lock');
         }
+
+    // запуск функції активація і дезактивація hamburger меню (при кліці по таким класам):
+        $('.hamburger, #page_overlay, .mobile_menu a').on('click', function(){
+            toggleMenu ();
+        })
 
 
 })
