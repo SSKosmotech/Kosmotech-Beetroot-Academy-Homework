@@ -153,6 +153,12 @@ $(function(){
         animateThumb: false,
         zoomFromOrigin: true,
         actualSize: true,
+        mobileSettings: {
+            controls: false,
+            showCloseIcon: false,
+            download: false,
+            rotate: false
+          }
     });
 
 
@@ -175,8 +181,9 @@ $(function(){
         // .openPopup();
     }
 
-    
-        
+
         
 
 })
+
+
