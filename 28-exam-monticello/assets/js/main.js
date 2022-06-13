@@ -7,7 +7,7 @@ $(function(){
         // adaptiveHeight: true,
         dots: true,
         arrows: false,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 3000,
         // responsive: [
         //     {
@@ -48,8 +48,8 @@ $(function(){
             // centerMode: true,
             infinite: true,
             slidesToScroll: 1,
-            // autoplay: true,
-            autoplaySpeed: 3000,
+            autoplay: true,
+            autoplaySpeed: 4000,
             dots: true,
             // responsive: [
             //     {
@@ -146,7 +146,7 @@ $(function(){
     lightGallery(document.getElementById('lightgallery'), {
         plugins: [lgZoom, lgThumbnail],
         thumbnail: true,
-        speed: 500,
+        speed: 1000,
         controls: true,
         zoom: true,
         actualSize: true,
@@ -157,29 +157,80 @@ $(function(){
             controls: false,
             showCloseIcon: false,
             download: false,
-            rotate: false
+            // rotate: false
           }
     });
 
 
 
-    document.getElementById('load_map_link').addEventListener('click', function(event){
+
+
+    
+    // document.getElementById('load_map_link').addEventListener('click', function(event){
+    $("#load_map_link").on('click', function (event) {
         event.preventDefault();
         event.stopPropagation();
-        document.getElementById('map').innerHTML = '';
+        // document.getElementById('map').innerHTML = '';
+        $("#map", '');
         initMap();
     })
 
+
+
     function initMap(){
-        let map = L.map('map').setView([40.67831799088298, -73.89777067307712], 17);
+        let map = L.map('map').setView([40.67831799088298, -73.89777067307712], 18);
 
         L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
 
-        L.marker([40.67831799088298, -73.89777067307712]).addTo(map)
-        .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+
+        
+        let pinIcon = L.icon({
+            iconUrl: 'assets/images/pin.png',
+            iconSize: [106, 106],
+            iconAnchor: [106, 106],
+            popupAnchor: [-53, -90],
+            // shadowUrl: 'assets/icons/pin.png',
+                // shadowSize: [106, 106],
+        });
+
+
+
+        L.marker([40.67831799088298, -73.89777067307712], {icon: pinIcon}).addTo(map)
+        .bindPopup(`
+        <div class="popup">
+            <span>Serhii Simonov can be there</span>
+            <img src="assets/images/kosmo_planet.png">
+        </div>
+        `);
         // .openPopup();
     }
+
+
+
+    // $("#init_map").on('click', function () {
+    //     $(this).remove();
+    //     var map = L.map('my_map').setView([40.851137941150604, -73.84834194992693], 17);
+
+   
+
+    //     var myIcon = L.icon({
+    //         iconUrl: 'assets/icons/pin.png',
+    //         iconSize: [106, 106],
+    //         iconAnchor: [106, 106],
+    //         popupAnchor: [-53, -90],
+    //         shadowUrl: 'assets/icons/pin.png',
+    //             shadowSize: [106, 106],
+    //     });
+
+    //     L.marker([40.851137941150604, -73.84834194992693], { icon: myIcon }).addTo(map)
+    //         .bindPopup(`
+    //     <div class="map__popup">
+    //         <img src="assets/images/orang.jpg">
+    //         <div class="map__info"><b>Welcome!</b></div>
+    //         </div>
+    //     `);
+    // });
 
 
         
