@@ -40,12 +40,18 @@
     <meta name="twitter:image" content="https://sskosmotech.github.io/Kosmotech-Beetroot-Academy-Homework/17-exam-bhromaon/assets/images/first_screen_bg.jpg" />
 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     
-    <!-- <link rel="stylesheet" href="assets/styles/fonts_style.min.css"> -->
+    
+    
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&family=Source+Sans+Pro&display=swap" rel="stylesheet"> -->
+    
+    <link rel="stylesheet" href="assets/styles/fonts_style.min.css">
 
+    
+    
+    
     <link rel="stylesheet" type="text/css" href="assets/plugins/slickSlider/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/plugins/slickSlider/slick-theme.css"/>
     <link rel="stylesheet" href="assets/plugins/leaflet/leaflet.css">
@@ -67,7 +73,7 @@
             <div class="header_logo">
                 <div class="pic">
                     <a href="#">
-                        <img src="assets/images/monticello_logo.png" alt="Logo Mmonticello">
+                        <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/monticello_logo.png" alt="Logo Mmonticello">
                     </a>
                 </div>
             </div>
@@ -75,10 +81,10 @@
 
             <nav class="mobile_menu">
                             <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
-                                <li><a itemprop="url" href="#about_us">About Us</a></li>
-                                <li><a itemprop="url" href="#projects">Projects</a></li>
-                                <li><a itemprop="url" href="#news">News</a></li>
-                                <li><a itemprop="url" href="#contact">Contact</a></li>
+                                <li><a itemprop="url" href="#trade_center">About Us</a></li>
+                                <li><a itemprop="url" href="#gallery_scroll">Projects</a></li>
+                                <li><a itemprop="url" href="#latest_news_h2">News</a></li>
+                                <li><a itemprop="url" href="#contacts_section">Contact</a></li>
                                 
                             </ul>
                         </nav>   
@@ -87,17 +93,12 @@
                 <span class="hamburger-box">
                   <span class="hamburger-inner"></span>
                 </span>
-              </button> 
+            </button> 
 
         </div>
     </div>
 
     <div id="page_overlay"></div>
-
-    <!-- <section id="first_screen" class="main_container lazy-bg bgimg" data-src="assets/images/first_screen_bg.jpg">
-
-    </section> -->
-
 
     <header id="header" class="main_container">
         <div class="container">
@@ -116,10 +117,10 @@
                     </div>
                     <nav class="main_menu">
                         <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
-                            <li><a itemprop="url" href="#about_us">About Us</a></li>
-                            <li><a itemprop="url" href="#projects">Projects</a></li>
-                            <li><a itemprop="url" href="#news">News</a></li>
-                            <li><a itemprop="url" href="#contact">Contact</a></li>
+                            <li><a itemprop="url" href="#trade_center">About Us</a></li>
+                            <li><a itemprop="url" href="#gallery_scroll">Projects</a></li>
+                            <li><a itemprop="url" href="#latest_news_h2">News</a></li>
+                            <li><a itemprop="url" href="#contacts_section">Contact</a></li>
                             
                         </ul>
                     </nav> 
@@ -245,7 +246,7 @@
                 <div class="wrap_commerce">
                     <div class="wrap_two_img">
                         <div class="pic">
-                            <img src="assets/images/trade-center.jpg" alt="Trade Center Foto">
+                            <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/trade-center.jpg" alt="Trade Center Foto">
                         </div>
                     </div>
     
@@ -270,13 +271,13 @@
             </div>
         </section>
 
-        <section id="commerce_centre" class="main_container lazy-bg bgimg" data-src="assets/images/why_choose_us_bg.jpg">
+        <section id="commerce_centre">
             <div class="container">
 
                 <div class="wrap_commerce flex_reverse">
                     <div class="wrap_two_img reverse_pic">
                         <div class="pic">
-                            <img src="assets/images/commerce-centre.jpg" alt="Commerce Centre Foto">
+                            <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/commerce-centre.jpg" alt="Commerce Centre Foto">
                         </div>
                     </div>
     
@@ -303,139 +304,12 @@
         <section id="latest_news">
 
             <div class="container bgimg lazy-bg" data-src="assets/images/latest-news-background.jpg">
-                <h2 class="up_line up_line_wght wght">Latest news</h2>
+               
+                <h2 id="latest_news_h2" class="up_line up_line_wght wght">Latest news</h2>
 
                 <div id="news_slider">
-    
-                    <!-- <div class="news_slider_content"> 
-                        <div class="pic">
-                            <img src="assets/images/see-the-unmatched.jpg" alt="See the unmatched beauty of the great foto">                         
-                        </div>
-                        <div class="wrap_wht_bckg">
-                            <h3>
-                                See the unmatched<br>
-                                beauty of the great.
-                            </h3>
-                            <p>
-                               Free directories: directories are perfect<br>
-                               for customers that are searching for...
-                            </p>
-                            <div class="wrap_author">
-                                <div class="pic">
-                                    <img src="assets/images/ALJA-BRUN.jpg" alt="">
-                                </div>
-                                <div class="wrap_info_news">
-                                    <p>Alja Brun</p>
-                                    <p>20 Jan 2020</p>
-                                </div>
-                            </div>
-                        </div>
-                  
-                    </div>
-    
-                    <div class="news_slider_content"> 
-                        <div class="pic">
-                            <img src="assets/images/effective-advertising.jpg" alt="Effective advertising pointers foto">                         
-                        </div>
-                        <div class="wrap_wht_bckg">
-                            <h3>
-                                Effective advertising<br>
-                                pointers.
-                            </h3>
-                            <p>
-                                Having a home based business is a<br>
-                                wonderful asset to your life...
-                            </p>
-                            <div class="wrap_author">
-                                <div class="pic">
-                                    <img src="assets/images/DOMINIC-FREEMAN.jpg" alt="">
-                                </div>
-                                <div class="wrap_info_news">
-                                    <p>Dominic Freeman</p>
-                                    <p>13 Dec 2019</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="news_slider_content"> 
-                        <div class="pic">
-                            <img src="assets/images/hypnotize-yourself.jpg" alt="Hypnotize yourself into the ghost foto">
-                        </div>
-                        <div class="wrap_wht_bckg">
-                            <h3>
-                                Hypnotize yourself into<br>
-                                the ghost.
-                            </h3>
-                            <p>
-                                There are many things that are<br>
-                                important to catalog design...
-                            </p>
-                            <div class="wrap_author">
-                                <div class="pic">
-                                    <img src="assets/images/ALICE-WARD.jpg" alt="">
-                                </div>                            
-                                <div class="wrap_info_news">
-                                    <p>Alice Ward</p>
-                                    <p>30 Nov 2019</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-    
-                    <div class="news_slider_content"> 
-                        <div class="pic">
-                            <img src="assets/images/see-the-unmatched.jpg" alt="See the unmatched beauty of the great foto">                         
-                        </div>
-                        <div class="wrap_wht_bckg">
-                            <h3>
-                                See the unmatched<br>
-                                beauty of the great.
-                            </h3>
-                            <p>
-                               Free directories: directories are perfect<br>
-                               for customers that are searching for...
-                            </p>
-                            <div class="wrap_author">
-                                <div class="pic">
-                                    <img src="assets/images/ALJA-BRUN.jpg" alt="">
-                                </div>
-                                <div class="wrap_info_news">
-                                    <p>Alja Brun</p>
-                                    <p>20 Jan 2020</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-    
-                    <div class="news_slider_content"> 
-                        <div class="pic">
-                            <img src="assets/images/effective-advertising.jpg" alt="Effective advertising pointers foto">                         
-                        </div>
-                        <div class="wrap_wht_bckg">
-                            <h3>
-                                Effective advertising<br>
-                                pointers.
-                            </h3>
-                            <p>
-                                Having a home based business is a<br>
-                                wonderful asset to your life...
-                            </p>
-                            <div class="wrap_author">
-                                <div class="pic">
-                                    <img src="assets/images/DOMINIC-FREEMAN.jpg" alt="">
-                                </div>
-                                <div class="wrap_info_news">
-                                    <p>Dominic Freeman</p>
-                                    <p>13 Dec 2019</p>
-                                </div>
-                            </div>
-                        </div>
- 
-                    </div> -->
-    
+
+                
                 </div>
             </div>
             
@@ -482,19 +356,7 @@
                     </a>
                 </div>
 
-
-
-                <!-- <div id="lightgallery">
-                    <a href="img/img1.jpg" data-lg-size="1600-2400">
-                        <img alt=".." src="img/thumb1.jpg" />
-                    </a>
-                    <a href="img/img2.jpg" data-lg-size="1024-800">
-                        <img alt=".." src="img/thumb2.jpg" />
-                    </a>
-                    ...
-                </div> -->
-
-                <button type="button" class="btn">See more</button>
+                <button type="button" class="btn btn-gallery">See more</button>
             </div>
 
         </section>
@@ -504,7 +366,7 @@
                 
                 <div id="map">
                     <a href="javascript:void(0)" id="load_map_link">
-                        <img src="assets/images/map_img.png" alt="Map Img" >
+                        <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/map_img.png" alt="Map Img" >
                     </a>
                 </div>
 
@@ -606,72 +468,21 @@
         </div>
     </footer>
     
-    <!-- <i class="fa-light fa-clock-nine"></i> -->
-    <!-- <i class="fa-solid fa-clock-nine"></i> -->
-    <!-- <i style="color: red" class="fa-solid fa-phone"></i> -->
+  
     <!-- <script src="https://kit.fontawesome.com/a021bb2175.js" crossorigin="anonymous"></script> -->
 
     <script src="assets/js/jquery-3.6.0.min.js" ></script>
-    <script src="assets/plugins/slickSlider/slick.min.js" ></script>
-
-    <!-- <script src="assets/plugins/lightGallery-master/dist/lightgallery.umd.js"></script>
-    <script src="assets/plugins/lightGallery-master/dist/plugins/thumbnail/lg-thumbnail.umd.js"></script>
-    <script src="assets/plugins/lightGallery-master/dist/plugins/zoom/lg-zoom.umd.js"></script> -->
+    <script src="assets/js/lazyload.prod.js"></script>
     
+    <script src="assets/plugins/slickSlider/slick.min.js" ></script>
     
     <script src="assets/plugins/lightGallery-master/dist/lightgallery.min.js"></script>
     <script src="assets/plugins/lightGallery-master/dist/plugins/thumbnail/lg-thumbnail.min.js"></script>
     <script src="assets/plugins/lightGallery-master/dist/plugins/zoom/lg-zoom.min.js"></script>
-    <script src="assets/plugins/leaflet/leaflet.js"></script>
-
-
-    <script src="assets/js/lazyload.prod.js"></script>
-    <script src="assets/js/main.js"></script>
-
-    <!-- <script>
-
-        //фіксація горизонтального меню, яке знаходиться нижче першого екрану
-        $(window).on('scroll', function(){
-            if($(window).scrollTop()>$("#first_screen").height()){
-                $('header').addClass('fixed');
-            }else{
-                $('header').removeClass('fixed');
-            }
-        })
-
-
-        function toggleMenu (){
-            $('.hamburger').toggleClass('is-active');
-                    $('#side_block, #page_overlay').toggleClass('open');
-                    $('body').toggleClass('lock');
-            }
     
-        //активація і дезактивація hamburger меню по клікам на: гамбургер, оверлей, мобільні пункти меню
-            $(function() {
-                $('.hamburger, #page_overlay, .mobile_menu a').on('click', function(){
-                    toggleMenu ();
-                })
-            })
-
-        //плавний скрол до секції, при клікі на мобільні і головні пункти меню і стрілка на first_screen 
-            $(function(){
-                $('.mobile_menu a, .main_menu a, .first_screen a').on('click', function(e){
-                    e.preventDefault(); //заборонили браузеру проскролити до id
-                  $('html, body').animate({scrollTop:$($(this).attr('href')).offset().top-$('header').outerHeight()}, 800)
-
-                })
-            })
-        //активація "скляного" горизонтального меню
-            $(window).on('scroll', ()=>{
-                    if($(window).scrollTop()>480) {
-                        $('header').addClass('scroll')
-                    }else{
-                        $('header').removeClass('scroll')
-                    }
-            })
-
-
-    </script> -->
+    <script src="assets/plugins/leaflet/leaflet.js"></script>
+    
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>

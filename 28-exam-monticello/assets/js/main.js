@@ -1,4 +1,6 @@
 $(function(){
+
+    // ініціалізація головного (вертикального) слайдера
     $('#main_slider').slick({
         infinite: true,
         vertical: true,
@@ -40,6 +42,7 @@ $(function(){
     });
 
 
+    // забір новин з json та запуск функції побудови dom і вставка новин в слайдер
     $.get('data/news.json', (resp)=>{
         console.log(resp);
         buildNewsHtml(resp);
@@ -110,6 +113,7 @@ $(function(){
 
     });
 
+    //функція побудови dom для news
     function buildNewsHtml(cart){
         let news_html = ''
         cart.forEach(element => {
@@ -140,9 +144,9 @@ $(function(){
             `
         });
         $('#news_slider').html(news_html);
-    }
+    };
 
-
+    //ініціалізація lightGallery
     lightGallery(document.getElementById('lightgallery'), {
         plugins: [lgZoom, lgThumbnail],
         thumbnail: true,
@@ -165,7 +169,7 @@ $(function(){
 
 
 
-    
+    // фклік по фото карти, якитй активує саму карту
     // document.getElementById('load_map_link').addEventListener('click', function(event){
     $("#load_map_link").on('click', function (event) {
         event.preventDefault();
@@ -173,10 +177,10 @@ $(function(){
         // document.getElementById('map').innerHTML = '';
         $("#map", '');
         initMap();
-    })
+    });
 
 
-
+    // функція побудови карти
     function initMap(){
         let map = L.map('map').setView([40.67831799088298, -73.89777067307712], 18);
 
@@ -184,7 +188,7 @@ $(function(){
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
 
 
-        
+        //створюю кастомний маркер   
         let pinIcon = L.icon({
             iconUrl: 'assets/images/pin.png',
             iconSize: [106, 106],
@@ -195,7 +199,7 @@ $(function(){
         });
 
 
-
+        // будую dom для виводу кастомного маркеру (і popup) на карту
         L.marker([40.67831799088298, -73.89777067307712], {icon: pinIcon}).addTo(map)
         .bindPopup(`
         <div class="popup">
@@ -204,37 +208,40 @@ $(function(){
         </div>
         `);
         // .openPopup();
-    }
+    };
 
+    //плавний скрол до секції, при клікі на мобільні і головні пункти меню і стрілка на first_screen 
+      $('.mobile_menu a, .main_menu a, .first_screen a.bottom_arrow').on('click', function(e){
+        e.preventDefault(); //заборонили браузеру проскролити до id
+      $('html, body').animate({
+        scrollTop:$($(this).attr('href')).offset().top
+    
+        }, 800)
+    });
 
+    //активація "скляного" горизонтального меню
+    $(window).on('scroll', ()=>{
+        if($(window).scrollTop()>135) {
+            $(".wrap_menu").addClass("scroll")
+        }else{
+            $(".wrap_menu").removeClass("scroll")
+        }
+    })
 
-    // $("#init_map").on('click', function () {
-    //     $(this).remove();
-    //     var map = L.map('my_map').setView([40.851137941150604, -73.84834194992693], 17);
+    
+    
 
-   
+    // запуск функції активація і дезактивація hamburger меню (при кліці по таким класам):
+        $('.hamburger, #page_overlay, .mobile_menu a').on('click', function(){
+            toggleMenu ();
+        })
 
-    //     var myIcon = L.icon({
-    //         iconUrl: 'assets/icons/pin.png',
-    //         iconSize: [106, 106],
-    //         iconAnchor: [106, 106],
-    //         popupAnchor: [-53, -90],
-    //         shadowUrl: 'assets/icons/pin.png',
-    //             shadowSize: [106, 106],
-    //     });
+    // функція для активація і дезактивація hamburger меню по клікам на: гамбургер, оверлей, мобільні пункти меню
+    function toggleMenu (){
+        $('.hamburger').toggleClass('is-active');
+                $('#side_block, #page_overlay').toggleClass('open');
+                $('body').toggleClass('lock');
+        }
 
-    //     L.marker([40.851137941150604, -73.84834194992693], { icon: myIcon }).addTo(map)
-    //         .bindPopup(`
-    //     <div class="map__popup">
-    //         <img src="assets/images/orang.jpg">
-    //         <div class="map__info"><b>Welcome!</b></div>
-    //         </div>
-    //     `);
-    // });
-
-
-        
 
 })
-
-
