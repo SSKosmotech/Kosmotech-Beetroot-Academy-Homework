@@ -17,20 +17,20 @@ $(function(){
               settings: {
                 dots: false,
               }
-            },
-            {
-              breakpoint: 320,
-              settings: {
-                slidesToShow: 1,
-                infinite: true,
-                dots: true,
-                arrows: false,
-                autoplay: true,
-                autoplaySpeed: 3000,
-                slidesToScroll: 1,
-                adaptiveHeight: true,
-              }
             }
+            // {
+            //   breakpoint: 320,
+            //   settings: {
+            //     slidesToShow: 1,
+            //     infinite: true,
+            //     dots: true,
+            //     arrows: false,
+            //     autoplay: true,
+            //     autoplaySpeed: 3000,
+            //     slidesToScroll: 1,
+            //     adaptiveHeight: true,
+            //   }
+            // }
         ]
     });
 
@@ -47,61 +47,27 @@ $(function(){
             autoplay: true,
             autoplaySpeed: 4000,
             dots: true,
-            // responsive: [
-            //     {
-            //         breakpoint: 1100,
-            //         settings: {
-            //           slidesToShow: 4,
-            //           infinite: true,
-            //           dots: false,
-            //           arrows: true,
-            //           autoplay: true,
-            //           autoplaySpeed: 3000,
-            //           slidesToScroll: 4,
-            //           lazyLoad: 'ondemand',
-            //         }
-            //     },
-            //     {
-            //       breakpoint: 850,
-            //       settings: {
-            //         slidesToShow: 3,
-            //         infinite: true,
-            //         dots: false,
-            //         arrows: true,
-            //         autoplay: true,
-            //         autoplaySpeed: 3000,
-            //         slidesToScroll: 3,
-            //         lazyLoad: 'ondemand',
-            //       }
-            //     },
-            //     {
-            //       breakpoint: 750,
-            //       settings: {
-            //         slidesToShow: 2,
-            //         infinite: true,
-            //         dots: true,
-            //         arrows: false,
-            //         autoplay: true,
-            //         autoplaySpeed: 3000,
-            //         slidesToScroll: 2,
-            //         lazyLoad: 'ondemand',
-            //         // centerMode: true,
-            //       }
-            //     },
-            //     {
-            //       breakpoint: 401,
-            //       settings: {
-            //         slidesToShow: 1,
-            //         infinite: true,
-            //         dots: true,
-            //         arrows: false,
-            //         autoplay: true,
-            //         autoplaySpeed: 3000,
-            //         slidesToScroll: 1,
-            //         lazyLoad: 'ondemand',
-            //       }
-            //     }
-            // ]
+            lazyLoad: 'ondemand',
+            responsive: [
+                {
+                    breakpoint: 1300,
+                    settings: {
+                      slidesToShow: 2,
+                      dots: false,
+                      arrows: true,
+                      slidesToScroll: 2,
+                    }
+                },
+                {
+                    breakpoint: 1000,
+                    settings: {
+                      slidesToShow: 1,
+                      arrows: false,
+                      dots: false,
+                      slidesToScroll: 1,
+                  }
+                }
+            ]
         });
 
     });
@@ -143,7 +109,7 @@ $(function(){
     lightGallery(document.getElementById('lightgallery'), {
         plugins: [lgZoom, lgThumbnail],
         thumbnail: true,
-        speed: 1000,
+        speed: 500,
         controls: true,
         zoom: true,
         actualSize: true,
