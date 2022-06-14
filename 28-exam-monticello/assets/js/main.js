@@ -17,7 +17,14 @@ $(function(){
               settings: {
                 dots: false,
               }
-            }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    swipe: false,
+                    dots: false,
+                }
+              }
         ]
     });
 

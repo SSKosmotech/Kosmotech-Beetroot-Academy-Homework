@@ -79,6 +79,9 @@
             margin-left: 0;
         }
     }
+    #main_slider .slick-dots {
+        right: 40px;
+    }
 }
 
 @media screen and (max-width: 1035px) {
@@ -296,6 +299,15 @@
         padding-top: 55px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    h1 {
+        padding: 0 60px;
+    }
+}
+
+
+
 
 @media screen and (max-width: 675px) {
     .wrap_wht_bckg h3 {
