@@ -149,7 +149,7 @@ img {
   position: fixed;
   top: 0px;
   width: 100%;
-  max-width: 1600px;
+  padding-top: 53px;
   z-index: 10;
   left: 50%;
   transform: translateX(-50%);
@@ -236,7 +236,6 @@ img {
 }
 
 #main_slider {
-  max-width: 1600px;
   width: 100%;
   max-height: 800px;
   height: 100%;
@@ -690,6 +689,11 @@ h2.text_h2_left {
   opacity: 1;
 }
 
+.gallery {
+  max-width: 1170px;
+  width: 100%;
+}
+
 #gallery {
   padding-bottom: 139px;
 }
@@ -737,8 +741,6 @@ h2.text_h2_left {
 
 #map {
   height: 700px;
-  max-width: 1600px;
-  width: 100%;
   z-index: 1;
 }
 #map > a {

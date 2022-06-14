@@ -35,6 +35,36 @@ $(function(){
     });
 
 
+    // $('#slider-1').slick({
+    //     slidesToShow: 1,
+    //     vertical: true,
+    //     verticalSwiping: true,
+    //     arrows: false,
+    //     dots: true,
+    //     lazyLoad: 'ondemand',
+        
+    //     responsive:[
+    //         {
+    //             breakpoint: 1000,
+    //             settings: {
+    //                 dots:false,
+    //                 autoplay: true,
+    //                 autoplaySpeed: 2000,
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 500,
+    //             settings: {
+    //                 swipe: false,
+    //                 dots:false,
+    //                 autoplay: true,
+    //             }
+    //         }
+    //     ]
+    // });
+    
+
+    
     // забір новин з json та запуск функції побудови dom і вставка новин в слайдер
     $.get('data/news.json', (resp)=>{
         console.log(resp);
@@ -44,33 +74,85 @@ $(function(){
             // centerMode: true,
             infinite: true,
             slidesToScroll: 1,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 4000,
             dots: true,
             lazyLoad: 'ondemand',
-            responsive: [
-                {
-                    breakpoint: 1300,
-                    settings: {
-                      slidesToShow: 2,
-                      dots: false,
-                      arrows: true,
-                      slidesToScroll: 2,
-                    }
-                },
-                {
-                    breakpoint: 1000,
-                    settings: {
-                      slidesToShow: 1,
-                      arrows: false,
-                      dots: false,
-                      slidesToScroll: 1,
-                  }
-                }
-            ]
+            responsive:[              
+                            {
+                            breakpoint: 965,
+                            settings: {
+                                slidesToShow: 2,
+                                }
+                            },
+                            {
+                                breakpoint: 800,
+                                settings: {
+                                    slidesToShow: 2,
+                                    arrows: false,
+                                    }
+                            },
+                            {
+                                breakpoint: 650,
+                                settings: {
+                                    slidesToShow: 1,
+                                    arrows: false,                       
+                                }
+                            }
+                    ]
+            // responsive: [
+            //     {
+            //         breakpoint: 1300,
+            //         settings: {
+            //           slidesToShow: 2,
+            //           dots: false,
+            //           arrows: true,
+            //           slidesToScroll: 2,
+            //         }
+            //     },
+            //     {
+            //         breakpoint: 1000,
+            //         settings: {
+            //           slidesToShow: 1,
+            //           arrows: false,
+            //           dots: false,
+            //           slidesToScroll: 1,
+            //       }
+            //     }
+            // ]
         });
 
     });
+
+
+    // $('#slider-2').slick({
+    //     slidesToShow: 3,
+    //     dots: true,
+    //     lazyLoad: 'ondemand',
+    //     arrows: true,
+    //     responsive:[              
+    //             {
+    //             breakpoint: 965,
+    //             settings: {
+    //                 slidesToShow: 2,
+    //                 }
+    //             },
+    //             {
+    //                 breakpoint: 800,
+    //                 settings: {
+    //                     slidesToShow: 2,
+    //                     arrows: false,
+    //                     }
+    //             },
+    //             {
+    //                 breakpoint: 650,
+    //                 settings: {
+    //                     slidesToShow: 1,
+    //                     arrows: false,                       
+    //                 }
+    //             }
+    //     ]
+    // })
 
     //функція побудови dom для news
     function buildNewsHtml(cart){
@@ -105,6 +187,7 @@ $(function(){
         $('#news_slider').html(news_html);
     };
 
+    
     //ініціалізація lightGallery
     lightGallery(document.getElementById('lightgallery'), {
         plugins: [lgZoom, lgThumbnail],
@@ -200,5 +283,9 @@ $(function(){
             toggleMenu ();
         })
 
+  
+
 
 })
+
+
