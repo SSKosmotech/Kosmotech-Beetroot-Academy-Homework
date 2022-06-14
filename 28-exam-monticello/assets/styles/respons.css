@@ -44,6 +44,12 @@
     font-size: 0.8rem;
     line-height: 1rem;
   }
+
+  #news_slider {
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 26px;
+  }
 }
 @media screen and (max-width: 950px) {
   .main_menu {
@@ -63,6 +69,12 @@
     font-size: 0.9rem;
     line-height: 1rem;
     letter-spacing: 8px;
+  }
+
+  #news_slider {
+    width: 75%;
+    margin: 0 auto;
+    padding-left: 26px;
   }
 }
 @media screen and (max-width: 890px) {
@@ -146,6 +158,13 @@
     left: 48%;
   }
 }
+@media screen and (max-width: 675px) {
+  #news_slider {
+    width: 60%;
+    margin: 0 auto;
+    padding-left: 26px;
+  }
+}
 @media screen and (max-width: 655px) {
   .socials {
     display: none;
@@ -163,5 +182,11 @@
     margin-bottom: 170px;
     line-height: 2rem;
     letter-spacing: 4px;
+  }
+
+  #news_slider {
+    width: 40%;
+    margin: 0 auto;
+    padding-left: 26px;
   }
 }

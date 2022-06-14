@@ -78,19 +78,19 @@ $(function(){
             autoplaySpeed: 4000,
             dots: true,
             lazyLoad: 'ondemand',
-            responsive:[              
+            responsive:[       
                             {
-                            breakpoint: 965,
+                            breakpoint: 1400,
+                            settings: {
+                                slidesToShow: 3,
+                                arrows: false,
+                                }
+                            },       
+                            {
+                            breakpoint: 1300,
                             settings: {
                                 slidesToShow: 2,
                                 }
-                            },
-                            {
-                                breakpoint: 800,
-                                settings: {
-                                    slidesToShow: 2,
-                                    arrows: false,
-                                    }
                             },
                             {
                                 breakpoint: 650,
