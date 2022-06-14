@@ -80,23 +80,34 @@ $(function(){
             lazyLoad: 'ondemand',
             responsive:[       
                             {
-                            breakpoint: 1400,
-                            settings: {
-                                slidesToShow: 3,
-                                arrows: false,
-                                }
-                            },       
-                            {
                             breakpoint: 1300,
                             settings: {
                                 slidesToShow: 2,
+                                arrows: false,
+                                slidesToScroll: 2,
+                                }
+                            },       
+                            // {
+                            // breakpoint: 1220,
+                            // settings: {
+                            //     slidesToShow: 2,
+                            //     }
+                            // },
+                            {
+                                breakpoint: 955,
+                                settings: {
+                                    slidesToShow: 1,
+                                    arrows: true,
+                                    slidesToScroll: 1,
                                 }
                             },
                             {
-                                breakpoint: 650,
+                                breakpoint: 685,
                                 settings: {
                                     slidesToShow: 1,
-                                    arrows: false,                       
+                                    arrows: false,
+                                    slidesToScroll: 1,
+                                    dots: false,
                                 }
                             }
                     ]
