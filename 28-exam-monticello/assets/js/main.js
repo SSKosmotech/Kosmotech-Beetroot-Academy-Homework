@@ -18,60 +18,15 @@ $(function(){
                 dots: false,
               }
             }
-            // {
-            //   breakpoint: 320,
-            //   settings: {
-            //     slidesToShow: 1,
-            //     infinite: true,
-            //     dots: true,
-            //     arrows: false,
-            //     autoplay: true,
-            //     autoplaySpeed: 3000,
-            //     slidesToScroll: 1,
-            //     adaptiveHeight: true,
-            //   }
-            // }
         ]
     });
 
-
-    // $('#slider-1').slick({
-    //     slidesToShow: 1,
-    //     vertical: true,
-    //     verticalSwiping: true,
-    //     arrows: false,
-    //     dots: true,
-    //     lazyLoad: 'ondemand',
-        
-    //     responsive:[
-    //         {
-    //             breakpoint: 1000,
-    //             settings: {
-    //                 dots:false,
-    //                 autoplay: true,
-    //                 autoplaySpeed: 2000,
-    //             }
-    //         },
-    //         {
-    //             breakpoint: 500,
-    //             settings: {
-    //                 swipe: false,
-    //                 dots:false,
-    //                 autoplay: true,
-    //             }
-    //         }
-    //     ]
-    // });
-    
-
-    
     // забір новин з json та запуск функції побудови dom і вставка новин в слайдер
     $.get('data/news.json', (resp)=>{
         console.log(resp);
         buildNewsHtml(resp);
         $('#news_slider').slick({
             slidesToShow: 3,
-            // centerMode: true,
             infinite: true,
             slidesToScroll: 1,
             autoplay: false,
@@ -87,12 +42,6 @@ $(function(){
                                 slidesToScroll: 2,
                                 }
                             },       
-                            // {
-                            // breakpoint: 1220,
-                            // settings: {
-                            //     slidesToShow: 2,
-                            //     }
-                            // },
                             {
                                 breakpoint: 955,
                                 settings: {
@@ -111,59 +60,10 @@ $(function(){
                                 }
                             }
                     ]
-            // responsive: [
-            //     {
-            //         breakpoint: 1300,
-            //         settings: {
-            //           slidesToShow: 2,
-            //           dots: false,
-            //           arrows: true,
-            //           slidesToScroll: 2,
-            //         }
-            //     },
-            //     {
-            //         breakpoint: 1000,
-            //         settings: {
-            //           slidesToShow: 1,
-            //           arrows: false,
-            //           dots: false,
-            //           slidesToScroll: 1,
-            //       }
-            //     }
-            // ]
         });
 
     });
 
-
-    // $('#slider-2').slick({
-    //     slidesToShow: 3,
-    //     dots: true,
-    //     lazyLoad: 'ondemand',
-    //     arrows: true,
-    //     responsive:[              
-    //             {
-    //             breakpoint: 965,
-    //             settings: {
-    //                 slidesToShow: 2,
-    //                 }
-    //             },
-    //             {
-    //                 breakpoint: 800,
-    //                 settings: {
-    //                     slidesToShow: 2,
-    //                     arrows: false,
-    //                     }
-    //             },
-    //             {
-    //                 breakpoint: 650,
-    //                 settings: {
-    //                     slidesToShow: 1,
-    //                     arrows: false,                       
-    //                 }
-    //             }
-    //     ]
-    // })
 
     //функція побудови dom для news
     function buildNewsHtml(cart){
@@ -214,7 +114,6 @@ $(function(){
             controls: false,
             showCloseIcon: false,
             download: false,
-            // rotate: false
           }
     });
 
@@ -247,8 +146,7 @@ $(function(){
             iconSize: [106, 106],
             iconAnchor: [106, 106],
             popupAnchor: [-53, -90],
-            // shadowUrl: 'assets/icons/pin.png',
-                // shadowSize: [106, 106],
+
         });
 
 
@@ -268,7 +166,6 @@ $(function(){
         e.preventDefault(); //заборонили браузеру проскролити до id
       $('html, body').animate({
         scrollTop:$($(this).attr('href')).offset().top
-    
         }, 800)
     });
 
@@ -295,8 +192,6 @@ $(function(){
         })
 
   
-
-
 })
 
 
