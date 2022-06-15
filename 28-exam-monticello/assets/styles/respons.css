@@ -458,4 +458,18 @@ input[type=text] {
   #side_block {
     width: 80%;
   }
+
+  .slider_item {
+    padding-top: 130px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .slider_item {
+    padding-top: 130px;
+    padding-bottom: 0px;
+  }
+  .slider_item p {
+    margin-bottom: 120px;
+  }
 }
