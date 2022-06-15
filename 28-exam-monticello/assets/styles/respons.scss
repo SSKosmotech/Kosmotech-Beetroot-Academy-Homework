@@ -4,6 +4,12 @@
 //     }
 // }
 
+@media screen and (max-width: 1600px) {
+    #main_slider .slick-dots {
+        right: 80px;
+    }
+}
+
 @media screen and (max-width: 1400px) {
     #latest_news .slick-prev {
         left: -59px;
@@ -51,6 +57,15 @@
     #news_slider {
         max-width: 800px;
         width: 100%;
+    }
+    #gallery h2 {
+        padding-top: 100px;
+    }
+    .wght {
+        padding-top: 60px;
+    }
+    .commerce_centre {
+        padding-bottom: 100px;
     }
 }
 
