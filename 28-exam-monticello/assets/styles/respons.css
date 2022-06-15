@@ -16,6 +16,14 @@
   .wrap_two_img::before {
     margin-left: 15%;
   }
+
+  .wrap_details {
+    padding-right: 20px;
+  }
+
+  .reverse_pic {
+    margin-right: 35px;
+  }
 }
 @media screen and (max-width: 1345px) {
   #latest_news .slick-prev {
@@ -75,6 +83,11 @@
 
   .wrap_details {
     padding-top: 80px;
+    padding-right: 0;
+  }
+
+  .reverse_pic {
+    margin-right: 0;
   }
 
   #trade_center,
