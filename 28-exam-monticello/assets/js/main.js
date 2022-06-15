@@ -118,7 +118,7 @@ $(function(){
         zoomFromOrigin: true,
         actualSize: true,
         mobileSettings: {
-            controls: false,
+            controls: true,
             showCloseIcon: false,
             download: false,
           }
