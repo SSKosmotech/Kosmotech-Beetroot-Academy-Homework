@@ -868,6 +868,10 @@ h2.text_h2_left {
   object-fit: cover;
   vertical-align: top;
 }
+#map img.popup_img {
+  width: 50%;
+  height: 50%;
+}
 
 #contacts_section {
   position: relative;
@@ -1001,10 +1005,6 @@ input[type=search]:focus {
   font-size: 1rem;
   color: #2C4058;
   text-align: center;
-}
-.popup img {
-  width: 50%;
-  height: 50%;
 }
 
 .footer .container {

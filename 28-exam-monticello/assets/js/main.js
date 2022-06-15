@@ -162,7 +162,7 @@ $(function(){
         .bindPopup(`
         <div class="popup">
             <span>Serhii Simonov can be there</span>
-            <img src="assets/images/kosmo_planet.png">
+            <img class="popup_img" src="assets/images/kosmo_planet.png">
         </div>
         `);
         // .openPopup();

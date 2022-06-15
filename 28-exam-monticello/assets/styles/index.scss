@@ -875,7 +875,13 @@ h2.text_h2_left {
     -o-object-fit: cover;
        object-fit: cover;
     vertical-align: top;
+    &.popup_img {
+        width: 50%;
+        height: 50%;
+    }
 }
+
+
 
 #contacts_section {
     position: relative;
@@ -1019,11 +1025,8 @@ input[type=search] {
         color: #2C4058;
         text-align: center;
     }
-    & img {
-        width: 50%;
-        height: 50%;
-    }
 }
+
 
 .footer {
     .container {
