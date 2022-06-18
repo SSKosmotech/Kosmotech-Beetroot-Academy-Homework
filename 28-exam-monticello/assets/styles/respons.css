@@ -2,6 +2,10 @@
   #main_slider .slick-dots {
     right: 80px;
   }
+
+  .first_screen_arrow {
+    top: 90vh;
+  }
 }
 @media screen and (max-width: 1400px) {
   #latest_news .slick-prev {
@@ -249,6 +253,10 @@
     -ms-transform: scale(1.5);
     transform: scale(1.5);
   }
+
+  .first_screen_arrow {
+    top: 80vh;
+  }
 }
 @media screen and (max-width: 820px) {
   h1 {
@@ -476,6 +484,10 @@ input[type=text] {
     padding-top: 130px;
     padding-bottom: 20px;
   }
+
+  .first_screen_arrow {
+    top: 65vh;
+  }
 }
 @media screen and (max-width: 320px) {
   .slider_item {
@@ -484,5 +496,9 @@ input[type=text] {
   }
   .slider_item p {
     margin-bottom: 120px;
+  }
+
+  .first_screen_arrow {
+    top: 70vh;
   }
 }

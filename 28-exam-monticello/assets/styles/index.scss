@@ -288,35 +288,34 @@ h1 {
     }
 }
 
-.bottom_arrow {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+header {
     position: relative;
-    bottom: 70px;
+}
+
+
+.first_screen_arrow {
+    z-index: 8;
+    position: absolute;
+    top: 80vh;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff; 
+    background-color: transparent;
     cursor: pointer;
     -webkit-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease;
-    &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        border: 1px solid #fff;
-    }
     &::after {
         content: '';
         display: block;
         position: absolute;
+        left: 16px;
+        top: 16px;
         width: 6px;
         height: 6px;
         border-top: 1px solid #fff;
@@ -324,11 +323,13 @@ h1 {
         -webkit-transform: rotate(225deg);
             -ms-transform: rotate(225deg);
                 transform: rotate(225deg);
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
     }
     &:hover  {
-        -webkit-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-                transform: scale(1.1);
+        -webkit-box-shadow: 0px 0px 30px rgba(208, 214, 221, 0.9);
+                box-shadow: 0px 0px 30px rgba(208, 214, 221, 0.9);
     }
 }
 
@@ -534,9 +535,9 @@ h2.text_h2_left {
     cursor: pointer;
     margin-left: 14px;
     &:hover > .pic > img {
-        -webkit-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-                transform: scale(1.1);
+        -webkit-transform: scale(1.1) rotate(3deg);
+            -ms-transform: scale(1.1) rotate(3deg);
+                transform: scale(1.1) rotate(3deg);
     }
     > .pic:first-of-type {
         overflow: hidden;
@@ -973,8 +974,8 @@ input[type=search] {
     top: 0;
     color: #fff;
     background: rgb(116,152,231);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(123,98,251,1)), color-stop(55%, rgba(116,152,231,1)));
     background: -o-linear-gradient(top, rgba(123,98,251,1) 20%, rgba(116,152,231,1) 55%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(123,98,251,1)), color-stop(55%, rgba(116,152,231,1)));
     background: linear-gradient(180deg, rgba(123,98,251,1) 20%, rgba(116,152,231,1) 55%);
         -webkit-box-shadow: 0 0 5px rgb(123, 98, 251);
                 box-shadow: 0 0 5px rgb(123, 98, 251);

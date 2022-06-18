@@ -1,5 +1,8 @@
 $(function(){
 
+    //ініціалізація анімацій
+    new WOW().init();
+
     // ініціалізація головного (вертикального) слайдера
     $('#main_slider').slick({
         infinite: true,
@@ -63,7 +66,7 @@ $(function(){
                                     slidesToShow: 1,
                                     arrows: false,
                                     slidesToScroll: 1,
-                                    dots: false,
+                                    dots: true,
                                 }
                             }
                     ]
@@ -125,9 +128,6 @@ $(function(){
     });
 
 
-
-
-
     // фклік по фото карти, якитй активує саму карту
     // document.getElementById('load_map_link').addEventListener('click', function(event){
     $("#load_map_link").on('click', function (event) {
@@ -169,7 +169,7 @@ $(function(){
     };
 
     //плавний скрол до секції, при клікі на мобільні і головні пункти меню і стрілка на first_screen 
-      $('.mobile_menu a, .main_menu a, .first_screen a.bottom_arrow').on('click', function(e){
+      $('.mobile_menu a, .main_menu a, .first_screen .first_screen_arrow').on('click', function(e){
         e.preventDefault(); //заборонили браузеру проскролити до id
       $('html, body').animate({
         scrollTop:$($(this).attr('href')).offset().top

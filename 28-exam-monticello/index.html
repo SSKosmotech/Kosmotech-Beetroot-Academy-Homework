@@ -40,6 +40,8 @@
   
     <link rel="stylesheet" href="assets/styles/fonts_style.min.css">
 
+    <link rel="stylesheet" href="assets/styles/animate.min.css">
+
     <link rel="stylesheet" type="text/css" href="assets/plugins/slickSlider/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/plugins/slickSlider/slick-theme.css"/>
     <link rel="stylesheet" href="assets/plugins/leaflet/leaflet.css">
@@ -170,40 +172,8 @@
     
                 </div>   
 
-
-                <div id="main_slider">
-                    
-                    <div class="slider_item bgimg" style="background-image: url('assets/images/tu-tram-pham-first-screen_01.jpg')">
-                            <h1>Simple & modern</h1>
-                            <p>we make the world beautiful everyday</p>
-                    </div>
-              
-                    <div class="slider_item bgimg" style="background-image: url('assets/images/tu-tram-pham-first-screen_02.jpg')">
-                        <h1>Simple & modern2</h1>
-                        <p>we make the world beautiful everyday</p>
-                    </div>
-
-                    <div class="slider_item bgimg" style="background-image: url('assets/images/tu-tram-pham-first-screen_03.jpg')">
-                        <h1>Simple & modern3</h1>
-                        <p>we make the world beautiful everyday</p>
-                    </div> 
-                    
-                    <div class="slider_item bgimg" style="background-image: url('assets/images/tu-tram-pham-first-screen_04.jpg')">
-
-                        <h1>Simple & modern4</h1>
-                        <p>we make the world beautiful everyday</p>
-                    </div>
-
-                    <div class="slider_item bgimg" style="background-image: url('assets/images/tu-tram-pham-first-screen_05.jpg')">
-
-                        <h1>Simple & modern5</h1>
-                        <p>we make the world beautiful everyday</p>
-                    </div>
-
-                </div>
-
-         
-                <a class="bottom_arrow" href="#gallery_scroll"></a>
+                <button type="button" class="first_screen_arrow" href="#trade_center"></button>
+                <!-- <a class="bottom_arrow" href="#trade_center"></a> -->
                 
             </div>
 
@@ -211,10 +181,41 @@
 
     <main class="main">
 
+        <div id="main_slider">
+                    
+            <div class="slider_item bgimg" style="background-image: url('assets/images/tu-tram-pham-first-screen_01.jpg')">
+                    <h1>Simple & modern</h1>
+                    <p>we make the world beautiful everyday</p>
+            </div>
+      
+            <div class="slider_item bgimg" style="background-image: url('assets/images/tu-tram-pham-first-screen_02.jpg')">
+                <h1>Simple & modern2</h1>
+                <p>we make the world beautiful everyday</p>
+            </div>
+
+            <div class="slider_item bgimg" style="background-image: url('assets/images/tu-tram-pham-first-screen_03.jpg')">
+                <h1>Simple & modern3</h1>
+                <p>we make the world beautiful everyday</p>
+            </div> 
+            
+            <div class="slider_item bgimg" style="background-image: url('assets/images/tu-tram-pham-first-screen_04.jpg')">
+
+                <h1>Simple & modern4</h1>
+                <p>we make the world beautiful everyday</p>
+            </div>
+
+            <div class="slider_item bgimg" style="background-image: url('assets/images/tu-tram-pham-first-screen_05.jpg')">
+
+                <h1>Simple & modern5</h1>
+                <p>we make the world beautiful everyday</p>
+            </div>
+
+        </div>
+
         <section id="trade_center">
             <div class="container">
 
-                <h2 class="up_line">What we do</h2>
+                <h2 class="up_line wow animate__animated animate__fadeInDown">What we do</h2>
 
                 <div class="wrap_commerce">
                     
@@ -224,7 +225,7 @@
                         </div>
                     </div>
     
-                    <div class="wrap_details">
+                    <div class="wrap_details wow animate__animated animate__fadeInLeft">
                         <p>One world</p>
                         <h2 class="text_h2_left">Trade center</h2>
                         <p>Increasing prosperity in our lives can be accomplished<br>
@@ -256,7 +257,7 @@
                         </div>
                     </div>
     
-                    <div class="wrap_details reverse_margin">
+                    <div class="wrap_details reverse_margin wow animate__animated animate__fadeInRight">
                         <p>International</p>
                         <h2 class="text_h2_left">Commerce centre</h2>
                         <p>Successful businesses have many things in common,<br>
@@ -280,7 +281,7 @@
 
             <div class="container">
                
-                <h2 id="latest_news_h2" class="up_line up_line_wght wght">Latest news</h2>
+                <h2 id="latest_news_h2 wow animate__animated animate__fadeInDown" class="up_line up_line_wght wght wow animate__animated animate__fadeInDown">Latest news</h2>
 
                 <div id="news_slider"></div>
             </div>
@@ -293,7 +294,7 @@
 
             <div class="container">
                 
-                <h2 class="up_line" id="gallery_scroll">Gallery</h2>
+                <h2 class="up_line wow animate__animated animate__fadeInDown" id="gallery_scroll">Gallery</h2>
 
                 <div id="lightgallery" class="gallery">
                     <a href="assets/images/gallery_main.jpg" class="pic" data-lg-size="580-438">
@@ -344,7 +345,7 @@
             <div class="container">    
 
                     <div class="wrap_form bgimg lazy-bg" data-src="assets/images/get-in-touch-background.png">
-                        <h2 class="up_line mb_h2">Get in touch</h2>
+                        <h2 class="up_line mb_h2 wow animate__animated animate__fadeInDown">Get in touch</h2>
                         <div class="wrap_form_contacts">
                             <div class="form_contacts">
                                 
@@ -444,6 +445,8 @@
     <script src="assets/js/lazyload.prod.js"></script>
     
     <script src="assets/plugins/slickSlider/slick.min.js" ></script>
+
+    <script src="assets/js/wow.min.js"></script>
     
     <script src="assets/plugins/lightGallery-master/dist/lightgallery.min.js"></script>
     <script src="assets/plugins/lightGallery-master/dist/plugins/thumbnail/lg-thumbnail.min.js"></script>
