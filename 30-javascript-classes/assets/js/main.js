@@ -23,6 +23,36 @@ circ.showLineWidthCircle();
 
 circ.showCircle();
 
+// <<==========================2 Task==============================>>
+
+const marker = new Marker('blue', 100);
+console.log(marker);
+marker.showColor();
+marker.showPercent();
+// marker.showBar();
+
+
+marker.getAndShow("Думи мої, думи мої, Лихо мені з вами! Нащо стали на папері Сумними рядами?.. Чом вас вітер не розвіяв В степу, як пилину? Чом вас лихо не приспало, Як свою дитину?.. Бо вас лихо на світ на сміх породило, Поливали сльози... Чом не затопил");
+// console.log;
+
+marker.showPercenAfter();
+marker.showBarAfter();
+
+
+document.getElementById("reCharged").addEventListener('click',function (){
+    const recharge_ink = new Recharge('blue', 3);
+    recharge_ink.reCharged();
+    recharge_ink.showPercenAfter();
+    recharge_ink.showBarAfter();
+    // marker.getAndShow();
+    recharge_ink.setAmount = '100';
+    recharge_ink.getAndShow();
+    // console.log(`Yo: ${this.amountInk}`);
+});
+
+
+// const rechargedAmount = new Recharge('green', 80, 20);
+// console.log(rechargedAmount.color);
 
 
 
