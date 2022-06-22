@@ -28,6 +28,7 @@ class Marker {
     // }
   
     getAndShow(text){
+        console.log(`Check text: ${text}`);
         let ink = this.amountInk;
         // let writeText = text.split(" ").join("");
         let newText = '';
@@ -72,7 +73,6 @@ class Marker {
     }
 
     
-
 }
 
 
