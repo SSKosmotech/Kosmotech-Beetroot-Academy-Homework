@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">   
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+
+    <div id="app">
+        <div class="container pt-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-8">
+                            <form id="search_form" @submit.prevent="searchMovies">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="search" class="form-control" placeholder="Enter movie title" v-model="search">
+                                    </div>
+                                    <div class="col-4">
+                                        <select v-model="selectedType" class="form-select">
+                                            <option disabled value="">Please select one</option>
+                                            <option value="all" >All</option>
+                                            <option value="movie" >Movie</option>
+                                            <option value="series">Series</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-2">
+                                        <button type="submit" class="btn btn-info">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-4">
+                            <button type="button" class="btn btn-warning" @click="showFavorites">My Favorite</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Movie list</h3>
+                </div>
+                <div class="card-body row">
+                    <div class="card col-3 mb-4 " v-for="movie in movieList" :key="movie.imdbID">
+                        <img :src="movie.Poster" class="card-img-top pt-4" :alt="movie.Title">
+                        <div class="card-body">
+                            <h5 class="card-title"> {{ movie.Title }} </h5>
+                            <p class="card-text"><b>Year:</b> {{ movie.Year }}</p>
+                            <p class="card-text"><b>Type:</b> {{ movie.Type }}</p>
+                            <button type="button" class="btn btn-primary me-2" @click="getMovieInfo(movie.imdbID)">Info</button>
+                            <button type="button" class="btn btn-warning" @click="setFavorites(movie.imdbID, movie.Title)">&#9733;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal_overlay" v-if="showModal">
+            <div class="my_modal">
+
+                <div class="info_container mb-4">
+                    <div class="img_container mb-4">
+                        <img :src="movieInfo.Poster" class="card-img-top pt-4" :alt="movieInfo.Title">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"> {{ movieInfo.Title }} </h4>
+                        <p class="card-text"><span class="bold">Year: </span>{{ movieInfo.Year }}</p>
+                        <p><span class="bold">Awards: </span>{{ movieInfo.Awards }}</p>
+                        <p><span class="bold">Rated: </span>{{ movieInfo.Rated }}</p>
+                        <p><span class="bold">Released: </span>{{ movieInfo.Released }}</p>
+                        <p><span class="bold">Runtime: </span>{{ movieInfo.Runtime }}</p>
+                        <p><span class="bold">Genre: </span>{{ movieInfo.Genre }}</p>
+                        <p><span class="bold">Director: </span>{{ movieInfo.Director }}</p>
+                        <p><span class="bold">Writer: </span>{{ movieInfo.Writer }}</p>
+                        <p><span class="bold">Actors: </span>{{ movieInfo.Actors }}</p>
+                        <p><span class="bold">Plot: </span>{{ movieInfo.Plot }}</p>
+                        <p><span class="bold">Language: </span>{{ movieInfo.Language }}</p>
+                        <p><span class="bold">Country: </span>{{ movieInfo.Country }}</p>
+                        
+                        <p><span class="bold">Ratings:</span></p>
+                        <li v-for="(rating, index) in movieInfo.Ratings" :key="index">
+                            {{ rating.Source }} - {{ rating.Value }}
+                        </li>
+                    
+                    </div>
+                </div>
+                <button type="button" class="btn btn-info" @click="showModal=false">Close</button>
+            </div>
+        </div>
+
+        <div class="modal_overlay" v-if="showFavoritesModal">
+            <div class="my_modal">
+                <div class="info_container mb-4">
+                    <div class="card-body">
+                        <h3>My favorites:</h3>
+                        <li v-for="(item, index) in this.myFavorite" :key="index">
+                            {{ item.title }} (<b>imdbID:</b> {{ item.id }})
+                        </li>
+                    </div>
+                </div>
+            <button type="button" class="btn btn-info" @click="showFavoritesModal=false">Close</button>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="assets/js/axios.min.js" ></script> -->
+    <script src="assets/js/vue.global.js" ></script>
+    <script src="assets/js/movies.js" ></script>
+</body>
+</html>

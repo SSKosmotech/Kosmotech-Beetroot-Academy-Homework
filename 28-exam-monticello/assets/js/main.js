@@ -128,7 +128,7 @@ $(function(){
     });
 
 
-    // фклік по фото карти, якитй активує саму карту
+    // клік по фото карти, який активує саму карту
     // document.getElementById('load_map_link').addEventListener('click', function(event){
     $("#load_map_link").on('click', function (event) {
         event.preventDefault();
@@ -184,7 +184,6 @@ $(function(){
             $(".wrap_menu").removeClass("scroll")
         }
     })
-
     
     // функція для активація і дезактивація hamburger меню по клікам на: гамбургер, оверлей, мобільні пункти меню
     function toggleMenu (){
