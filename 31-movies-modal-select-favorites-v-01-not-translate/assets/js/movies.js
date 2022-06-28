@@ -1,20 +1,3 @@
-const movieItem = {
-    props: ["movie"],
-
-    methods: {
-        getMovieInfo(id) {
-            // this.$parent.getMovieInfo(id)
-            this.$emit("getMovie", id)
-        },
-        setFavorites(id, title) {
-            // this.$parent.setFavorites(id, title)
-            this.$emit("setFavorit", id, title)
-        }
-    },
-    
-    template: "#movieItem"
-}
-
 const App = {
     data(){
         return {
@@ -27,9 +10,6 @@ const App = {
             myFavorite: [],
             showFavoritesModal: false
         }
-    },
-    components: {
-        movieItem
     },
     methods: {
         searchMovies() {
@@ -51,7 +31,6 @@ const App = {
                 .then(function () {
                     // always executed
                 });
-                this.myFavorite = JSON.parse(localStorage.getItem('myFavorite'));
             }
         },
         showMovieInfo(){
@@ -101,36 +80,10 @@ const App = {
             localStorage.setItem('myFavorite', JSON.stringify(this.myFavorite));
             console.log(this.myFavorite);
         },
-        created() {
-            this.myFavorite = JSON.parse(localStorage.getItem('myFavorite'));
-        },
         showFavorites(){
             this.showFavoritesModal = true
             this.myFavorite = JSON.parse(localStorage.getItem('myFavorite'));
             console.log(`Check: ${this.myFavorite}`);
-        },
-        // 02 Work
-        movieListWithFavorite(){
-            const arr = []
-            
-            this.movieList.forEach(el => {
-                const findFav = this.myFavorite.find(item => {
-                    // return el.imdbID === item.imdbID
-                    return el.imdbID === item.id
-                })
-
-                el.inFav = findFav !== undefined ? true : false
-                arr.push(el)
-                
-                // if (findFav !== undefined){
-                //     el.inFav = tru
-                // }else{
-                //     el.inFav = false
-                // }
-
-            })
-            console.log(arr);
-            return arr
         }
     }
 }

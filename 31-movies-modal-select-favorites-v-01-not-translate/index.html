@@ -47,9 +47,16 @@
                     <h3>Movie list</h3>
                 </div>
                 <div class="card-body row">
-                    <template v-for="movie in movieListWithFavorite()" :key="movie.imdbID">
-                        <movie-item :movie="movie" @get-movie="getMovieInfo" @set-favorit="setFavorites"/>
-                    </template>
+                    <div class="card col-3 mb-4 " v-for="movie in movieList" :key="movie.imdbID">
+                        <img :src="movie.Poster" class="card-img-top pt-4" :alt="movie.Title">
+                        <div class="card-body">
+                            <h5 class="card-title"> {{ movie.Title }} </h5>
+                            <p class="card-text"><b>Year:</b> {{ movie.Year }}</p>
+                            <p class="card-text"><b>Type:</b> {{ movie.Type }}</p>
+                            <button type="button" class="btn btn-primary me-2" @click="getMovieInfo(movie.imdbID)">Info</button>
+                            <button type="button" class="btn btn-warning" @click="setFavorites(movie.imdbID, movie.Title)">&#9733;</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -92,7 +99,7 @@
                 <div class="info_container mb-4">
                     <div class="card-body">
                         <h3>My favorites:</h3>
-                        <li v-for="(item, index) in myFavorite" :key="index">
+                        <li v-for="(item, index) in this.myFavorite" :key="index">
                             {{ item.title }} (<b>imdbID:</b> {{ item.id }})
                         </li>
                     </div>
@@ -102,36 +109,6 @@
         </div>
 
     </div>
-
-
-    <template id="movieItem">
-        <div class="card col-3 mb-4">
-            <img :src="movie.Poster" class="card-img-top pt-4" :alt="movie.Title" v-if="movie.Poster !== 'N/A'">
-            
-            <img src="https://via.placeholder.com/420x630" class="card-img-top pt-4" :alt="movie.Title" v-else>
-
-            <!-- TODO: фото заглушку -->
-            
-            
-            <div class="card-body">
-                <h5 class="card-title"> {{ movie.Title }} </h5>
-                <!-- <h2 v-if="movie.inFav">123</h2> -->
-                <p class="card-text"><b>Year:</b> {{ movie.Year }}</p>
-                <p class="card-text"><b>Type:</b> {{ movie.Type }}</p>
-                <button type="button" class="btn btn-primary me-2" @click="getMovieInfo(movie.imdbID)">Info</button>
-                <button type="button" class="btn btn-warning" @click="setFavorites(movie.imdbID, movie.Title)">
-                    <!-- &#9733; -->
-                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        :fill="movie.inFav ? '#f00' : '#fff'" width="20px" height="20px" viewbox="0 0 544.582 544.582" style="enable-background:new 0 0 544.582 544.582;"
-                        xml:space="preserve">
-                        <path d="M448.069,57.839c-72.675-23.562-150.781,15.759-175.721,87.898C247.41,73.522,169.303,34.277,96.628,57.839
-                        C23.111,81.784-16.975,160.885,6.894,234.708c22.95,70.38,235.773,258.876,263.006,258.876
-                        c27.234,0,244.801-188.267,267.751-258.876C561.595,160.732,521.509,81.631,448.069,57.839z"/>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </template>
     
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- <script src="assets/js/axios.min.js" ></script> -->
@@ -139,6 +116,3 @@
     <script src="assets/js/movies.js" ></script>
 </body>
 </html>
-
-
-<!-- :fill="movie.inFav ? '#f00' : '#fff'" -->
