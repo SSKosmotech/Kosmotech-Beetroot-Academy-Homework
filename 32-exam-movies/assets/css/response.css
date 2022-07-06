@@ -1,0 +1,22 @@
+@media screen and (max-width: 675px) {
+  .col_fav_modal .card {
+    width: 60%;
+  }
+
+  .width_modal_large {
+    max-width: 600px;
+    width: 85%;
+    max-height: 80vh;
+    overflow: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .col_fav_modal .card {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 330px) {
+  h3 {
+    font-size: 1.3rem;
+  }
+}
