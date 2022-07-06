@@ -65,6 +65,10 @@ body.dark_theme {
         color: $text-color
     }
 
+    .page-link:hover {
+        color: $background-color;
+    }
+
     .disabled>.page-link{
         color: $checked-color;
     }

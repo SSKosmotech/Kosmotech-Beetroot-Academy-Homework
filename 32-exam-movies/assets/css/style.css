@@ -206,6 +206,10 @@ label[for=check_theme] span {
   color: #808080;
 }
 
+.page-link:hover {
+  color: #000;
+}
+
 .active > .page-link {
   background-color: #808080;
   border-color: #808080;

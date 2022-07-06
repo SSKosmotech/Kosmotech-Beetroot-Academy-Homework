@@ -217,11 +217,14 @@ label[for=check_theme]{
     color: $shadow-color;
 }
 
+.page-link:hover {
+    color: $text-color;
+}
+
 .active>.page-link {
     background-color: $shadow-color;
     border-color: $shadow-color;
 }
-
 
 h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

@@ -45,6 +45,9 @@ body.dark_theme .page-link {
   background-color: #8b8b8b;
   color: #FFF;
 }
+body.dark_theme .page-link:hover {
+  color: #000;
+}
 body.dark_theme .disabled > .page-link {
   color: #d3d3d3;
 }
