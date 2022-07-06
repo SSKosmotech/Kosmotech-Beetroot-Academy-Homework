@@ -1,11 +1,75 @@
-$text-color: red;
+$text-color: #FFF;
 $background-color: #000;
+$shadow-color: #8b8b8b;
+$checked-color: #d3d3d3;
+
 
 body.dark_theme {
     color: $text-color;
-    background-color: $background-color;
+    background-color: $background-color; 
+    
+    .modal_overlay {
+        background-color: rgba(0,0,0,.7);
+    }
+    
+    .my_modal {
+        background-color: $background-color;
+        -webkit-box-shadow: 0 0 5px 15px $shadow-color;
+                box-shadow: 0 0 5px 15px $shadow-color;
+        background-color: $background-color;
+    }
+    
+    .checkbox {
+      background-color: $background-color;
+      -webkit-box-shadow: 0 0 5px 1px $text-color;
+              box-shadow: 0 0 5px 1px $text-color;
+    }
+    
+    input[type=checkbox] {
+        &::before {
+            background-color: $background-color;
+        }
+        &:checked {
+            &::before{
+                background-color: $shadow-color;
+            }
+        }
+    
+    }
+    
+    .rating_container {
+        background: -o-linear-gradient(45deg, rgba(246,0,0,1) 0%, rgba(43,254,0,1) 100%);
+        background: linear-gradient(45deg, rgba(246,0,0,1) 0%, rgba(43,254,0,1) 100%);
+        border: 1px solid black;
+        .progress_bar {
+            background: $text-color;
+        }
+    }
+    
+    page-link.disabled {
+        color:var(--bs-pagination-disabled-color);
+        background-color:var(--bs-pagination-disabled-bg);
+        border-color:var(--bs-pagination-disabled-border-color);
+    }
 
+    .bg-light {
+        background-color:$shadow-color!important
+    }
+    
+    .black_bg {
+        background-color: $background-color;
+    }
+    
+    .page-link {
+        background-color: $shadow-color;
+        color: $text-color
+    }
 
+    .disabled>.page-link{
+        color: $checked-color;
+    }
 
-
+    .active>.page-link {
+        border-color: $background-color;
+    }
 }

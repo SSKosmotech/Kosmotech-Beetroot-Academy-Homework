@@ -1,13 +1,14 @@
 //Check dark_theme cookie
 const my_theme_cookie = getCookie('ThemeName')
-console.log(my_theme_cookie);
+// console.log(my_theme_cookie);
 
 if(my_theme_cookie === 'dark_theme'){
     document.body.classList.add('dark_theme');
     document.getElementById('check_theme').setAttribute('checked', 'checked');
 }
 
-const Pagination2 = {
+
+const Pagination = {
     props: {
         page: {
             type: Number,
@@ -19,23 +20,45 @@ const Pagination2 = {
             default: 0,
             required: true
         },
+        showpaginationprevbutton: {
+            type: Boolean,
+            default: true,
+            required: true
+        },
+        showpaginationnextbutton: {
+            type: Boolean,
+            default: true,
+            required: true
+        },
+        ifdisabledprevbutton: {
+            type: Boolean,
+            default: false,
+            required: true
+        },
+        ifdisablednextbutton: {
+            type: Boolean,
+            default: false,
+            required: true
+        },
+        ifdisabledprev: {
+            type: Boolean,
+            default: false,
+            required: true
+        },
+        ifdisablednext: {
+            type: Boolean,
+            default: false,
+            required: true
+        }
     },
     methods: {
         goToPage2(new_page) {
             this.$emit('toPage', new_page)
         }
     },
-    // computed: {
-    //     from(){
-    //         return from
-    //     },
-    //     to() {
 
-    //     }      
-    // },
-    template: '#pagination2'
+    template: '#pagination'
 }
-
 
 
 const movieItem = {
@@ -77,14 +100,14 @@ const App = {
             ifDisabledPrev: false,
             ifDisabledNext: false,
             isActiveTheme: false,
-            showPagination: false,
+            // showPagination: false,
             showPaginationNextButton: true,
             showPaginationPrevButton: true
         }
     },
     components: {
         movieItem,
-        Pagination2
+        Pagination
     },
     methods: {
         searchMovies() {
@@ -99,16 +122,17 @@ const App = {
                     this.movieList = response.data.Search
                     this.totalPages = Math.ceil(response.data.totalResults / 10)
                     console.log(`this.totalPages: ${this.totalPages}`);
-                    if(this.page >= this.totalPages){
-                        this.ifDisabledNext = true
-                    }else{
-                        this.ifDisabledNext = false
-                    }
-                    if(this.page === 1){
-                        this.ifDisabledPrev = true
-                    }else{
-                        this.ifDisabledPrev = false
-                    }
+                    
+                if(this.page >= this.totalPages){
+                    this.ifDisabledNext = true
+                }else{
+                    this.ifDisabledNext = false
+                }
+                if(this.page === 1){
+                    this.ifDisabledPrev = true
+                }else{
+                    this.ifDisabledPrev = false
+                }
 
                 if(this.page >= (this.totalPages-5)){
                     this.ifDisabledNextButton = true
@@ -117,7 +141,7 @@ const App = {
                     this.showPaginationNextButton = true
                 }
 
-                if(this.page <= 5){
+                if(this.page <= 6){
                     this.ifDisabledPrevButton = true
                     this.showPaginationPrevButton = false
                 }else{
@@ -133,11 +157,9 @@ const App = {
                 .then(function () {
                     // always executed
                 });
-                // this.myFavorite = JSON.parse(localStorage.getItem('myFavorite'));
                 console.log(`this.page: ${this.page}`);
                 console.log(`this.totalPages: ${this.totalPages}`);
-                
-                this.showPagination = true
+                // this.showPagination = true
             }
 
             
@@ -165,19 +187,6 @@ const App = {
                         this.movieInfo.Ratings[i].Value = 100 - parseFloat(`${this.movieInfo.Ratings[i].Value}`)
                     }
                 }
-                // this.movieInfo.Ratings[2].Value = parseFloat(`${this.movieInfo.Ratings[2].Value}`)
-                // console.log(this.movieInfo.Ratings[1].Value);
-
-
-                // this.movieInfo.Ratings[0].Value[1] = this.movieInfo.Ratings[0].Value[2];
-                // console.log(this.movieInfo.Ratings[0].Value[1]);
-
-
-                // console.log(intMovDat);
-                // console.log(this.movieInfo.Ratings[0].Value[2]);
-                // console.log(this.movieInfo.Ratings[0].Value[0] + this.movieInfo.Ratings[0].Value[2]);
-
-
             })
             .catch(function (error) {
                 // handle error
@@ -188,8 +197,6 @@ const App = {
             });
         },
         setFavorites(id){
-            // this.myFavorite = JSON.parse(localStorage.getItem('myFavorite')) || [];
-            // this.myFavorite = id
             console.log(id)
             const movie = this.movieList.find(el => el.imdbID===id)
             const delFavoriteIndex = this.myFavorite.findIndex(el => el.imdbID===id);
@@ -197,24 +204,18 @@ const App = {
                 this.myFavorite.push(movie);
                 this.showAboutAdded();
                 // console.log(this.myFavorite);
-                // localStorage.setItem('myFavorite', JSON.stringify(this.myFavorite));
-            //     localStorage.removeItem('myFavorite', JSON.stringify(this.myFavorite));
             }
             else{
-                // localStorage.removeItem(this.myFavorite);
-                // localStorage.removeItem('myFavorite', JSON.stringify(this.myFavorite));
-                console.log(`delFavoriteIndex= ${delFavoriteIndex}`);
 
+                // console.log(`delFavoriteIndex= ${delFavoriteIndex}`);
                 this.myFavorite.splice(delFavoriteIndex, 1);
                 this.showAboutDeleted();
-
             }
             localStorage.setItem('myFavorite', JSON.stringify(this.myFavorite));
             console.log(this.myFavorite);
         },
         showFavorites(){
             this.showFavoritesModal = true
-            // this.myFavorite = JSON.parse(localStorage.getItem('myFavorite'));
             console.log(`Check: ${this.myFavorite}`);
         },
         showAboutAdded(){
@@ -231,7 +232,7 @@ const App = {
             if(pageNum !== 1){
                 this.ifDisabledPrev = true
             }
-            if(pageNum <= 5){
+            if(pageNum <= 6){
                 this.ifDisabledPrevButton = true
                 this.showPaginationPrevButton = false
             }else{
@@ -247,19 +248,13 @@ const App = {
                 this.showPaginationNextButton = false
             }else{
                 this.ifDisabledNextButton = false
-                this.showPaginationNextButton = true            }
+                this.showPaginationNextButton = true            
+            }
 
-            // this.ifDisabledPrevButton = false
-            // this.ifDisabledNextButton = false
-            this.searchMovies()
-        },
-        goToPageMovies(new_page) {
-            this.page = new_page
             this.searchMovies()
         }
     },
     computed: {
-        // 02 Work
         movieListWithFavorite(){
             const arr = []
             
@@ -271,13 +266,6 @@ const App = {
 
                 el.inFav = findFav !== undefined ? true : false
                 arr.push(el)
-                
-                // if (findFav !== undefined){
-                //     el.inFav = true
-                // }else{
-                //     el.inFav = false
-                // }
-
             })
             console.log(arr);
             return arr
@@ -285,27 +273,12 @@ const App = {
     },
     created() {
         this.myFavorite = JSON.parse(localStorage.getItem('myFavorite')) || [];
-        // this.myFavorite = JSON.parse(localStorage.getItem('myFavorite'));
     }
 }
 
 Vue.createApp(App).mount('#app')
 
 
-
-
-// alert( document.cookie );
-
-// const my_cookie = document.cookie
-// // alert( my_cookie );
-// console.log(my_cookie);
-// my_cookie.split('=')
-// console.log(my_cookie);
-
-
-
-// Toggle class="dark_theme" on body
-// console.log(`Hello`);
 
 const checkbox = document.getElementById('check_theme');
 checkbox.addEventListener('change', function() {
@@ -315,22 +288,21 @@ checkbox.addEventListener('change', function() {
     // document.cookie = "ThemeName=dark_theme";
     setCookie('ThemeName', 'dark_theme')
   } else {
-    console.log("Checkbox is not checked..");
-    document.body.classList.toggle('dark_theme');
+    // console.log("Checkbox is not checked..");
     // document.cookie = "ThemeName=";
+    document.body.classList.toggle('dark_theme');
     deleteCookie('ThemeName');
   }
 });
 
 
+// Cookie
 function getCookie(name) {
     const matches = document.cookie.match(new RegExp(
       "(?:^|; )" + name.replace(/([.$?*|{}()[\]\\/+^])/g, '\\$1') + "=([^;]*)"
     ));
     return matches ? decodeURIComponent(matches[1]) : undefined;
   }
-  
-
 
 function setCookie(name, value, options = {}) {
   
@@ -356,7 +328,6 @@ function setCookie(name, value, options = {}) {
   
     document.cookie = updatedCookie;
   }
-  
   
   function deleteCookie(name) {
     setCookie(name, "", {
